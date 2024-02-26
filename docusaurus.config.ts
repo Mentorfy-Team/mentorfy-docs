@@ -56,12 +56,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/frase.png',
+    image: 'img/mfdocs.png',
     navbar: {
       title: '',
       logo: {
         alt: 'Docs Mentorfy',
-        src: 'img/tipografia-dark.png',
+        src: 'img/mfdocs.png',
       },
       items: [
         {
