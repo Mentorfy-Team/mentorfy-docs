@@ -8,7 +8,7 @@ As dimensões auxiliam na melhor experiência dentro da área de membros.
 
 ## Página de Login
 
-Get started by **creating a new site**.
+descrição **detalhada**.
 
 ```bash
 dimensões...
@@ -17,7 +17,7 @@ dimensões...
 
 ## Vitrine
 
-Generate a new Docusaurus site using the **classic template**.
+descrição **detalhada**.
 
 ```bash
 dimensões...
@@ -25,7 +25,7 @@ dimensões...
 
 ## Mentoria
 
-Generate a new Docusaurus site using the **classic template**.
+descrição **detalhada**.
 
 ```bash
 dimensões...
