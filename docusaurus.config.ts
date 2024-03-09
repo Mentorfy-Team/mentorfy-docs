@@ -56,7 +56,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/mfdocs.png',
+    image: 'img/mfdocs.jpg',
     navbar: {
       title: '',
       logo: {
