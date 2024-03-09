@@ -58,7 +58,10 @@ Mentoria Escolhida - Pagamento Confirmado | Mentorfy
 <br/>
 
 6- Clique em **Adicionar** Headers e adicione a chave **Content-Type** e o valor **application/json**.
-Em seguida cole o código abaixo em **Body** e clique em **Salvar edição**.
+Em seguida cole o código abaixo(sem espaços) em **Body**.
+```json
+{"name":"{{buyer_name}}","email":"{{buyer_email}}","phone":"{{buyer_phone}}","price":"{{ offer_price | divided_by: 100.00 }}","herospark": true}
+```
 <img src="/docs/img/herospark_header_body.jpg" alt="Herospark Header Body" width="350" />
 <br/>
 <br/>
