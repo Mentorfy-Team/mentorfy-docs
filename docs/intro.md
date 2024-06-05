@@ -8,8 +8,8 @@ Vamos guia-lo em todas as etapas da **Mentorfy**. Para que potencialize suas men
 
 ### Roadmap
 
-Estamos construindo essa plataforma, mas enquanto você não encontra informações por aqui, 
-você pode estar falando com nosso suporte dentro da plataforma da **Mentofy** para maiores informações.
+Essa documentação está em construção, caso você não encontre o que buscar, 
+você pode estar falando com nosso suporte dentro da plataforma da **Mentorfy** para maiores informações.
 
 <!-- ```bash
 cd my-website
