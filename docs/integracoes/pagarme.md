@@ -41,13 +41,12 @@ Navegue até Configurações > Webhooks.
 
 ## Testando a integração
 
-Após configurar o webhook na Hotmart e na Mentorfy:
+Após configurar o webhook na Pagarme e na Mentorfy:
 
-1. Faça uma venda de teste no Hotmart.
+1. Faça uma venda de teste no Pagarme.
 2. Verifique se o evento é recebido corretamente na Mentorfy.
 3. Confirme se o cliente aparece na jornada e na lista de clientes da Mentorfy.
 
-<img src="/docs/img/hotmart_webhooks_teste.jpg" alt="chave da API" /> 
 <br/>
 <br/>
 
