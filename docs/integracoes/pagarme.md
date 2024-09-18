@@ -6,14 +6,14 @@ sidebar_position: 3
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Pagar.me.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API da Hotmart** para salvar na Mentorfy.
+Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API da Pagar.me** para salvar na Mentorfy.
 
 1. Acesse o seu produto que deseja integrar:
 ```
 Minhas mentorias > Mentoria Escolhida > Integrações
 ```
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Hotmart. Ele se parecerá com:
+2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Pagar.me. Ele se parecerá com:
 ```
 https://app.mentorfy.io/api/webhooks/codigo123
 ```
