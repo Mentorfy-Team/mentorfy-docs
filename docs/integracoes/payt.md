@@ -30,7 +30,7 @@ Navegue até Ferramentas > Postbacks.
 <img src="/docs/img/payt_cadastrar.jpg" height="200" alt="chave da API" /> 
 <br/>
 
-5. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
+5. Preencha o formulário usando suas informações seguindo esse exemplo, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
 
 <img src="/docs/img/payt_form1.jpg" alt="chave da API" />
 <br/>
