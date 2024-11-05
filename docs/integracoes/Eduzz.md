@@ -6,17 +6,20 @@ sidebar_position: 4
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Eduzz.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API da Eduzz** para salvar na Mentorfy.
+Antes de configurar o webhook, precisamos **copiar o código de referência fornecido pela Mentorfy** do produto que deseja integrar.
 
 1. Acesse o seu produto que deseja integrar:
 ```
-Minhas mentorias > Mentoria Escolhida > Integrações
+Minhas mentorias > Mentoria Escolhida > Configurações
 ```
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Eduzz. Ele se parecerá com:
+2. **Copie o código de referência** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Eduzz. Ele se parecerá com:
 ```
-https://app.mentorfy.io/api/webhooks/codigo123
+codigo123
 ```
+<img src="/docs/img/codigo_produto.png" height="200" alt="chave da API"  /> 
+<br/>
+<br/>
 
 3. Entre na sua conta e depois vá até seu Hub https://console.eduzz.com/webhook
 ```
@@ -27,8 +30,10 @@ Clique em Nova Configuração.
 <br/>
 <br/>
 
-5. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
-
+5. Preencha o formulário com as seguintes informações:
+```
+URL para envio dos dados: https://mentorfy.io/api/webhooks/body
+```
 <img src="/docs/img/eduzz_form1.png" alt="chave da API" /> 
 <br/>
 <br/>
@@ -39,7 +44,17 @@ Clique em Nova Configuração.
 <br/>
 <br/>
 
-8. Clique em **Criar configuração** ao final da página e pronto!
+8. Clique em **Criar configuração** ao final da página.
+
+9. Agora para fazermos uma entrega de produto basta você usar o **código de referência** que você copiou da Mentorfy 
+no final do nome do produto/checkout (#codigo123):
+
+```
+Para produtos: Meu produto A #codigo123
+Para trilhas: Minha trilha ABC ##123
+```
+Isso serve para identificar os produtos que serão liberados para o cliente.
+
 
 ## Testando a integração
 
