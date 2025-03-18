@@ -22,25 +22,25 @@ https://app.mentorfy.io/api/webhooks/codigo123
 ```
 Navegue até Apps > Webhooks.
 ```
-<img src="/docs/img/Kiwify_webhooks.png" height="500" alt="chave da API"  /> 
+<img src="/docs/img/kiwify_webhooks.png" height="500" alt="chave da API"  /> 
 <br/>
 <br/>
 
 4. Procure pelo botão **+ Criar**.
 
-<img src="/docs/img/Kiwify_cadastrar.png" height="200" alt="chave da API" /> 
+<img src="/docs/img/kiwify_cadastrar.png" height="200" alt="chave da API" /> 
 <br/>
 <br/>
 
 5. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
 
-<img src="/docs/img/Kiwify_form.png" alt="chave da API" /> 
+<img src="/docs/img/kiwify_form.png" alt="chave da API" /> 
 <br/>
 <br/>
 
 6. Nas opções para enviar, selecione essas opções:
 
-<img src="/docs/img/Kiwify_form_opcoes.png" alt="chave da API" /> 
+<img src="/docs/img/kiwify_form_opcoes.png" alt="chave da API" /> 
 <br/>
 <br/>
 
