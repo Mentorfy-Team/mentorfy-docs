@@ -25,7 +25,7 @@ Acesse a sua conta na plataforma da Hubla, e no menu lateral, clique em **Integr
 Desça a tela até a seção **Automações**, clique em **Webhook**.
 
 <br/>
-<img src="/docs/img/hubla1" alt="config webhook" /> 
+<img src="/docs/img/hubla1.jpg" alt="config webhook" /> 
 <br/>
 
 Na página da Integração Webhook selecione a aba **Configurações**;
@@ -33,7 +33,7 @@ Na página da Integração Webhook selecione a aba **Configurações**;
 Clique no botão **Adicionar regra** localizado no canto superior direito da página.
 
 <br/>
-<img src="/docs/img/hubla2" alt="adicionar regra" /> 
+<img src="/docs/img/hubla2.jpg" alt="adicionar regra" /> 
 <br/>
 
 No formulário:
@@ -48,7 +48,7 @@ No formulário:
 Como o link da Mentorfy é por produto, é necessário criar uma regra para cada produto.
 
 <br/>
-<img src="/docs/img/hubla3" alt="formulário para a regra" /> 
+<img src="/docs/img/hubla3.jpg" alt="formulário para a regra" /> 
 <br/>
 
 Após seguir essas etapas, sua nova regra estará configurada e pronta para enviar automaticamente os dados dos eventos selecionados à URL especificada por você durante o processo de configuração do webhook.
