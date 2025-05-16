@@ -24,13 +24,13 @@ https://app.mentorfy.io/api/webhooks/codigo123
 ```
 Navegue até Recursos > Integrações > Nova integração.
 ```
-<img src="/static/docs/img/Integração-Xgrow1.png" alt="cadastro de webhook"  /> 
+<img src="/docs/img/Integração-Xgrow1.png" alt="cadastro de webhook"  /> 
 <br/>
 <br/>
 
 4. Selecione a opção **Webhook**.
 
-<img src="/static/docs/img/Integração-Xgrow2.png" alt="Integrações Disponíveis - Webhook" /> 
+<img src="/docs/img/Integração-Xgrow2.png" alt="Integrações Disponíveis - Webhook" /> 
 <br/>
 <br/>
 
@@ -39,18 +39,18 @@ Navegue até Recursos > Integrações > Nova integração.
 - Nome da integração: Identifição do produto o qual você fará as configurações
 - Url do webhook: **É o link que você copiou da Mentorfy** do seu produto, conforme item 2 acima
 
-<img src="/static/docs/img/Integração-Xgrow3.png" alt="cadastro da webhook" /> 
+<img src="/docs/img/Integração-Xgrow3.png" alt="cadastro da webhook" /> 
 <br/>
 <br/>
     
 - Chave da Xgrow: é o código/Token que você precisa copiar e inserir dentro da Mentorfy, na tela de integrações do produto que você está integrando. Não esqueça de salvar no canto superior direito da tela, após a inserção do código.
 <br/>
-<img src="/static/docs/img/Integração-Xgrow7.png" alt="Inserir o token da Xgrow na Mentorfy" /> 
+<img src="/docs/img/Integração-Xgrow7.png" alt="Inserir o token da Xgrow na Mentorfy" /> 
 <br/>
 <br/>
 6. Após integração cadastrada com sucesso, entre em "visualizar ações". 
 
-<img src="/static/docs/img/Integração-Xgrow4.png" alt="Integração cadastrada" /> 
+<img src="/docs/img/Integração-Xgrow4.png" alt="Integração cadastrada" /> 
 <br/>
 <br/>
 
@@ -62,13 +62,13 @@ Na configuração da ação, você deverá preencher:
     - Planos: selecionar o plano que você está fazendo a integração;
     - ação: "Disparar wenhook"
 
-<img src="/static/docs/img/Integração-Xgrow5.png" alt="configuração da ação" /> 
+<img src="/docs/img/Integração-Xgrow5.png" alt="configuração da ação" /> 
 <br/>
 <br/>
 
 8. Pronto sua integração está completa. Repita todo processo a cada produto que você quiser integrar com o Xgrow.
 
-<img src="/static/docs/img/Integração-Xgrow6.png" alt="webhook e ações finalizadas" /> 
+<img src="/docs/img/Integração-Xgrow6.png" alt="webhook e ações finalizadas" /> 
 <br/>
 <br/>
 
