@@ -20,6 +20,10 @@ https://app.mentorfy.io/api/webhooks/codigo123
 
 3. Acesse o Dashboard do Stripe e navegue até **Developers (Desenvolvedores) > Webhooks**.
 
+<img src="/docs/img/stripe_webhook.png" height="300" alt="chave da API"  /> 
+<br/>
+<br/>
+
 4. Clique em **Add endpoint (Adicionar endpoint)**.
 
 5. No campo **Endpoint URL**, cole o link que você copiou da Mentorfy.
