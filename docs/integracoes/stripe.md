@@ -20,7 +20,7 @@ https://app.mentorfy.io/api/webhooks/codigo123
 
 3. Acesse o Dashboard do Stripe e navegue até **Developers (Desenvolvedores) > Webhooks**.
 
-<img src="/docs/img/stripe_webhook.png" height="300" alt="chave da API"  /> 
+<img src="/docs/img/stripe-webhook.png" height="300" alt="chave da API"  /> 
 <br/>
 <br/>
 
