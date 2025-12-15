@@ -9,7 +9,6 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-  {},
   {
     title: 'Em contrução',
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
@@ -20,6 +19,7 @@ const FeatureList: FeatureItem[] = [
         Essa é a Mentorfy Docs, guiando mentores e mentorados para o sucesso.
       </>
     ),
+    Svg: undefined
   },
   // {
   //   title: 'Focus on What Matters',

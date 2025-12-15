@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Como funciona?
 
-Cara plataforma de pagamento possui uma forma própria de integrar, isso porque cada plataforma
+Cada plataforma de pagamento possui uma forma própria de integrar, isso porque cada plataforma
 oferece informações diferentes e formatos diferentes.
 Por isso a Mentorfy se adapta para cada uma das plataforma, para tornar os fluxos de venda e entrega
 um único fluxo.

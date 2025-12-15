@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -54,13 +54,15 @@ const config: Config = {
     ],
   ],
 
+
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/mfdocs.jpg',
     navbar: {
-      title: '',
+      title: 'Mentorfy Docs',
       logo: {
-        alt: 'Docs Mentorfy',
+        alt: 'Mentorfy Logo',
         src: 'img/mfdocs.png',
       },
       items: [
@@ -70,58 +72,56 @@ const config: Config = {
           position: 'left',
           label: 'Guia do Mentor',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+
+        {
+          href: 'https://app.mentorfy.io',
+          label: 'Ir para o App',
+          position: 'right',
+          className: 'button button--primary button--sm', // Add a class for styling if needed, or just use standard
+        },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light', // Changed to light for a cleaner look, CSS will override background
       links: [
         {
-          title: 'Docs',
+          title: 'Documentação',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Guia do Mentor',
               to: '/docs/intro',
+            },
+
+          ],
+        },
+        {
+          title: 'Suporte',
+          items: [
+            {
+              label: 'Central de Ajuda',
+              href: 'https://help.mentorfy.io',
+            },
+            {
+              label: 'Fale Conosco',
+              href: 'mailto:suporte@mentorfy.io',
             },
           ],
         },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/docusaurus',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'Blog',
-        //       to: '/blog',
-        //     },
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //   ],
-        // },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Termos de Uso',
+              href: 'https://mentorfy.io/terms',
+            },
+            {
+              label: 'Privacidade',
+              href: 'https://mentorfy.io/privacy',
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Mentorfy ltda.`,
+      copyright: `© ${new Date().getFullYear()} Mentorfy. Todos os direitos reservados.`,
     },
     prism: {
       theme: prismThemes.github,

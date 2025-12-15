@@ -4,27 +4,214 @@
  * work well for content-centric websites.
  */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Mentorfy Brand Colors - Refined for Web */
+  --mentorfy-green-primary: #2e8555;
+  --mentorfy-green-dark: #205d3b;
+  --mentorfy-green-light: #e6f4ea;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Docusaurus / Infima Overrides */
+  --ifm-color-primary: var(--mentorfy-green-primary);
+  --ifm-color-primary-dark: var(--mentorfy-green-dark);
+  --ifm-color-primary-darker: #1a4d31;
+  --ifm-color-primary-darkest: #153e27;
+  --ifm-color-primary-light: #4aa371;
+  --ifm-color-primary-lighter: #58b27f;
+  --ifm-color-primary-lightest: #82cea5;
+
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  --ifm-heading-font-weight: 600;
+  --ifm-line-height-base: 1.6;
+
+  /* Layout & Spacing */
+  --ifm-navbar-height: 70px;
+  --ifm-container-width: 1100px;
+  /* Slightly wider for modern feel */
+  --ifm-spacing-horizontal: 24px;
+
+  /* UI Elements */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.9);
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ifm-background-color: var(--color-white);
+  --ifm-footer-background-color: var(--color-gray-50);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #3cad6e;
+  /* Lighter green for dark mode */
+  --ifm-color-primary-dark: #2e8555;
+  --ifm-color-primary-darker: #29784c;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #58b27f;
+  --ifm-color-primary-lighter: #66c18c;
+  --ifm-color-primary-lightest: #82cea5;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+
+  --ifm-background-color: #0f1115;
+  /* Deep gray/black, not pure black */
+  --ifm-navbar-background-color: rgba(15, 17, 21, 0.9);
+  --ifm-footer-background-color: #0a0b0d;
+  --ifm-menu-color: #e5e7eb;
+}
+
+/* Global Styles */
+
+/* Navbar Styling */
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Sidebar Styling */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+
+.menu__link {
+  border-radius: 6px;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.menu__link--active {
+  background-color: var(--mentorfy-green-light);
+  color: var(--mentorfy-green-primary);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: rgba(60, 173, 110, 0.15);
+  color: var(--ifm-color-primary);
+}
+
+/* Content Styling */
+article header h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.markdown p {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-font-color-base);
+}
+
+/* Admonitions (Alerts) - Premium Look */
+.alert {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.alert--info {
+  background-color: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0369a1;
+}
+
+[data-theme='dark'] .alert--info {
+  background-color: rgba(14, 165, 233, 0.1);
+  border-color: rgba(14, 165, 233, 0.3);
+  color: #38bdf8;
+}
+
+.alert--success {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #15803d;
+}
+
+[data-theme='dark'] .alert--success {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+}
+
+.alert--warning {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
+}
+
+[data-theme='dark'] .alert--warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+}
+
+.alert--danger {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+[data-theme='dark'] .alert--danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+
+/* Card Styling (for homepage or lists) */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* TOC (Right Sidebar) */
+.table-of-contents {
+  font-size: 0.85rem;
+  border-left: 1px solid var(--color-gray-200);
+}
+
+[data-theme='dark'] .table-of-contents {
+  border-left: 1px solid #222;
+}
+
+.table-of-contents__link--active {
+  color: var(--mentorfy-green-primary) !important;
+  border-left: 2px solid var(--mentorfy-green-primary);
+  margin-left: -1px;
+  /* Overlap border */
+  padding-left: 1rem;
 }
