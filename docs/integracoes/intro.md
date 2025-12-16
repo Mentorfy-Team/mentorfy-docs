@@ -11,13 +11,15 @@ Esta aba permite que você crie URLs específicas para receber notificações (w
 
 Ao invés de usar uma única URL, você pode criar URLs por produto, categoria ou campanha para melhor organização.
 
-![Entrada](/img/integracoes/01-entrada.png)
+
 
 ### Como Criar uma Nova URL de Entrada
 
 
 
 Acesse a aba **Entrada** e clique no botão **+ Nova URL**.
+
+![Entrada](/img/integracoes/1.png)
 
 Preencha as informações na janela "Nova URL de Entrada":
 
@@ -29,11 +31,11 @@ Preencha as informações na janela "Nova URL de Entrada":
 
 Clique em **Criar**.
 
+![Saída](/img/integracoes/2.png)
+
 **Próximo Passo**: Após criar, copie a URL e cole no campo de Webhook da sua plataforma de pagamento (Consulte o guia específico do seu gateway para o passo a passo completo, por exemplo, o guia do Hotmart).
 
 ---
-
-![Saída](/img/integracoes/02-saida.png)
 
 ## 2. Saída: Disparando Eventos (Webhooks do Mentorfy)
 
@@ -45,7 +47,7 @@ Se não houver webhooks configurados, clique em **+ Criar primeiro webhook** ou 
 
 ---
 
-![Chaves](/img/integracoes/5.png)
+![Chaves](/img/integracoes/33.png)
 
 ## 3. Chaves: Segurança e URL Global
 
