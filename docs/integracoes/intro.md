@@ -71,7 +71,7 @@ Adicione chaves clicando em **+ Adicionar Chave**.
 
 A aba **Logs** é fundamental para o monitoramento e diagnóstico de problemas, exibindo um histórico de todas as chamadas de webhooks (tanto de Entrada quanto de Saída).
 
-![Logs](/img/integracoes/03-chaves.png), 
+
 
 Você pode monitorar:
 
