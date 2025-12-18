@@ -41,13 +41,42 @@ Clique em **Criar**.
 
 Esta é uma funcionalidade nova. A aba **Saída** permite que a Mentorfy envie notificações (webhooks) para outras plataformas externas quando eventos específicos acontecerem com seus alunos/mentorados.
 
+
+
 Isso permite, por exemplo, notificar sistemas de automação de marketing ou planilhas de controle quando um aluno concluir um módulo, cancelar ou for inativado.
 
 Se não houver webhooks configurados, clique em **+ Criar primeiro webhook** ou **+ Novo Webhook** para iniciar o fluxo.
 
+![Chaves](/img/integracoes/33.png)
+
 ---
 
-![Chaves](/img/integracoes/33.png)
+## 2.1 Configurando um Novo Webhook de Saída
+
+Para que a Mentorfy notifique seus sistemas externos sobre eventos que acontecem na plataforma, clique em + Novo Webhook na aba Saída. O modal "Novo Webhook" será aberto para configuração:
+
+![Chaves](/img/integracoes/novo.png)
+
+Campos de Configuração:
+
+Nome: Dê um nome claro para sua organização (ex: "Envio para o CRM" ou "Automação ActiveCampaign").
+
+URL do Webhook: Insira o endereço de destino (endpoint) que deve receber as notificações.
+
+Eventos Disponíveis (Gatilhos): Você pode selecionar um ou mais eventos que dispararão este webhook automaticamente:
+
+
+Organização: Turma Atribuída, Turma Removida.
+
+Headers Customizados (Opcional):
+
+Esta seção permite adicionar chaves e valores personalizados ao cabeçalho (header) da requisição HTTP.
+
+É ideal para enviar tokens de autenticação ou chaves de segurança exigidas pelo sistema que vai receber os dados.
+
+Após preencher as informações e selecionar os eventos desejados, clique em Criar para ativar o webhook.
+
+---
 
 ## 3. Chaves: Segurança e URL Global
 
@@ -71,6 +100,7 @@ Adicione chaves clicando em **+ Adicionar Chave**.
 
 A aba **Logs** é fundamental para o monitoramento e diagnóstico de problemas, exibindo um histórico de todas as chamadas de webhooks (tanto de Entrada quanto de Saída).
 
+![Logs](/img/integracoes/03-chaves.png)
 
 
 Você pode monitorar:
