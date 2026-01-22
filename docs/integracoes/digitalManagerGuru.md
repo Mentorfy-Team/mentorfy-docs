@@ -36,32 +36,27 @@ Acesse a plataforma do Digital Manager Guru:
 <br/>
 <br/>
 
-2- Na página de Webhooks, você verá as opções **E-Tickets**, **Sales** e **Subscriptions**. Escolha a aba correspondente ao seu tipo de produto e clique em **+ Add Webhook**:
+2- Na página de Webhooks, você verá as opções **Add webhook** clicque nele:
 
 <img src="/img/integracoes/guru 2.png" alt="Página Webhooks - Add Webhook" width="600" />
 <br/>
 <br/>
 
-3- No modal que abrir, preencha os campos:
-- **Name**: Dê um nome adequado para seu webhook, por exemplo:
-```
-Mentoria Escolhida - Pagamento Confirmado | Mentorfy
-```
-- **URL**: Cole o link que você copiou no início desse tutorial
-- **Status**: Selecione os status que deseja monitorar (recomendamos marcar todos)
-- **Filter by**: Escolha se deseja filtrar por **All**, **Marketplaces** ou **Products**
-- **Active**: Certifique-se de que está ativado
+3- No modal **Add Webhook**, configure os seguintes campos:
 
-Clique em **Send** para salvar.
+- **Name**: Dê um nome para identificar a integração (ex: "Mentorfy - Entrega de Curso")
+- **URL**: Cole aqui a URL de Entrada que você gerou dentro da Mentorfy (na aba Integrações > Entrada)
+- **Concurrent Requests**: Define o limite de requisições simultâneas (o padrão costuma ser 5)
+- **Status**: Selecione quais status de venda devem disparar o aviso (ex: selecione "Aprovada/Paga" para liberar o acesso ao aluno)
+- **Filter by**: Escolha **All** para enviar todas as vendas ou **Products** se quiser filtrar apenas produtos específicos
+- **Active**: Certifique-se de que a chave está marcada como ativa (roxo)
 
 <img src="/img/integracoes/guru 3.png" alt="Modal Adicionar Webhook" width="450" />
 <br/>
 <br/>
 
+4- **Finalizar**: Clique em **Send** (ou Criar) para salvar a configuração. A partir de agora, sempre que uma venda atingir o status selecionado no Guru, a Mentorfy receberá o aviso e liberará o acesso automaticamente.
 
 ## Conclusão
 
-Ao finalizar esses passos, a integração estará completa e você poderá ver seus clientes na jornada e
-em sua lista de clientes na Mentorfy.
-
-Em caso de dúvida, entre em contato com nosso suporte pelo chat na plataforma ou pelo e-mail contato@mentorfy.io
+Ao finalizar esses passos, a integração estará completa e você poderá testar.
