@@ -36,7 +36,7 @@ Acesse a plataforma do Digital Manager Guru:
 <br/>
 <br/>
 
-2- Na página de Webhooks, você verá as opções **Add webhook** clicque nele:
+2- Na página de Webhooks, você verá as opções **Add webhook** clique nele:
 
 <img src="/img/integracoes/guru 2.png" alt="Página Webhooks - Add Webhook" width="600" />
 <br/>
