@@ -2,109 +2,91 @@
 sidebar_position: 0
 ---
 
-# Como funciona?
+# 🔌 Integrações: Automatize sua Mentoria
 
+A área de Integrações é o "coração" da sua automação. É aqui que você conecta a Mentorfy com as plataformas de pagamento e com suas outras ferramentas de trabalho (como Zapier ou CRM). 
 
-## 1. Entrada: Recebendo Eventos (Webhooks de Gateways)
+O objetivo é simples: **fazer o sistema trabalhar para você**, garantindo que o aluno receba o acesso na hora que paga e que você seja avisado de tudo o que acontece.
 
-Esta aba permite que você crie URLs específicas para receber notificações (webhooks) de seus gateways de pagamento e automatizar a liberação de acesso ao aluno.
+---
 
-Ao invés de usar uma única URL, você pode criar URLs por produto, categoria ou campanha para melhor organização.
+## 1. Entrada: Como liberar o acesso automaticamente (Webhooks)
 
+Esta aba é usada para receber avisos das plataformas de pagamento (Hotmart, Kiwify, Stripe, etc.). Quando alguém compra seu curso lá, a plataforma "avisa" a Mentorfy por aqui, e o sistema libera o acesso do aluno automaticamente.
 
+> **Vantagem:** Você pode criar um link (URL) diferente para cada produto ou campanha, deixando tudo organizado.
 
-### Como Criar uma Nova URL de Entrada
+### Passo a Passo para configurar uma Entrada:
 
-
-
-Acesse a aba **Entrada** e clique no botão **+ Nova URL**.
-
+1. Acesse a aba **Entrada** e clique no botão **+ Nova URL**.
 ![Entrada](/img/integracoes/1.png)
 
-Preencha as informações na janela "Nova URL de Entrada":
+2. Preencha os campos de forma simples:
+   - **Nome**: Identifique para você mesmo (Ex: "Vendas Mentoria VIP - Hotmart").
+   - **Gateway de Pagamento**: Escolha a plataforma onde você vende. Se não estiver na lista, use **Genérico**.
+   - **Identificador (Slug)**: Escolha uma palavra curta para o final do link (Ex: `mentoria-vip`). 
+   - **O que liberar (Mapeamento)**: Aqui está o segredo! Selecione quais **Produtos** ou **Turmas** o aluno deve receber acesso assim que o pagamento for confirmado por este link.
 
-- **Nome**: Defina um nome para a URL (Ex: Curso X - Hotmart).
-- **Gateway de Pagamento**: Selecione a plataforma que enviará o webhook (Ex: Hotmart, Kiwify). Se for um sistema não listado, selecione **Genérico**.
-  > **Nota**: Ao selecionar o gateway, a URL gerada terá o parâmetro `?gateway=nome-do-gateway` no final, facilitando a identificação.
-- **Slug (identificador na URL)**: É o identificador único que fará parte da URL (Ex: `curso-marketing`).
-- **Mapeamento**: Selecione quais **Produtos a Liberar** e/ou **Categorias a Liberar** do seu ambiente Mentorfy serão automaticamente acessados quando um pagamento for confirmado para esta URL.
-
-Clique em **Criar**.
-
+3. Clique em **Criar**.
 ![Saída](/img/integracoes/2.png)
 
-**Próximo Passo**: Após criar, copie a URL e cole no campo de Webhook da sua plataforma de pagamento (Consulte o guia específico do seu gateway para o passo a passo completo, por exemplo, o guia do Hotmart).
+**O que fazer agora?** Copie o link gerado e cole na sua plataforma de pagamento (no campo de Webhook/Integração dela). Temos guias específicos para cada plataforma aqui no Docs para te ajudar nessa parte final!
 
 ---
 
-## 2. Saída: Disparando Eventos (Webhooks do Mentorfy)
+## 2. Saída: Avisando outros sistemas sobre seus alunos
 
-Esta é uma funcionalidade nova. A aba **Saída** permite que a Mentorfy envie notificações (webhooks) para outras plataformas externas quando eventos específicos acontecerem com seus alunos/mentorados.
+A aba **Saída** é uma via de mão dupla. Ela serve para a Mentorfy "avisar" outras ferramentas que você usa (como Zapier, ActiveCampaign ou uma Planilha) quando algo acontece com seu aluno.
 
+> **Exemplo Prático:** "Sempre que um aluno **concluir o curso**, avise o meu Zapier para eu mandar um presente para ele."
 
-
-Isso permite, por exemplo, notificar sistemas de automação de marketing ou planilhas de controle quando um aluno concluir um módulo, cancelar ou for inativado.
-
-Se não houver webhooks configurados, clique em **+ Criar primeiro webhook** ou **+ Novo Webhook** para iniciar o fluxo.
-
+Se você ainda não tem nada configurado, clique em **+ Criar primeiro webhook**.
 ![Chaves](/img/integracoes/33.png)
 
----
+### 2.1 Configurando um Novo Aviso de Saída (Passo a Passo)
 
-## 2.1 Configurando um Novo Webhook de Saída
-
-Para que a Mentorfy notifique seus sistemas externos sobre eventos que acontecem na plataforma, clique em + Novo Webhook na aba Saída. O modal "Novo Webhook" será aberto para configuração:
-
+Ao clicar em **+ Novo Webhook**, você verá este painel:
 ![Chaves](/img/integracoes/novo.png)
 
-Campos de Configuração:
+**Como preencher sem erro:**
 
-Nome: Dê um nome claro para sua organização (ex: "Envio para o CRM" ou "Automação ActiveCampaign").
+1. **Nome**: Um apelido para a automação (Ex: "Aviso de Aluno Novo no CRM").
+2. **URL do Webhook**: É o link de "destino". Você pega esse link dentro da ferramenta que vai receber os dados (como o Zapier).
+3. **Gatilhos (O que vai disparar o aviso?)**: Marque apenas o que você quer monitorar:
+   - **Vendas**: Avisa quando o pagamento é confirmado.
+   - **Engajamento**: Avisa quando o aluno conclui uma aula ou ganha um certificado.
+   - **Acesso**: Avisa se o acesso do aluno expirou ou foi removido.
+   - **Organização**: Avisa quando você muda o aluno de turma.
 
-URL do Webhook: Insira o endereço de destino (endpoint) que deve receber as notificações.
+4. **Configurações Extras (Headers)**: 
+   - **Pode deixar em branco** na maioria das vezes! Só preencha se o sistema que vai receber os dados te der uma "Chave" ou "Token" de segurança obrigatório.
 
-Eventos Disponíveis (Gatilhos): Você pode selecionar um ou mais eventos que dispararão este webhook automaticamente:
-
-
-Organização: Turma Atribuída, Turma Removida.
-
-Headers Customizados (Opcional):
-
-Esta seção permite adicionar chaves e valores personalizados ao cabeçalho (header) da requisição HTTP.
-
-É ideal para enviar tokens de autenticação ou chaves de segurança exigidas pelo sistema que vai receber os dados.
-
-Após preencher as informações e selecionar os eventos desejados, clique em Criar para ativar o webhook.
+5. Clique em **Criar**. Agora, a Mentorfy passará a enviar esses avisos em tempo real para você.
 
 ---
 
-## 3. Chaves: Segurança e URL Global
+## 3. Chaves: Sua Identidade e Segurança
 
-A aba **Chaves** centraliza as informações de segurança necessárias para suas integrações.
+A aba **Chaves** é onde ficam as suas "senhas" de integração.
 
-### URL de Webhook Principal
-Esta é a URL básica da sua conta para receber notificações, válida para todos os gateways de pagamento. Ela é exibida no topo da página.
-
-> **Recomendação**: Para melhor organização e rastreamento, utilize as URLs personalizadas criadas na aba **Entrada** em vez da URL global.
+### URL Principal
+No topo, você verá sua URL global. Ela serve para todos os gateways, mas **recomendamos usar as URLs da aba "Entrada"** (explicada no item 1) para ter um controle melhor de qual produto está vendendo mais.
 
 ### Chaves de Segurança
-Você pode adicionar Tokens (secrets) para validar se o webhook recebido é realmente legítimo (disparado pelo seu gateway de pagamento), aumentando a segurança da sua integração.
-
-Adicione chaves clicando em **+ Adicionar Chave**.
+Se você quiser uma camada extra de proteção para garantir que os avisos que você recebe são realmente da Hotmart/Kiwify, você pode adicionar um **Token (Secret)** clicando em **+ Adicionar Chave**.
+![Logs](/img/integracoes/03-chaves.png)
 
 ---
+
+## 4. Logs: O Histórico de tudo o que aconteceu
+
+Teve dúvida se um aluno recebeu o acesso ou se o sistema avisou seu CRM? A aba **Logs** é o seu "detetive".
 
 ![Logs](/img/integracoes/04-logs.png)
 
-## 4. Logs: Monitoramento de Eventos
+Aqui você consegue ver:
+- **Sucessos e Falhas**: Se a bolinha estiver verde, deu tudo certo. Se estiver vermelha, algo falhou na comunicação.
+- **Gráfico de Eventos**: Veja o volume de vendas e acessos dos últimos 7 dias.
+- **Busca Detalhada**: Você pode digitar o e-mail de um aluno para ver exatamente quais avisos o sistema recebeu ou enviou sobre ele.
 
-A aba **Logs** é fundamental para o monitoramento e diagnóstico de problemas, exibindo um histórico de todas as chamadas de webhooks (tanto de Entrada quanto de Saída).
-
-![Logs](/img/integracoes/03-chaves.png)
-
-
-Você pode monitorar:
-
-- **Status das Chamadas**: Visão geral de Total de Eventos, Sucesso e Falhas.
-- **Distribuição de Eventos**: Gráfico de eventos por dia (últimos 7 dias).
-- **Logs de Eventos**: Tabela detalhada onde é possível pesquisar e filtrar as chamadas por e-mail, status (**Sucesso** ou **Falha**) e período.
+---
