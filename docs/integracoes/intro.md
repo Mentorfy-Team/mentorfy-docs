@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# 🔌 Integrações: Automatize sua Mentoria
+# 🔌 Integrações: Página de Integrações
 
 A área de Integrações é o "coração" da sua automação. É aqui que você conecta a Mentorfy com as plataformas de pagamento e com suas outras ferramentas de trabalho (como Zapier ou CRM). 
 
