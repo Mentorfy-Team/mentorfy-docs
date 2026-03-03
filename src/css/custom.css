@@ -10,9 +10,9 @@
 /* You can override the default Infima variables here. */
 :root {
   /* Mentorfy Brand Colors - Refined for Web */
-  --mentorfy-green-primary: #2e8555;
-  --mentorfy-green-dark: #205d3b;
-  --mentorfy-green-light: #e6f4ea;
+  --mentorfy-orange-primary: #e8622a;
+  --mentorfy-orange-dark: #c24e1e;
+  --mentorfy-orange-light: #fdf0ea;
 
   /* Neutral Colors */
   --color-white: #ffffff;
@@ -25,13 +25,13 @@
   --color-gray-900: #111827;
 
   /* Docusaurus / Infima Overrides */
-  --ifm-color-primary: var(--mentorfy-green-primary);
-  --ifm-color-primary-dark: var(--mentorfy-green-dark);
-  --ifm-color-primary-darker: #1a4d31;
-  --ifm-color-primary-darkest: #153e27;
-  --ifm-color-primary-light: #4aa371;
-  --ifm-color-primary-lighter: #58b27f;
-  --ifm-color-primary-lightest: #82cea5;
+  --ifm-color-primary: var(--mentorfy-orange-primary);
+  --ifm-color-primary-dark: var(--mentorfy-orange-dark);
+  --ifm-color-primary-darker: #a8441a;
+  --ifm-color-primary-darkest: #8c3815;
+  --ifm-color-primary-light: #ed7d50;
+  --ifm-color-primary-lighter: #f0906a;
+  --ifm-color-primary-lightest: #f5b899;
 
   --ifm-code-font-size: 90%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
@@ -57,14 +57,14 @@
 
 /* Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #3cad6e;
-  /* Lighter green for dark mode */
-  --ifm-color-primary-dark: #2e8555;
-  --ifm-color-primary-darker: #29784c;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #58b27f;
-  --ifm-color-primary-lighter: #66c18c;
-  --ifm-color-primary-lightest: #82cea5;
+  --ifm-color-primary: #f07843;
+  /* Lighter orange for dark mode */
+  --ifm-color-primary-dark: #e8622a;
+  --ifm-color-primary-darker: #d9561f;
+  --ifm-color-primary-darkest: #c24e1e;
+  --ifm-color-primary-light: #f5956b;
+  --ifm-color-primary-lighter: #f7a582;
+  --ifm-color-primary-lightest: #fac4a8;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
 
@@ -101,13 +101,13 @@
 }
 
 .menu__link--active {
-  background-color: var(--mentorfy-green-light);
-  color: var(--mentorfy-green-primary);
+  background-color: var(--mentorfy-orange-light);
+  color: var(--mentorfy-orange-primary);
   font-weight: 600;
 }
 
 [data-theme='dark'] .menu__link--active {
-  background-color: rgba(60, 173, 110, 0.15);
+  background-color: rgba(240, 120, 67, 0.15);
   color: var(--ifm-color-primary);
 }
 
@@ -209,8 +209,8 @@ article header h1 {
 }
 
 .table-of-contents__link--active {
-  color: var(--mentorfy-green-primary) !important;
-  border-left: 2px solid var(--mentorfy-green-primary);
+  color: var(--mentorfy-orange-primary) !important;
+  border-left: 2px solid var(--mentorfy-orange-primary);
   margin-left: -1px;
   /* Overlap border */
   padding-left: 1rem;
