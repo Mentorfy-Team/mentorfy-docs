@@ -2,91 +2,324 @@
 sidebar_position: 0
 ---
 
-# 🔌 Integrações: Página de Integrações
+# Integrações
 
-A área de Integrações é o "coração" da sua automação. É aqui que você conecta a Mentorfy com as plataformas de pagamento e com suas outras ferramentas de trabalho (como Zapier ou CRM). 
-
-O objetivo é simples: **fazer o sistema trabalhar para você**, garantindo que o aluno receba o acesso na hora que paga e que você seja avisado de tudo o que acontece.
+A área de Integrações permite configurar webhooks e conexões com plataformas externas. As configurações estão organizadas nas abas: **Entrada, Saída, Automações, Chaves, Widgets e Logs**.
 
 ---
 
-## 1. Entrada: Como liberar o acesso automaticamente (Webhooks)
+## **Entrada — URLs de Entrada**
 
-Esta aba é usada para receber avisos das plataformas de pagamento (Hotmart, Kiwify, Stripe, etc.). Quando alguém compra seu curso lá, a plataforma "avisa" a Mentorfy por aqui, e o sistema libera o acesso do aluno automaticamente.
+As URLs de Entrada são utilizadas para receber webhooks de gateways de pagamento. Cada URL gerada aqui libera automaticamente o acesso do aluno ao produto correspondente quando uma compra é confirmada na plataforma de origem.
 
-> **Vantagem:** Você pode criar um link (URL) diferente para cada produto ou campanha, deixando tudo organizado.
+### **Como criar uma nova URL de Entrada**
 
-### Passo a Passo para configurar uma Entrada:
+Clique em **"+ Nova URL"** no canto superior direito. Um formulário será exibido com os seguintes campos:
 
-1. Acesse a aba **Entrada** e clique no botão **+ Nova URL**.
-![Entrada](/img/integracoes/1.png)
+![Nova URL de Entrada](/img/integracoes/intro-1.png)
 
-2. Preencha os campos de forma simples:
-   - **Nome**: Identifique para você mesmo (Ex: "Vendas Mentoria VIP - Hotmart").
-   - **Gateway de Pagamento**: Escolha a plataforma onde você vende. Se não estiver na lista, use **Genérico**.
-   - **Identificador (Slug)**: Escolha uma palavra curta para o final do link (Ex: `mentoria-vip`). 
-   - **O que liberar (Mapeamento)**: Aqui está o segredo! Selecione quais **Produtos** ou **Turmas** o aluno deve receber acesso assim que o pagamento for confirmado por este link.
+**Nome: Identifique** a integração com um nome descritivo.
 
-3. Clique em **Criar**.
-![Saída](/img/integracoes/2.png)
+* Exemplo: *Curso de Marketing \- Hotmart*
 
-**O que fazer agora?** Copie o link gerado e cole na sua plataforma de pagamento (no campo de Webhook/Integração dela). Temos guias específicos para cada plataforma aqui no Docs para te ajudar nessa parte final!
+**Gateway de Pagamento:** Selecione a plataforma de origem da venda. Gateways disponíveis incluem: Hotmart, Cakto, Voomp, Kiwify, Stripe, XGrow, entre outros.
 
----
+**Slug (identificador na URL):** Gerado automaticamente a partir do nome, mas pode ser personalizado.
 
-## 2. Saída: Avisando outros sistemas sobre seus alunos
+* Utilize apenas letras minúsculas, números e hífens  
+* Exemplo: *curso-marketing-hotmart*
 
-A aba **Saída** é uma via de mão dupla. Ela serve para a Mentorfy "avisar" outras ferramentas que você usa (como Zapier, ActiveCampaign ou uma Planilha) quando algo acontece com seu aluno.
+**Duração do Acesso (dias):** Campo opcional. Se preenchido, define por quantos dias o aluno terá acesso ao produto após a compra, sobrescrevendo a expiração padrão configurada no produto.
 
-> **Exemplo Prático:** "Sempre que um aluno **concluir o curso**, avise o meu Zapier para eu mandar um presente para ele."
+* Exemplo: *30*
 
-Se você ainda não tem nada configurado, clique em **+ Criar primeiro webhook**.
-![Chaves](/img/integracoes/33.png)
+**Produtos a Liberar:** Selecione quais produtos serão liberados automaticamente quando o webhook for recebido. Use o campo de busca para localizar rapidamente.
 
-### 2.1 Configurando um Novo Aviso de Saída (Passo a Passo)
+**Categorias a Liberar:** Selecione quais categorias de produtos serão liberadas. Também possui campo de busca.
 
-Ao clicar em **+ Novo Webhook**, você verá este painel:
-![Chaves](/img/integracoes/novo.png)
+Após preencher, clique em **"Criar"** para gerar a URL.
 
-**Como preencher sem erro:**
+![URL de Entrada criada](/img/integracoes/intro-2.png)
 
-1. **Nome**: Um apelido para a automação (Ex: "Aviso de Aluno Novo no CRM").
-2. **URL do Webhook**: É o link de "destino". Você pega esse link dentro da ferramenta que vai receber os dados (como o Zapier).
-3. **Gatilhos (O que vai disparar o aviso?)**: Marque apenas o que você quer monitorar:
-   - **Vendas**: Avisa quando o pagamento é confirmado.
-   - **Engajamento**: Avisa quando o aluno conclui uma aula ou ganha um certificado.
-   - **Acesso**: Avisa se o acesso do aluno expirou ou foi removido.
-   - **Organização**: Avisa quando você muda o aluno de turma.
+### **Gerenciando URLs existentes**
 
-4. **Configurações Extras (Headers)**: 
-   - **Pode deixar em branco** na maioria das vezes! Só preencha se o sistema que vai receber os dados te der uma "Chave" ou "Token" de segurança obrigatório.
+Cada URL cadastrada exibe o nome, o status (**Ativo**), o endpoint gerado e a quantidade de produtos, categorias e turmas vinculadas.
 
-5. Clique em **Criar**. Agora, a Mentorfy passará a enviar esses avisos em tempo real para você.
+As ações disponíveis para cada URL são:
+
+* **Copiar** — copia o endpoint para a área de transferência  
+* **Desativar** — suspende temporariamente a integração  
+* **Editar** — altera as configurações da URL  
+* **Excluir** — remove a integração permanentemente
+
+![Gerenciando URLs de Entrada](/img/integracoes/intro-3.png)
 
 ---
 
-## 3. Chaves: Sua Identidade e Segurança
+## **Saída — Webhooks de Saída**
 
-A aba **Chaves** é onde ficam as suas "senhas" de integração.
+Os Webhooks de Saída disparam notificações automaticamente para URLs externas sempre que eventos específicos acontecerem na plataforma. Utilize esta funcionalidade para integrar a Mentorfy com ferramentas como CRMs, automações (n8n, Make, Zapier) e outros sistemas.
 
-### URL Principal
-No topo, você verá sua URL global. Ela serve para todos os gateways, mas **recomendamos usar as URLs da aba "Entrada"** (explicada no item 1) para ter um controle melhor de qual produto está vendendo mais.
+### **Como criar um novo Webhook de Saída**
 
-### Chaves de Segurança
-Se você quiser uma camada extra de proteção para garantir que os avisos que você recebe são realmente da Hotmart/Kiwify, você pode adicionar um **Token (Secret)** clicando em **+ Adicionar Chave**.
-![Logs](/img/integracoes/03-chaves.png)
+Clique em **"+ Novo Webhook"** no canto superior direito. O formulário exibe os seguintes campos:
+
+![Novo Webhook de Saída](/img/integracoes/intro-4.png)
+
+**Nome: Identifique** a integração com um nome descritivo.
+
+* Exemplo: *Integração CRM*
+
+**URL do Webhook:** Insira a URL de destino que receberá as notificações.
+
+* Exemplo: *https://exemplo.com/webhook*
+
+**Eventos:** Selecione quais eventos irão disparar o webhook. Os eventos disponíveis são:
+
+| Evento | Descrição |
+| ----- | ----- |
+| **Aluno Cadastrado** | Novo aluno se cadastra na plataforma |
+| **Primeiro Acesso** | Aluno acessa pela primeira vez |
+| **Progresso Atualizado** | Aluno avança no conteúdo |
+| **Certificado Emitido** | Certificado é gerado para o aluno |
+| **Cliente Atualizado** | Dados do cliente são alterados |
+| **Produto Liberado** | Acesso a um produto é liberado |
+| **Acesso Revogado** | Acesso a um produto é removido |
+| **Conteúdo Concluído** | Aluno conclui um conteúdo |
+| **Turma Atribuída** | Aluno é adicionado a uma turma |
+| **Pagamento Confirmado** | Pagamento é confirmado |
+| **Acesso Expirado** | Acesso ao produto expira |
+| **Acesso Estendido** | Acesso ao produto é prorrogado |
+| **Turma Removida** | Aluno é removido de uma turma |
+
+Você pode selecionar múltiplos eventos para um mesmo webhook.
+
+**Headers Customizados (opcional):** Adicione cabeçalhos personalizados à requisição, informando a **Chave** e o **Valor** e clicando em **"Adicionar"**. Útil para autenticação em APIs externas.
+
+Após preencher, clique em **"Criar"** para salvar o webhook.
+
+![Webhook de Saída configurado](/img/integracoes/intro-5.png)
+
+### **Gerenciando Webhooks existentes**
+
+Cada webhook cadastrado exibe o nome, status (**Ativo**), a URL de destino e a quantidade de eventos vinculados.
+
+As ações disponíveis são:
+
+* **Desativar** — suspende temporariamente o disparo do webhook  
+* **Editar** — altera as configurações  
+* **Excluir** — remove o webhook permanentemente
 
 ---
 
-## 4. Logs: O Histórico de tudo o que aconteceu
+## **Automações (Experimental)**
 
-Teve dúvida se um aluno recebeu o acesso ou se o sistema avisou seu CRM? A aba **Logs** é o seu "detetive".
+As Automações permitem criar fluxos visuais para executar ações automaticamente com base em eventos da plataforma. Com elas, você elimina tarefas manuais e garante que as ações certas aconteçam no momento certo.
 
-![Logs](/img/integracoes/04-logs.png)
+### **Como criar uma nova Automação**
 
-Aqui você consegue ver:
-- **Sucessos e Falhas**: Se a bolinha estiver verde, deu tudo certo. Se estiver vermelha, algo falhou na comunicação.
-- **Gráfico de Eventos**: Veja o volume de vendas e acessos dos últimos 7 dias.
-- **Busca Detalhada**: Você pode digitar o e-mail de um aluno para ver exatamente quais avisos o sistema recebeu ou enviou sobre ele.
+Clique em **"+ Nova Automação"** no canto superior direito. O editor visual será aberto com os seguintes campos e componentes:
+
+**Nome da Automação:** Dê um nome descritivo para identificar o fluxo.
+
+* Exemplo: *Atribuir turma por produto*
+
+**Descrição (opcional):** Adicione uma descrição breve para documentar o objetivo da automação.
+
+![Nova Automação](/img/integracoes/intro-6.png)
+
+### **Estrutura do fluxo**
+
+Cada automação é composta por três tipos de nós conectados em sequência:
+
+**1\. Gatilho:** Define o evento que inicia a automação. Clique no nó **GATILHO** para selecionar o evento de origem, como por exemplo: Produto Liberado, Pagamento Confirmado, Aluno Cadastrado, entre outros.
+
+**2\. Condição (opcional):** Filtra quando a automação deve ou não ser executada. Clique no nó **CONDIÇÃO** para configurar a regra de filtragem.
+
+Campos disponíveis para verificar:
+
+* ID do Produto  
+* Título do Produto  
+* Email do Cliente  
+* Nome do Cliente  
+* Tipo do Evento
+
+Operadores disponíveis:
+
+* É igual a / É diferente de  
+* Contém / Não contém  
+* É maior que / É menor que  
+* Está vazio / Não está vazio
+
+A condição será avaliada quando o evento disparar. Se verdadeira, as ações conectadas ao **SIM** serão executadas. Se falsa, o fluxo seguirá o caminho **NÃO**.
+
+![Condição no fluxo](/img/integracoes/intro-7.png)
+
+**3\. Ação:** Define o que será feito quando o gatilho disparar e a condição for atendida. Clique no nó **AÇÃO** para selecionar a ação a ser executada.
+
+![Ação no fluxo](/img/integracoes/intro-8.png)
+
+### **Adicionando mais nós ao fluxo**
+
+No painel lateral, utilize os botões:
+
+* **Condição** — adiciona um novo nó de condição ao fluxo  
+* **Ação** — adiciona um novo nó de ação ao fluxo
+
+Você pode encadear múltiplos nós para criar automações mais complexas.
+
+### **Gerenciando Automações existentes**
+
+Cada automação cadastrada exibe o nome, status (**Ativo**), o gatilho configurado, o destino da ação e a quantidade de ações vinculadas.
+
+As ações disponíveis são:
+
+* **Desativar** — suspende temporariamente a automação  
+* **Editar** — abre o editor visual para alterações  
+* **Excluir** — remove a automação permanentemente
+
+Após configurar o fluxo, clique em **"Criar Automação"** para salvar.
 
 ---
+
+## **Chaves — Chaves de Segurança**
+
+As Chaves de Segurança são tokens utilizados para validar a autenticidade dos webhooks recebidos dos gateways de pagamento, garantindo que apenas requisições legítimas sejam processadas pela plataforma.
+
+![Chaves de Segurança](/img/integracoes/intro-9.png)
+
+### **Como integrar com gateways de pagamento**
+
+No topo da página, você encontra a **URL do webhook** da sua conta na Mentorfy. Essa é a URL que deve ser cadastrada no seu gateway de pagamento para que ele envie as notificações corretamente.
+
+Clique no ícone de copiar ao lado da URL para copiá-la rapidamente.
+
+A plataforma também oferece links de instrução específicos para cada gateway. Clique no nome da plataforma desejada para acessar o passo a passo de configuração: Hotmart, Kiwify, Eduzz, Stripe, Asaas, Greenn, Hubla, Cakto, Kirvano, Pagar.me, Payt, Herospark, DM Guru, Xgrow e Voomp.
+
+### **Como criar uma Nova Chave de Segurança**
+
+Clique em **"+ Nova Chave"** no canto superior direito. O formulário exibe os seguintes campos:
+
+![Nova Chave](/img/integracoes/intro-10.png)
+
+**Plataforma:** Selecione o gateway de pagamento ao qual a chave será vinculada. Plataformas disponíveis: Hotmart, Kiwify, Eduzz, Greenn, HeroSpark, PerfectPay, Kirvano, Cakto, Hubla, Asaas, Pagar.me, Payt, Voomp, Xgrow e Stripe.
+
+**Chave Secreta:** Cole o token fornecido pelo gateway de pagamento no campo indicado. Caso o gateway não forneça um token, clique no ícone de atualizar para **gerar uma chave aleatória** automaticamente.
+
+Após preencher, clique em **"Criar"** para salvar a chave.
+
+### **Gerenciando Chaves existentes**
+
+Cada chave cadastrada exibe o nome da plataforma, a data de criação e o token parcialmente ocultado para segurança.
+
+As ações disponíveis são:
+
+* **Visualizar** — exibe o token completo temporariamente  
+* **Copiar** — copia o token para a área de transferência  
+* **Editar** — altera as configurações da chave  
+* **Excluir** — remove a chave permanentemente
+
+---
+
+## **Widgets — Códigos Embedados**
+
+A aba Widgets permite adicionar scripts e códigos externos que serão carregados na área do aluno. Use para integrar ferramentas como chat de atendimento, pixels de rastreamento, widgets de analytics e muito mais.
+
+![Lista de Chaves](/img/integracoes/intro-11.png)
+
+### **Como adicionar um novo código**
+
+Clique em **"+ Novo Código"** ou **"+ Adicionar código"**. O formulário exibe os seguintes campos:
+
+**Nome do Widget:** Identifique o código com um nome descritivo.
+
+* Exemplos: *Chat Intercom, Google Analytics, Pixel Facebook*
+
+**Tipo:** Selecione o tipo de código a ser inserido:
+
+* **Script** — código JavaScript a ser executado na página  
+* **HTML/Widget** — código HTML para incorporar elementos visuais ou widgets externos
+
+**Posição:** Define onde o código será injetado no HTML da página:
+
+* **Head (antes do `</head>`)** — indicado para pixels e scripts de rastreamento  
+* **Body Início (após `<body>`)** — carrega logo no início do corpo da página  
+* **Body Final (antes do `</body>`)** — posição padrão e recomendada para a maioria dos scripts
+
+**Código:** Cole o código no campo indicado.
+
+Você pode colar o código JavaScript puro ou com as tags `<script>`. As tags serão removidas automaticamente.
+
+**Escopo**
+
+* **Global (toda área do aluno)** — carregado em todas as páginas  
+* **Por Produto (produtos específicos)** — carregado apenas nas páginas dos produtos selecionados
+
+**Apenas usuários autenticados**
+
+* **Ativado** (padrão): carrega apenas após o login  
+* **Desativado**: carrega desde a tela de login
+
+**Nota:** Códigos embedados precisam ser aprovados antes de serem carregados na área do aluno.
+
+Após preencher, clique em **"Criar"** para salvar.
+
+![Widgets](/img/integracoes/intro-12.png)
+
+---
+
+## **Logs — Logs de Eventos**
+
+A aba Logs oferece visibilidade completa sobre todos os eventos processados pelas integrações, permitindo monitorar sucessos, falhas e o status em tempo real da fila de webhooks.
+
+![Logs](/img/integracoes/intro-13.png)
+
+### **Fila de Webhooks**
+
+Painel de status em tempo real da fila de processamento:
+
+| Indicador | Descrição |
+| ----- | ----- |
+| **Aguardando** | Eventos na fila aguardando processamento |
+| **Processando** | Eventos sendo processados no momento |
+| **Atrasados** | Eventos com atraso no processamento |
+| **Concluídos** | Eventos processados com sucesso |
+| **Falhas** | Eventos que falharam no processamento |
+
+Quando um novo evento é recebido, o modo ao vivo é ativado automaticamente.
+
+### **Resumo de desempenho**
+
+| Indicador | Descrição |
+| ----- | ----- |
+| **Eventos** | Total de eventos processados no período |
+| **Sucesso** | Quantidade e percentual de eventos bem-sucedidos |
+| **Falhas** | Quantidade de eventos que falharam |
+| **Tempo Médio** | Tempo médio de resposta em milissegundos |
+
+### **Eventos por Dia**
+
+Gráfico que exibe a distribuição de eventos nos últimos 30 dias, com linhas separadas para **Falha** e **Sucesso**. Use o seletor no canto superior direito para ajustar o período visualizado.
+
+### **Logs de Eventos**
+
+Tabela detalhada com o histórico de todos os eventos disparados:
+
+| Coluna | Descrição |
+| ----- | ----- |
+| **Data** | Data e hora do evento |
+| **Evento** | Tipo do evento disparado |
+| **Direção** | Entrada ou Saída |
+| **Cliente** | E-mail do cliente relacionado ao evento |
+| **Status** | Sucesso ou Falha |
+| **Tempo** | Tempo de resposta em milissegundos |
+| **Webhook** | Nome da integração que processou o evento |
+
+**Filtros disponíveis:**
+
+* **Pesquisar por e-mail** — localiza eventos de um cliente específico  
+* **Filtro de tipo** — filtra por tipo de evento  
+* **Filtro de status** — filtra por integração específica
+
+Clique em qualquer linha da tabela para expandir os detalhes do evento. Clique no ícone de atualizar no canto superior direito para recarregar os logs manualmente.
+

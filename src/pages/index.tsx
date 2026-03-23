@@ -1,50 +1,63 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import styles from './index.module.css';
+import React from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import Layout from "@theme/Layout";
+import { ArrowUpRight } from "lucide-react";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+import styles from "./index.module.css";
+
+function HomeHero() {
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container">
-        <h1 className={styles.heroTitle}>
-          Documentação Mentorfy
-        </h1>
+    <section className={clsx(styles.heroBanner)}>
+      <div className={styles.gridOverlay}>
+        <div className={styles.grid}>
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroTitle}>Documentação Mentorfy</h1>
+
         <p className={styles.heroSubtitle}>
-          De mentores para mentores.
+          De mentores para mentores. Guias, integrações e suporte em um só
+          lugar.
         </p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            to="/docs/intro">
-            Explore a Documentação
+
+        <div className={styles.heroActions}>
+          <Link to="/docs/intro" className={styles.heroButton}>
+            <span className={styles.heroButtonLabel}>
+              Explorar documentação
+            </span>
+            <span className={styles.heroButtonIcon}>
+              <ArrowUpRight className={styles.arrowDefault} />
+              <ArrowUpRight className={styles.arrowHover} />
+            </span>
           </Link>
+
           <Link
-            className="button button--secondary button--lg"
-            to="https://help.mentorfy.io">
-            Fale com o Suporte
+            href="https://help.mentorfy.io"
+            className={styles.heroSecondaryLink}
+          >
+            Central de ajuda
           </Link>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
-
-
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Início`}
-      description="Documentação oficial da Mentorfy. Guia do mentor, API e suporte.">
-      <HomepageHeader />
-      <main>
-        {/* User requested removal of "Por onde começar" section */}
-      </main>
+      title="Início"
+      description="Documentação oficial da Mentorfy. Guia do mentor, API e suporte."
+    >
+      <HomeHero />
+      <main />
     </Layout>
   );
 }

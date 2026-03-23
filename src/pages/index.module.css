@@ -1,23 +1,59 @@
-/* Homepage Specific Styles */
+/* ── Hero Section ─────────────────────────────────────────────── */
 
 .heroBanner {
-  padding: 0;
-  min-height: calc(100vh - var(--ifm-navbar-height));
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  position: relative;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  padding: 0;
   overflow: hidden;
+  text-align: center;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(232, 98, 42, 0.35) 0%, transparent 70%),
-    linear-gradient(170deg, #0a0a0a 0%, #1a0d07 60%, #2d1208 100%);
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(232, 98, 42, 0.25) 0%, transparent 70%),
+    linear-gradient(170deg, #1a1c23 0%, #201510 60%, #2d1a10 100%);
 }
 
 [data-theme='dark'] .heroBanner {
   background:
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(232, 98, 42, 0.45) 0%, transparent 70%),
-    linear-gradient(170deg, #000000 0%, #1a0d07 60%, #2d1208 100%);
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(232, 98, 42, 0.30) 0%, transparent 70%),
+    linear-gradient(170deg, #1a1c23 0%, #201510 60%, #2d1a10 100%);
+}
+
+/* ── Grid overlay (from demo) ────────────────────────────────── */
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.grid > div {
+  height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.grid > div:last-child {
+  border-right: none;
+}
+
+/* ── Content ─────────────────────────────────────────────────── */
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1.5rem;
 }
 
 .heroTitle {
@@ -29,17 +65,23 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  line-height: 1.08;
 }
 
-[data-theme='dark'] .heroTitle {
-  background: linear-gradient(135deg, #fac4a8 0%, #f07843 50%, #e8622a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 6rem;
+  }
 }
 
 .heroSubtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
   max-width: 600px;
@@ -51,12 +93,109 @@
   color: rgba(255, 255, 255, 0.65);
 }
 
-.buttons {
+/* ── Actions row ─────────────────────────────────────────────── */
+
+.heroActions {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .heroActions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.75rem;
+  }
+}
+
+/* ── Primary CTA (pill button with animated arrow) ───────────── */
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.heroButtonLabel {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: #f07843;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.heroButton:hover .heroButtonLabel {
+  background-color: #1a0d07;
+  color: #f07843;
+}
+
+.heroButtonIcon {
+  position: relative;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: #f07843;
+  color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+.heroButton:hover .heroButtonIcon {
+  background-color: #1a0d07;
+  color: #f07843;
+}
+
+.heroButtonIcon svg {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.5s ease;
+}
+
+.arrowDefault {
+  transform: translateX(0);
+}
+
+.arrowHover {
+  transform: translateX(-2.5rem);
+}
+
+.heroButton:hover .arrowDefault {
+  transform: translateX(2.5rem);
+}
+
+.heroButton:hover .arrowHover {
+  transform: translateX(0);
+}
+
+/* ── Secondary link ──────────────────────────────────────────── */
+
+.heroSecondaryLink {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.heroSecondaryLink:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+/* ── Feature cards (kept for potential future use) ───────────── */
 
 .featuresSection {
   padding: 4rem 0;
@@ -72,7 +211,6 @@
   border-radius: 12px;
   transition: all 0.2s ease;
   text-decoration: none !important;
-  /* Remove underline from link */
   color: inherit !important;
 }
 

@@ -2,103 +2,136 @@
 sidebar_position: 2
 ---
 
-# Criando Times
+# Meus Times
 
-Conforme escalamos de centenas para milhares de clientes, a criação de times é uma ferramenta que
-ajuda a gerenciar a equipe de mentoria e acompanhar o desempenho de cada um deles.
-Para isso criamos uma ferramenta para você organizar times de mentores.
+A área **Meus Times** permite organizar mentores em grupos, atribuir clientes a cada mentor e definir quais produtos cada time tem acesso.
 
-## Como funciona?
+**Administradores** podem gerenciar todos os produtos, alunos e vitrine, mesmo os não atribuídos a eles. As permissões podem ser acumuladas.
 
-### Estrutura
-Cada time recebe acesso a produtos que você determinar. 
-E a partir disso, apenas mentorados que possuem esses produtos poderão ser incluídos aos membros do time.
+---
 
-Membros do time podem ter permissões diferentes, inclusive em times diferentes. São muitas as possibilidades. Fique atento!
+## **Visão Geral**
 
-Ao acessar a página de times, você verá uma lista com todos os times que você possui. No início
-você verá uma lista vazia e nós vamos criar o seu primeiro time.
+A tela principal exibe todos os times criados. Cada time mostra:
 
-```bash
-Acesse a página de times em: Clientes > Meus Times
-```
-## Novo time
-### Criando um novo time
+* Nome do time  
+* Produtos disponíveis vinculados  
+* Lista de mentores com nome, e-mail e quantidade de clientes visíveis
 
-<img src="/docs/img/new_team.png" alt="Novo Time" width="600" />
+---
 
-### Atribuindo produtos ao time
+## **Criar um Novo Time**
 
-Agora precisamos atribuir produtos ao time. Essa parte é importante ter atenção, pois ela define
-os produtos que o time poderá acessar, assim como quais mentorados poderão ser atribuidos aos
-membros desse time.
+Clique em **"+ Novo Time"** no canto superior esquerdo. No formulário, preencha:
 
-<img src="/docs/img/add_products.png" alt="Novo Time" width="600" />
+**Nome do Time** Digite o nome para identificar o grupo.
 
-### Atribuindo membros ao time
+* Exemplo: *Meu Time*
 
-Agora já podemos convidar nossos membros ao time e atribuir permissões que eles terão.
+Clique em **"Salvar"** para criar o time.
 
-<img src="/docs/img/add_members.png" alt="Novo Time" width="600" />
+---
 
-### Atribuindo permissões ao membro
+## **Gerenciar Time**
 
-Após inserir os dados do membro, você poderá atribuir permissões ao mesmo.
-São três:
-- Visualizar: permite que ele possa acessar a area me membros e visualizar os mentorados assim como as interações deles;
-- Editar: permite alterar informações do produto assim como editar as etapas dele.
-- Gerenciar: permite gerenciar o acesso dos mentorados, adicionando e removendo o acesso deles.
+Ao clicar em **"Gerenciar Time"** ao lado de qualquer time, um menu é exibido com as seguintes opções:
 
-<img src="/docs/img/add_attr.png" alt="Novo Time" width="600" />
+**Mentores**
 
+* **Adicionar Mentor** — adiciona um mentor ao time
 
-### Atribuindo mentorados ao membro
+**Produtos**
 
-Estamos a um passo de finalizarmos a criação do seu primeiro time.
-Só falta atribuir os mentorados ao membro. Quando atribuirmos esse membro poderá
-acompanhar esse mentorado de acordo com sua permissão no time.
+* **Adicionar Produtos** — disponibiliza produtos para o time
 
-Aqui temos 4 opções:
-- Editar permissões: quando você quiser alterar as permissões do membro;
-- Atribuir mentorado: quando você quer que esse membro cuide desse mentorado;
-- Tirar atribuição de mentorado: quando você quer que esse membro não cuide mais desse mentorado;
-- Remover membro do time: você remove o membro do time.
+**Time**
 
-<img src="/docs/img/team_options.png" alt="Novo Time" width="600" />
+* **Excluir Time** — remove o time permanentemente
 
-<p></p>
-Agora podemos escolher quais mentorados serão atribuidos ao membro do time.
+---
 
-<img src="/docs/img/assign_mentor.png" alt="Novo Time" width="600" />
+## **Adicionar Mentor**
 
-<p></p>
-Pronto, agora você já tem um time com todos os seus membros e permisses atribuídas. Assim como
-também ele já tem acesso ao produto e aos mentorados que foram atribuidos a ele.
+Ao clicar em **"Adicionar Mentor"**, um formulário é exibido com os seguintes campos:
 
-Revise sempre os produtos que foram atribuidos ao time e as permissões do membro.
+* **Adicionar mentor existente ao time** — opção para vincular um mentor já cadastrado na plataforma  
+* **Email** — e-mail do mentor  
+* **Nome** — nome completo  
+* **Telefone (opcional)**  
+* **Senha (opcional)**
 
-## Visão do Membro do Time
-### Como o membro do time vê?
+**Permissões Avançadas** Defina o nível de acesso do mentor na plataforma. Para cada área, é possível conceder permissão de **Visualizar** e/ou **Criar**:
 
-Bem, de acordo com suas permissões o membro irá visualizar os produtos que tem acesso.
-Será indicado quando esse acesso é de time.
+| Área | Permissões disponíveis |
+| ----- | ----- |
+| Meetings | Visualizar / Criar |
+| Clientes | Visualizar / Criar |
+| Vídeos | Visualizar / Criar |
+| Integrações | Visualizar / Criar |
+| Perfil | Visualizar / Criar |
+| Produtos | Visualizar / Criar |
+| Times | Visualizar / Criar |
+| Eventos/Calendário | Visualizar / Criar |
+| Relatório de Aluno | Visualizar / Criar |
+| Design da Vitrine | Visualizar / Criar |
 
-<img src="/docs/img/team_view.png" alt="Novo Time" width="600" />
+Marque **"Selecionar Todos (Admin)"** para conceder acesso completo ao mentor.
 
-<p></p>
-Ao acessar o produto o membro poderá acompanhar seus mentorados na página Jornada do Mentorado.
-Será contabilizado a progressão de cada mentorado apartir da primeira interação.
-Na imagem abaixo você pode ver que temos um mentorado, mas que ainda não iniciou nenhuma etapa.
+Você também pode aplicar um **Modelo de Permissões** já salvo clicando no botão correspondente.
 
-<img src="/docs/img/mentor_journey.png" alt="Novo Time" width="600" />
+Clique em **"Salvar"** para adicionar o mentor.
 
-<p></p>
-Quando o mentorado iniciar as etapas o membro poderá acompanhar o progresso dele.
-E ele começa a contabilizar o progresso geral e individual.
+---
 
-<img src="/docs/img/mentor_journey_progress.png" alt="Novo Time" width="600" />
+## **Adicionar Produtos ao Time**
 
-<p></p>
-Ficou com alguma dúvida?
-Fique a vontade para entrar em contato com a gente.
+Ao clicar em **"Adicionar Produtos"** no menu Gerenciar Time, uma janela exibe todos os produtos disponíveis com nome e tipo. Selecione os produtos que o time terá acesso e clique em **"Atribuir"**.
+
+---
+
+## **Ações por Mentor**
+
+Ao clicar em **"Opções"** ao lado de cada mentor dentro do time, as seguintes ações estão disponíveis:
+
+* **Editar Mentor** — altera os dados e permissões do mentor  
+* **Atribuir Clientes** — seleciona quais clientes serão atribuídos ao mentor  
+* **Ver Atribuições** — exibe os clientes já atribuídos ao mentor, com opção de filtrar por time e exportar em CSV  
+* **Remover Atribuição** — remove os clientes atribuídos ao mentor  
+* **Remover Mentor** — remove o mentor do time permanentemente
+
+---
+
+## **Atribuir Clientes a um Mentor**
+
+Ao clicar em **"Atribuir Clientes"**, uma janela exibe todos os clientes disponíveis com nome e e-mail. Selecione os clientes desejados usando os checkboxes e clique em **"Atribuir"**.
+
+Os clientes listados possuem acesso aos produtos da equipe. Caso não encontre um cliente, verifique se ele tem acesso ao produto da equipe e se a equipe possui o produto disponível.
+
+---
+
+## **Ver Atribuições**
+
+A janela de **Ver Atribuições** exibe todos os clientes atribuídos ao mentor selecionado, com as colunas: Nome, Time e E-mail do Mentor.
+
+**Filtros disponíveis:**
+
+* Pesquisar por nome ou e-mail  
+* Filtrar por time
+
+Clique em **"Exportar CSV"** para baixar a lista de atribuições.
+
+---
+
+## **Modelo de Permissões**
+
+Clique em **"Modelo de Permissões"** na tela principal para criar ou editar modelos reutilizáveis de permissão, agilizando o cadastro de novos mentores.
+
+**Como criar um modelo:**
+
+1. Selecione um modelo existente para editar ou deixe em branco para criar um novo  
+2. Digite o **Título do Modelo**  
+3. Defina as permissões de cada área (Visualizar / Criar)  
+4. Clique em **"Salvar"**
+
+Os modelos criados ficam disponíveis para seleção ao adicionar novos mentores.
 

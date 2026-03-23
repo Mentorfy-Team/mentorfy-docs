@@ -7,6 +7,13 @@ const config: Config = {
   tagline: 'De mentores para mentores.',
   favicon: 'img/favicon.ico',
 
+  scripts: [
+    {
+      src: '/js/force-dark.js',
+      async: false,
+    },
+  ],
+
   // Set the production url of your site here
   url: 'https://docs.mentorfy.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -57,6 +64,11 @@ const config: Config = {
 
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
     image: 'img/mfdocs.jpg',
     navbar: {
