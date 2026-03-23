@@ -1,8 +1,8 @@
 {
-  "label": "Vitrine",
+  "label": "Área do Mentor",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Informações básicas sobre o funcionamento da Vitrine"
+    "description": "Ferramentas e funcionalidades disponíveis na Área do Mentor"
   }
 }
