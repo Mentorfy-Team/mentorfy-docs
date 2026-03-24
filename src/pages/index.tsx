@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import { ArrowUpRight } from "lucide-react";
+import HeroSearch from "@site/src/components/SearchBar/HeroSearch";
 
 import styles from "./index.module.css";
 
@@ -20,6 +21,8 @@ function HomeHero() {
       </div>
 
       <div className={styles.heroContent}>
+        <HeroSearch />
+
         <h1 className={styles.heroTitle}>Documentação Mentorfy</h1>
 
         <p className={styles.heroSubtitle}>

@@ -36,12 +36,17 @@ const config: Config = {
     locales: ['pt'],
   },
 
+  plugins: [
+    require.resolve('./src/plugins/search-index-plugin'),
+  ],
+
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -64,6 +69,16 @@ const config: Config = {
 
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
@@ -84,12 +99,11 @@ const config: Config = {
           position: 'left',
           label: 'Guia do Mentor',
         },
-
         {
-          href: 'https://app.mentorfy.io',
-          label: 'Ir para o App',
+          type: 'html',
           position: 'right',
-          className: 'button button--primary button--sm', // Add a class for styling if needed, or just use standard
+          value:
+            '<a href="https://app.mentorfy.io" target="_blank" rel="noopener noreferrer" class="navbar-app-cta">Ir para o App</a>',
         },
       ],
     },

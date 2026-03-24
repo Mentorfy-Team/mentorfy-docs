@@ -1,0 +1,489 @@
+/* ── Navbar: container ───────────────────────────────────────── */
+
+.navContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
+
+/* ── Lupa button (collapsed state) ──────────────────────────── */
+
+.lupaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  padding: 0;
+}
+
+.lupaButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── Expanded search wrapper ────────────────────────────────── */
+
+.expandedWrapper {
+  position: relative;
+  animation: expandIn 0.2s ease-out;
+}
+
+@keyframes expandIn {
+  from {
+    opacity: 0;
+    width: 180px;
+  }
+  to {
+    opacity: 1;
+    width: 280px;
+  }
+}
+
+/* ── Input wrapper (shared by navbar + hero) ────────────────── */
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.75rem;
+  height: 36px;
+  width: 280px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.inputWrapper:focus-within {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(240, 120, 67, 0.45);
+  box-shadow: 0 0 0 3px rgba(240, 120, 67, 0.08);
+  color: rgba(240, 120, 67, 0.8);
+}
+
+@media (max-width: 996px) {
+  .navContainer {
+    position: static;
+  }
+
+  .lupaButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .expandedWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 400;
+    background: rgba(5, 6, 10, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    animation: mobileSearchIn 0.15s ease-out;
+  }
+
+  @keyframes mobileSearchIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .inputWrapper {
+    width: 100%;
+    height: 48px;
+    background: #22252e;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+}
+
+/* ── Input ──────────────────────────────────────────────────── */
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  font-family: inherit;
+  min-width: 0;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Clear button ───────────────────────────────────────────── */
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.clearButton:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Shortcut hint ──────────────────────────────────────────── */
+
+.shortcutHint {
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  font-family: inherit;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .shortcutHint {
+    display: none;
+  }
+}
+
+/* ── Dropdown ───────────────────────────────────────────────── */
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #22252e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:
+    0 20px 40px -8px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  max-height: 420px;
+  overflow-y: auto;
+  animation: dropdownIn 0.12s ease-out;
+  min-width: 340px;
+}
+
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 996px) {
+  .dropdown {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    min-width: 0;
+    max-height: calc(100vh - 5rem);
+    flex: 1 1 auto;
+    margin-top: 0.5rem;
+    overflow-y: auto;
+  }
+}
+
+/* ── Result item ────────────────────────────────────────────── */
+
+.resultItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.resultItem:hover,
+.resultItemActive {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.resultItemActive {
+  background: rgba(240, 120, 67, 0.1);
+}
+
+.resultIcon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.resultContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.resultTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f0f1f3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resultItemActive .resultTitle {
+  color: #f07843;
+}
+
+.resultExcerpt {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.resultBreadcrumb {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.25);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Highlight ──────────────────────────────────────────────── */
+
+.highlight {
+  background: rgba(240, 120, 67, 0.25);
+  color: #f5956b;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────── */
+
+.dropdown::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+.dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Hero search ────────────────────────────────────────────── */
+
+.heroSearchContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 2.5rem;
+  min-height: 40px;
+}
+
+/* ── Teaser (typing animation → pulsing lupa) ───────────────── */
+
+.heroTeaser {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.heroTeaser:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.heroTeaserIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(240, 120, 67, 0.45);
+  transition: color 0.3s ease;
+}
+
+.heroTeaser:hover .heroTeaserIcon {
+  color: rgba(240, 120, 67, 0.8);
+}
+
+.heroTeaserIconPulse {
+  animation: lupaPulse 3s ease-in-out infinite;
+}
+
+@keyframes lupaPulse {
+  0%, 100% { color: rgba(240, 120, 67, 0.3); }
+  50% { color: rgba(240, 120, 67, 0.7); }
+}
+
+.heroTeaserText {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.heroTeaserCursor {
+  display: inline-block;
+  margin-left: 1px;
+  color: rgba(240, 120, 67, 0.6);
+  animation: cursorBlink 0.6s step-end infinite;
+  font-weight: 300;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ── Expanded state ─────────────────────────────────────────── */
+
+.heroExpandedWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  animation: heroExpandIn 0.25s ease-out;
+}
+
+@keyframes heroExpandIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.7);
+    transform-origin: center;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.heroInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.85rem;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.heroInputWrapper:focus-within {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(240, 120, 67, 0.35);
+  box-shadow: 0 0 0 3px rgba(240, 120, 67, 0.06);
+  color: rgba(240, 120, 67, 0.6);
+}
+
+.heroSearchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-family: inherit;
+  min-width: 0;
+}
+
+.heroSearchInput::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.heroShortcut {
+  flex-shrink: 0;
+  font-size: 0.6rem;
+  font-family: inherit;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.15);
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .heroExpandedWrapper {
+    max-width: 320px;
+  }
+
+  .heroShortcut {
+    display: none;
+  }
+}
+
+.heroDropdown {
+  composes: dropdown;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  min-width: 0;
+  max-height: 380px;
+  z-index: 100;
+}
+
+@media (max-width: 996px) {
+  .heroDropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+  }
+}

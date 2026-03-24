@@ -68,6 +68,51 @@
   line-height: 1.08;
 }
 
+@media (max-width: 767px) {
+  /* Título com mais destaque no mobile; subtítulo mais discreto */
+  .heroTitle {
+    font-size: clamp(2.5rem, 11.5vw, 3.35rem);
+    margin-bottom: 1rem;
+    line-height: 1.05;
+  }
+
+  .heroSubtitle {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    margin-bottom: 2rem;
+    padding: 0 0.25rem;
+    opacity: 0.92;
+  }
+
+  .heroContent {
+    padding: 0 1rem;
+  }
+
+  .heroButtonLabel {
+    min-height: 44px;
+    padding: 0.875rem 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .heroButtonIcon {
+    width: 2.75rem;
+    height: 2.75rem;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .heroSecondaryLink {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gridOverlay {
+    opacity: 0.45;
+  }
+}
+
 @media (min-width: 768px) {
   .heroTitle {
     font-size: 4.5rem;

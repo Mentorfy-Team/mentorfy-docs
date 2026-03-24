@@ -117,6 +117,33 @@
   color: #fff;
 }
 
+/* CTA App — desktop + menu mobile */
+.navbar-app-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: linear-gradient(180deg, #f07843 0%, #e8622a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  transition: filter 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.navbar-app-cta:hover {
+  filter: brightness(1.08);
+  color: #fff !important;
+}
+
+.navbar__items--right .navbar-app-cta {
+  margin-left: 0.25rem;
+}
+
 /* Sidebar Styling */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--ifm-color-emphasis-200) !important;
@@ -280,4 +307,327 @@ article header h1 {
 /* Doc page main content area */
 [data-theme='dark'] .main-wrapper {
   background-color: var(--ifm-background-color);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Mobile ≤ 996px
+   ═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-navbar-height: 56px;
+    --ifm-spacing-horizontal: 16px;
+  }
+
+  /* ── Top bar ─────────────────────────────────────────────────── */
+  .navbar {
+    padding-top: max(0px, env(safe-area-inset-top));
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+  }
+
+  .navbar__inner {
+    gap: 0.5rem;
+    min-height: var(--ifm-navbar-height);
+  }
+
+  .navbar__brand {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  .navbar__logo {
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .navbar__title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Hide left nav links on mobile — they live in the drawer */
+  .navbar__items:not(.navbar__items--right) > .navbar__item:not(:first-child) {
+    display: none;
+  }
+
+  /* Right side: search + CTA pill + hamburger */
+  .navbar__items--right {
+    flex: 0 0 auto;
+    gap: 0.35rem;
+    align-items: center;
+  }
+
+  .navbar__items--right .navbar-app-cta {
+    margin-left: 0;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.7rem;
+    border-radius: 999px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  /* Hamburger button */
+  .navbar__toggle {
+    flex-shrink: 0;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.15s ease;
+  }
+
+  .navbar__toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* ── Backdrop ────────────────────────────────────────────────── */
+  .navbar-sidebar__backdrop {
+    background: rgba(5, 6, 10, 0.72) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* ── Drawer ──────────────────────────────────────────────────── */
+  .navbar-sidebar {
+    background: linear-gradient(170deg, #1e2028 0%, #14161d 100%) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 10px 0 36px rgba(0, 0, 0, 0.5);
+    padding-bottom: env(safe-area-inset-bottom);
+    width: min(82vw, 320px);
+  }
+
+  /* Drawer header */
+  .navbar-sidebar__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    min-height: 52px;
+  }
+
+  .navbar-sidebar__brand .navbar__logo {
+    height: 26px;
+  }
+
+  .navbar-sidebar__close {
+    color: rgba(255, 255, 255, 0.5) !important;
+    padding: 0.4rem;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+  }
+
+  .navbar-sidebar__close:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff !important;
+  }
+
+  /* Drawer panels */
+  .navbar-sidebar__items {
+    padding: 0.5rem 0.65rem;
+  }
+
+  .navbar-sidebar__item.menu {
+    padding: 0;
+  }
+
+  /* Links inside the drawer */
+  .navbar-sidebar .menu__list {
+    padding: 0;
+  }
+
+  .navbar-sidebar .menu__list-item {
+    margin: 0.15rem 0;
+  }
+
+  .navbar-sidebar .menu__link {
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .navbar-sidebar .menu__link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+  }
+
+  .navbar-sidebar .menu__link--active {
+    background: rgba(240, 120, 67, 0.12) !important;
+    color: var(--ifm-color-primary) !important;
+    font-weight: 600;
+  }
+
+  .navbar-sidebar .menu__link--sublist-caret {
+    font-weight: 600;
+  }
+
+  /* "Back" button in secondary menu */
+  .navbar-sidebar__back {
+    border-radius: 10px;
+    padding: 0.65rem 0.85rem;
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    transition: background 0.15s ease;
+  }
+
+  .navbar-sidebar__back:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+  }
+
+  /* CTA section at the bottom of the primary menu in the drawer */
+  .navbar-sidebar__cta-section {
+    margin-top: 1rem;
+    padding: 0.75rem 0.2rem 0.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .navbar-sidebar__cta-section .navbar-app-cta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    font-size: 0.88rem;
+    min-height: 48px;
+    border-radius: 12px;
+  }
+
+  /* ── Doc sidebar in drawer (secondary menu) ──────────────────── */
+  .theme-doc-sidebar-menu .menu__link {
+    min-height: 42px;
+    align-items: center;
+  }
+
+  button.clean-btn.theme-doc-sidebar-collapse-button {
+    border-radius: 8px;
+  }
+
+  /* ── TOC mobile ──────────────────────────────────────────────── */
+  .theme-doc-toc-mobile,
+  aside.theme-doc-toc-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .theme-doc-markdown > header + .row .col.col--3 .table-of-contents,
+  .row .col.col--3 .table-of-contents {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + 0.5rem);
+    max-height: min(42vh, 320px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.75rem 0.85rem;
+    background: var(--ifm-background-surface-color);
+    border-radius: 10px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    font-size: 0.8rem;
+  }
+
+  .table-of-contents__link {
+    display: block;
+    padding: 0.35rem 0;
+  }
+
+  .table-of-contents {
+    font-size: 0.8rem;
+  }
+
+  /* ── Pagination ──────────────────────────────────────────────── */
+  .pagination-nav {
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .pagination-nav__link {
+    min-height: 52px;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .pagination-nav__sublabel {
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+
+  /* ── Typography ──────────────────────────────────────────────── */
+  article header h1 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+  }
+
+  .markdown p,
+  .markdown li {
+    font-size: 0.9375rem;
+  }
+
+  .markdown table {
+    font-size: 0.8125rem;
+  }
+
+  .markdown pre {
+    font-size: 0.8125rem;
+    padding: 0.75rem;
+  }
+
+  .markdown img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  article .markdown {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ── Small phones ≤ 576px ────────────────────────────────────────── */
+
+@media (max-width: 576px) {
+  article header h1 {
+    font-size: 1.625rem;
+  }
+
+  .footer {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* ── Very narrow ≤ 380px ─────────────────────────────────────────── */
+
+@media (max-width: 380px) {
+  .navbar__title {
+    display: none;
+  }
+
+  .navbar__items--right .navbar-app-cta {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.65rem;
+  }
 }
