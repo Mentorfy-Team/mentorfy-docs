@@ -132,7 +132,18 @@ Clique em **"+ Nova Automação"** no canto superior direito. O editor visual se
 
 Cada automação é composta por três tipos de nós conectados em sequência:
 
-**1\. Gatilho:** Define o evento que inicia a automação. Clique no nó **GATILHO** para selecionar o evento de origem, como por exemplo: Produto Liberado, Pagamento Confirmado, Aluno Cadastrado, entre outros.
+**1\. Gatilho:** Clique no nó **GATILHO** para configurar o evento de origem. No campo "Quando acontecer", selecione um dos eventos disponíveis:
+
+| Evento | Descrição |
+| ----- | ----- |
+| Acesso Expirado | Acesso do aluno ao produto expira |
+| Progresso Atualizado | Aluno avança no conteúdo |
+| Conteúdo Concluído | Aluno conclui um conteúdo |
+| Produto Concluído | Aluno conclui um produto inteiro |
+| Acesso Estendido | Acesso ao produto é prorrogado |
+| Certificado Emitido | Certificado é gerado para o aluno |
+
+*Produto específico (opcional)* Selecione um produto para restringir o gatilho. Se deixado como "Qualquer produto", a automação disparará para todos os produtos quando o evento ocorrer.
 
 **2\. Condição (opcional):** Filtra quando a automação deve ou não ser executada. Clique no nó **CONDIÇÃO** para configurar a regra de filtragem.
 
@@ -157,6 +168,16 @@ A condição será avaliada quando o evento disparar. Se verdadeira, as ações 
 
 **3\. Ação:** Define o que será feito quando o gatilho disparar e a condição for atendida. Clique no nó **AÇÃO** para selecionar a ação a ser executada.
 
+| Tipo de Ação | Descrição |
+| ----- | ----- |
+| Liberar Produto | O cliente receberá acesso ao produto selecionado quando a automação executar |
+| Atribuir Turma | O cliente será adicionado automaticamente a uma turma |
+| Remover da Turma | O cliente será removido de uma turma automaticamente |
+| Enviar Webhook | Dispara uma notificação para uma URL externa |
+| Enviar Email | Envia um e-mail automático para o cliente |
+
+Após selecionar o tipo de ação, configure os parâmetros correspondentes no painel lateral, como o produto a liberar, a turma a atribuir ou a URL do webhook de destino.
+
 ![Ação no fluxo](/img/integracoes/intro-8.png)
 
 ### **Adicionando mais nós ao fluxo**
@@ -167,6 +188,24 @@ No painel lateral, utilize os botões:
 * **Ação** — adiciona um novo nó de ação ao fluxo
 
 Você pode encadear múltiplos nós para criar automações mais complexas.
+
+**Caso de uso: Liberação Sequencial de Mentorias** ✨
+
+A liberação sequencial permite controlar automaticamente a ordem de acesso às mentorias. O aluno só recebe acesso à próxima mentoria após concluir a anterior. A lógica é a mesma da liberação progressiva de módulos dentro de um produto, mas aplicada entre mentorias completas.
+
+*Como configurar:*
+
+**Passo 1 — Crie a automação** Em Integrações → Automações, clique em "+ Nova Automação" e dê um nome descritivo, como "Liberação sequencial".
+
+**Passo 2 — Configure o gatilho** No campo "Quando acontecer", selecione **Produto Concluído**. Em "Produto específico", selecione a mentoria que o aluno precisa concluir antes de avançar.
+
+**Passo 3 — Configure a ação** Adicione um nó de Ação e selecione o tipo **Liberar Produto**. Em seguida, escolha qual será o próximo produto liberado automaticamente.
+
+![Exemplo de liberação sequencial](/img/integracoes/intro-8.png)
+
+**Passo 4 — Salve e ative** Clique em "Criar Automação". A automação será ativada imediatamente. Para pausar sem perder a configuração, basta desativá-la pelo toggle na lista de automações.
+
+💡 Repita o processo para cada etapa da sequência. Exemplo: Mentoria A → conclui → libera Mentoria B → conclui → libera Mentoria C.
 
 ### **Gerenciando Automações existentes**
 
