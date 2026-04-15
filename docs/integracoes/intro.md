@@ -2,6 +2,8 @@
 sidebar_position: 0
 ---
 
+import VideoEmbed from '../../src/components/IframeVideo/VideoEmbed';
+
 # Integrações
 
 A área de Integrações permite configurar webhooks e conexões com plataformas externas. As configurações estão organizadas nas abas: **Entrada, Saída, Automações, Chaves, Widgets e Logs**.
@@ -127,6 +129,65 @@ Clique em **"+ Nova Automação"** no canto superior direito. O editor visual se
 **Descrição (opcional):** Adicione uma descrição breve para documentar o objetivo da automação.
 
 ![Nova Automação](/img/integracoes/intro-6.png)
+
+### **Template: Liberação em Ordem** ✨
+
+Para facilitar a criação de trilhas sequenciais, a plataforma oferece um template pronto acessível diretamente pelo botão **"+ Nova Automação"**.
+
+#### **Como acessar o template**
+
+Clique na seta ao lado do botão **"+ Nova Automação"** para abrir o menu de Templates. Selecione **Liberação em ordem** - "Cria trilha sequencial de liberação".
+
+---
+
+#### **Configurando a trilha de Liberação em Ordem**
+
+O assistente abre um formulário guiado com os seguintes campos:
+
+**Nome da trilha:** Dê um nome descritivo para identificar a sequência. Exemplo: *Onboarding -> Módulo 1 -> Módulo 2*
+
+**Encadear automaticamente:** toggle ativado por padrão. Quando ativo, o próximo passo começa automaticamente com o produto liberado no passo anterior, sem precisar configurar manualmente.
+
+---
+
+#### **Configurando os passos da trilha**
+
+Cada passo representa uma etapa da sequência e é composto por dois campos:
+
+**Quando concluírem o produto:** selecione o produto que o aluno precisa concluir para avançar.
+
+**Liberar os produtos:** selecione qual produto será liberado automaticamente após a conclusão. É possível adicionar mais de um produto a liberar por passo clicando em **"+ Adicionar produto a liberar"**.
+
+Clique no ícone de lixeira ao lado do título do passo para removê-lo, ou no ícone de seta para recolher/expandir.
+
+Atenção: cada passo precisa ter ao menos um produto gatilho e um produto a liberar selecionados. Caso contrário, a plataforma exibirá um aviso em vermelho e o botão **"Criar automações"** ficará desabilitado.
+
+---
+
+#### **Preview da trilha**
+
+À medida que os passos são configurados, a seção **Preview** na parte inferior exibe o fluxo completo da sequência em tempo real. Exemplo:
+
+1. Criado por Copiloto -> Máquina de Vendas Imobiliárias com SaaS
+2. Máquina de Vendas Imobiliárias com SaaS -> Crie Músicas Infantis Educacionais do Zero
+3. Crie Músicas Infantis Educacionais do Zero -> Produto Modelo - Testes Internos
+
+O preview também indica quantas automações serão criadas ao confirmar.
+
+#### **Finalizando**
+
+Clique em **"Criar automações"** para salvar. A plataforma criará automaticamente uma automação individual para cada passo da trilha, todas agrupadas com a tag **Trilha** na lista de automações.
+
+Após a criação, cada automação da trilha pode ser gerenciada individualmente - editada, desativada ou excluída. Para remover toda a trilha de uma vez, clique no ícone de camadas disponível nas ações de qualquer automação que faça parte dela.
+
+---
+
+### **Vídeo tutorial**
+
+<VideoEmbed
+  src="https://player.vimeo.com/video/1183549682?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+  title="VÍDEO LIBERAÇÃO SEQUENCIAL"
+/>
 
 ### **Estrutura do fluxo**
 

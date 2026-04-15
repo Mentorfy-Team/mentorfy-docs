@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 
 interface VideoEmbedProps {
   src: string;
@@ -6,12 +6,15 @@ interface VideoEmbedProps {
 }
 
 const VideoEmbed: React.FC<VideoEmbedProps> = ({ src, title }) => {
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+
   return (
     <div style={{ width: '100%', aspectRatio: '16 / 9', margin: '0 auto' }}>
       <iframe
         src={src}
+        ref={iframeRef}
         title={title}
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
         allowFullScreen
         style={{ width: '100%', height: '100%', border: 0 }}
       />
