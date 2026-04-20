@@ -91,6 +91,12 @@
 
 /* Global Styles */
 
+/* Doc content images: intrinsic width + responsive (retina-friendly) */
+.theme-doc-markdown img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Navbar Styling */
 .navbar {
   backdrop-filter: saturate(180%) blur(20px);

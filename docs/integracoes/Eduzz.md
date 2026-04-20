@@ -4,71 +4,100 @@ sidebar_position: 4
 
 # Eduzz
 
-Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Eduzz.
+Como configurar um Webhook no Developer Hub
 
-Antes de configurar o webhook, precisamos **copiar o código de referência fornecido pela Mentorfy** do produto que deseja integrar.
+Guia passo a passo — Eduzz · Developer Hub
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Configurações
-```
+Este guia explica como migrar e configurar integrações via webhook usando o Developer Hub da Eduzz (MyEduzz), desde o acesso à plataforma até a criação e teste da configuração.
 
-2. **Copie o código de referência** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Eduzz. Ele se parecerá com:
-```
-codigo123
-```
-<img src="/docs/img/codigo_produto.png" height="200" alt="chave da API"  /> 
-<br/>
-<br/>
+## **Passo 1 — Acesse a seção de Webhooks no MyEduzz**
 
-3. Entre na sua conta e depois vá até seu Hub https://console.eduzz.com/webhook
-```
-Navegue até Webhook > Configurações.
-```
-Clique em Nova Configuração.
-<img src="/docs/img/eduzz_webhooks.png" height="500" alt="chave da API"  /> 
-<br/>
-<br/>
+No painel do MyEduzz, acesse o menu lateral esquerdo, role até a seção Avançado e clique em Webhooks.
 
-5. Preencha o formulário com as seguintes informações:
-```
-URL para envio dos dados: https://mentorfy.io/api/webhooks/body
-```
-<img src="/docs/img/eduzz_form1.png" alt="chave da API" /> 
-<br/>
-<br/>
+<img src="/docs/img/eduzz_developer_hub_1.png" width="328" alt="Menu Webhooks no MyEduzz" decoding="async" loading="lazy" />
 
-6. Nas opções de eventos, selecione essas opções:
+<img src="/docs/img/eduzz_developer_hub_2.png" width="617" alt="Tela de Webhooks no MyEduzz" decoding="async" loading="lazy" />
 
-<img src="/docs/img/eduzz_form2.png" alt="chave da API" /> 
-<br/>
-<br/>
+⚠ O webhook atual será descontinuado em 11/01/2027. Migre para o Developer Hub o quanto antes para evitar impactos na sua integração.
 
-8. Clique em **Criar configuração** ao final da página.
+## **Passo 2 — Acesse o Developer Hub pelo banner de migração**
 
-9. Agora para fazermos uma entrega de produto basta você usar o **código de referência** que você copiou da Mentorfy 
-no final do nome do produto/checkout (#codigo123):
+Na tela de Webhooks do MyEduzz, um aviso em amarelo indica a necessidade de migração. Clique em "Saiba mais sobre o novo webhook e como migrar" ou acesse o Developer Hub diretamente.
 
-```
-Para produtos: Meu produto A #codigo123
-Para trilhas: Minha trilha ABC ##123
-```
-Isso serve para identificar os produtos que serão liberados para o cliente.
+✔ No Developer Hub, navegue até Webhooks → Configurações no menu lateral para gerenciar suas integrações.
 
+## **Passo 3 — Crie uma nova configuração de Webhook**
 
-## Testando a integração
+Na tela Lista de configurações do Developer Hub, clique no botão "+ Nova configuração" no canto superior direito da página.
 
-Após configurar o webhook na Eduzz e na Mentorfy:
+<img src="/docs/img/eduzz_developer_hub_3.png" width="622" alt="Lista de configurações e botão Nova configuração" decoding="async" loading="lazy" />
 
-1. Faça uma venda de teste no Eduzz.
-2. Verifique se o evento é recebido corretamente na Mentorfy.
-3. Confirme se o cliente aparece na jornada e na lista de clientes da Mentorfy.
+## **Passo 4 — Preencha os dados da configuração**
 
-<br/>
-<br/>
+Na tela de Criação de configuração, preencha os seguintes campos obrigatórios:
 
-## Conclusão
+- Nome da configuração — Ex: testementorfy
+- URL para envio dos dados — Ex: https://api.mentorfy.io/api/v1/webhooks/...
+- Máximo de eventos enviados em paralelo para a URL — use o slider (padrão: 10)
+- Secret — mantenha o padrão ou configure conforme necessário
 
-Ao finalizar esses passos, a integração estará completa e você poderá ver seus clientes na jornada e em sua lista de clientes na Mentorfy.
+<img src="/docs/img/eduzz_developer_hub_4.png" width="624" alt="Formulário de criação de configuração do webhook" decoding="async" loading="lazy" />
 
-Em caso de dúvida, entre em contato com nosso suporte pelo chat na plataforma ou pelo e-mail contato@mentorfy.io
+## **Passo 5 — Verifique a URL**
+
+Após preencher a URL, clique no botão "Verificar URL". Aguarde a confirmação de status antes de prosseguir.
+
+<img src="/docs/img/eduzz_developer_hub_5.png" width="625" alt="Verificação da URL do webhook" decoding="async" loading="lazy" />
+
+✔ Se a URL for válida, será exibido: "Status HTTP 200 – Sucesso!". Caso contrário, revise a URL e tente novamente.
+
+## **Passo 6 — Selecione os eventos desejados**
+
+Na seção "Quais eventos você deseja receber?", pesquise ou navegue pelas categorias disponíveis (AlpaClass, MyEduzz, SafeVideo, Nutror, Blinket, etc.) e selecione os eventos relevantes para sua integração. Os eventos selecionados aparecem no painel direito "Eventos Selecionados".
+
+<img src="/docs/img/eduzz_developer_hub_6.png" width="646" alt="Seleção de eventos do webhook" decoding="async" loading="lazy" />
+
+✔ Exemplo de eventos úteis: `myeduzz.invoice_paid` (pagamento efetuado) e `myeduzz.invoice_opened` (fatura aberta).
+
+## **Passo 7 — Teste os eventos selecionados**
+
+Clique em "Testar eventos selecionados" no painel direito. Uma janela de Teste de eventos será aberta com as opções:
+
+- Testar todos os eventos — envia teste para todos os eventos selecionados
+- Testar eventos não testados — envia apenas para os que ainda não foram testados
+- Enviar teste (por evento) — testa cada evento individualmente
+
+Após enviar os testes, clique em "Ver resultado" para verificar o resultado.
+
+<img src="/docs/img/eduzz_developer_hub_7.png" width="653" alt="Janela de teste de eventos" decoding="async" loading="lazy" />
+
+## **Passo 8 — Verifique o resultado dos testes**
+
+A janela "Resultado dos testes" exibirá um resumo com:
+
+- Eventos selecionados — lista dos eventos configurados
+- Eventos não testados — eventos que não receberam teste
+- Eventos integrados com sucesso — confirmados com retorno positivo
+- Eventos integrados com falha — eventos que retornaram erro
+
+<img src="/docs/img/eduzz_developer_hub_8.png" width="632" alt="Resultado dos testes do webhook" decoding="async" loading="lazy" />
+
+⚠ Se algum evento retornar falha, a configuração não poderá ser ativada. Corrija o problema antes de prosseguir.
+
+## **Passo 9 — Finalize criando a configuração**
+
+Com todos os testes validados com sucesso, feche o modal de resultados e clique no botão "Criar configuração" no rodapé da página para salvar e ativar seu webhook.
+
+✔ Sua configuração aparecerá na lista do Developer Hub, pronta para receber e processar eventos!
+
+## Resumo dos Passos
+
+- Acesse MyEduzz → Avançado → Webhooks
+- Acesse o Developer Hub pelo banner de migração
+- Crie uma nova configuração de webhook
+- Preencha nome, URL, paralelo e secret
+- Verifique a URL (HTTP 200 = sucesso)
+- Selecione os eventos desejados
+- Teste os eventos e envie os testes
+- Confira o resultado — todos devem ser integrados com sucesso
+- Clique em "Criar configuração" — pronto!
