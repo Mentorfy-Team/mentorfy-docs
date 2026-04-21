@@ -4,6 +4,28 @@ sidebar_position: 8
 
 # Stripe
 
+## Vídeo tutorial de integração
+
+Assista ao passo a passo em vídeo para configurar sua integração Stripe com a Mentorfy:
+<div style={{ position: "relative", width: "100%", paddingBottom: "56.25%", marginBottom: "24px" }}>
+  <iframe
+    src="https://player.mediadelivery.net/play/373508/1e02d5d0-9e91-48fc-8e58-bb4d8d735513"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      border: "none",
+      borderRadius: "8px"
+    }}
+    allowFullScreen
+    allow="encrypted-media"
+    title="Tutorial Stripe Mentorfy"
+  ></iframe>
+</div>
+
+
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando o Stripe. A Stripe não filtra para enviar eventos de produtos específicos, por isso, caso queria vender produtos diferentes e liberar acessos diferentes, será necessário uma configuração adicional para a mentorfy conseguir identificar as ofertas diferentes.
 
 
