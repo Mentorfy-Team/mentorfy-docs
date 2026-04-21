@@ -1,7 +1,10 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import { useLocation } from "@docusaurus/router";
-import { useDocsSidebar } from "@docusaurus/plugin-content-docs/client";
+import {
+  useDoc,
+  useDocsVersion,
+} from "@docusaurus/plugin-content-docs/client";
 import clsx from "clsx";
 import type { PropSidebarItem } from "@docusaurus/plugin-content-docs";
 
@@ -44,12 +47,18 @@ function isActivePath(pathname: string, href: string): boolean {
 }
 
 export default function GuideSectionsNav(): React.ReactElement | null {
-  const sidebar = useDocsSidebar();
+  const version = useDocsVersion();
+  const { metadata } = useDoc();
   const location = useLocation();
 
-  if (!sidebar?.items?.length) return null;
+  const sidebarName = metadata.sidebar;
+  const sidebarItems = sidebarName
+    ? version.docsSidebars[sidebarName] ?? []
+    : [];
 
-  const entries = sidebar.items
+  if (!sidebarItems.length) return null;
+
+  const entries = sidebarItems
     .map((item) => {
       const href = getFirstHref(item);
       const label = getLabel(item);
