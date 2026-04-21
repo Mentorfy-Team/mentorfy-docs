@@ -9,11 +9,9 @@ Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Me
 
 
 1. Acesse a página de Integrações:
-```
+
 Acesse o painel de Integrações neste link: [https://mentorfy.io/mentor/integracoes](https://mentorfy.io/mentor/integracoes)
-```
-
-
+<br/>
 
 2. **Crie uma URL**, vamos preencher as informações básicas:
 <img src="/docs/img/stripe_integracao_mentorfy.png" height="200" alt="chave da API"  />
