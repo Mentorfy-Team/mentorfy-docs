@@ -6,19 +6,17 @@ sidebar_position: 2
 
 Siga esse passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando o Asaas.
 
-Antes de configurar o webhook precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API do Asaas** para salvar na Mentorfy.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando o Asaas confirmar uma cobrança.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook no Asaas. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Asaas** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
 
-3. Entre na sua conta Assas e acesse o menu do usuário
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
+
+3. Entre na sua conta Asaas e acesse o menu do usuário
 ```
 Navegue até Integrações > Chave da API
 ```
@@ -30,7 +28,7 @@ Navegue até Integrações > Chave da API
 <img src="/docs/img/asaas_apikey.png" alt="chave da API" /> 
 <br/>
 
-5. Volte para a Mentorfy na página de integraçes e cole a chave gerada no campo de integração do Asaas.
+5. Volte para a Mentorfy, acesse **Integrações > Chaves** e cadastre a chave gerada para a plataforma Asaas.
 
 <img src="/docs/img/asaas_apikey_mentorfy.png" alt="chave da API" /> 
 <br/>
@@ -50,10 +48,10 @@ Navegue até Integrações > Webhooks
 <img src="/docs/img/asaas_webhooks.png" alt="webhooks" />
 <br/>
 
-3. **Preencha o formulário** com as seguintes informaçes:
+3. **Preencha o formulário** com as seguintes informações:
    - Webhook deve ser marcado como ativo
    - Nome para o webhook
-   - URL que receberá as informaçes do evento (link que você copiou da Mentorfy)
+   - URL que receberá as informações do evento: cole a **URL de Entrada** que você copiou da Mentorfy
    - E-mail para notificações em caso de erros de comunicação
    - Versão da API V3
    - Token de autenticação (chave da API que você copiou do Asaas)
@@ -72,7 +70,7 @@ Navegue até Integrações > Webhooks
 
 5. **Salve as configurações**.
 
-Você pode ter até 10 Webhooks configurados por conta, sem restriçes de endereço. Também é possível editar ou excluir Webhooks criados.
+Você pode ter até 10 Webhooks configurados por conta, sem restrições de endereço. Também é possível editar ou excluir Webhooks criados.
 
 <img src="/docs/img/asaas_webhooks_salvar.png" alt="Adicionar Webhook" width="450" />
 <br/>

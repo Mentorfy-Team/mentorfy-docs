@@ -6,17 +6,15 @@ sidebar_position: 2
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Greenn.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API da Greenn** para salvar na Mentorfy.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Greenn confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Greenn. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Greenn** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 3. Entre na sua conta
 ```
@@ -44,7 +42,7 @@ Navegue até Produtos > Editar Produto ou Criar Produto caso não tenha nenhum p
 <br/>
 <br/>
 
-7. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
+7. Preencha o formulário com as informações solicitadas, usando a **URL de Entrada** que você copiou da Mentorfy:
 
 <img src="/docs/img/greenn_produto_conteudo_form.jpg" alt="chave da API" /> 
 <br/>

@@ -6,17 +6,15 @@ sidebar_position: 6
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Xgrow.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar o token secreto** que fica junto.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Xgrow confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Xgrow. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Xgrow** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 ## Configurando a plataforma Xgrow
 
@@ -37,13 +35,13 @@ Navegue até Recursos > Integrações > Nova integração.
 5. Preencha as informações conforme abaixo:
 
 - Nome da integração: Identifição do produto o qual você fará as configurações
-- Url do webhook: **É o link que você copiou da Mentorfy** do seu produto, conforme item 2 acima
+- URL do webhook: cole a **URL de Entrada** que você copiou da Mentorfy, conforme item 2 acima
 
 <img src="/docs/img/Integração-Xgrow3.png" alt="cadastro da webhook" /> 
 <br/>
 <br/>
     
-- Chave da Xgrow: é o código/Token que você precisa copiar e inserir dentro da Mentorfy, na tela de integrações do produto que você está integrando. Não esqueça de salvar no canto superior direito da tela, após a inserção do código.
+- Chave da Xgrow: é o código/token que você deve cadastrar na Mentorfy em **Integrações > Chaves**, vinculando à plataforma Xgrow. Depois de inserir a chave, salve a configuração.
 <br/>
 <img src="/docs/img/Integração-Xgrow7.png" alt="Inserir o token da Xgrow na Mentorfy" /> 
 <br/>

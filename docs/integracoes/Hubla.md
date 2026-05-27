@@ -6,17 +6,15 @@ sidebar_position: 6
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Hubla.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar para salvar na Mentorfy.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Hubla confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Hubla. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Hubla** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 ## Configurando a plataforma Hubla
 
@@ -38,14 +36,14 @@ Clique no botão **Adicionar regra** localizado no canto superior direito da pá
 
 No formulário:
 - Preencha um nome significativo para identificar sua nova regra.
-- Informe a URL do seu produto, o link fornecido pela Mentorfy que você já copiou;
+- Informe a **URL de Entrada** que você copiou da Mentorfy;
 - Selecione os produtos específicos aos quais deseja associar essa regra.
 - Marque os eventos desejados que serão responsáveis por acionar o webhook:
   - Pagamento da fatura realizado
   - Assinatura desativada
   - Assinatura cancelada
 
-Como o link da Mentorfy é por produto, é necessário criar uma regra para cada produto.
+Se produtos diferentes liberarem acessos diferentes na Mentorfy, crie uma URL de Entrada e uma regra na Hubla para cada caso.
 
 <br/>
 <img src="/docs/img/hubla3.jpg" alt="formulário para a regra" /> 
@@ -66,4 +64,3 @@ Após configurar o webhook na Hubla:
 Ao finalizar esses passos, a integração estará completa e você poderá ver seus clientes na jornada e em sua lista de clientes na Mentorfy.
 
 Em caso de dúvida, entre em contato com nosso suporte pelo chat na plataforma ou pelo e-mail: **contato@mentorfy.io**
-

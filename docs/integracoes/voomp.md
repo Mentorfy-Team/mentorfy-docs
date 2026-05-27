@@ -6,19 +6,15 @@ sidebar_position: 7
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Voomp.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar para configurar na Voomp.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Voomp confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+2. Preencha a URL com um nome descritivo, selecione **Voomp** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Voomp. Ele se parecerá com:
-
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 ## Configurando o Webhook na Voomp
 
@@ -33,7 +29,7 @@ Dashboard > Integrações > Configurar integração do Webhook
 
 2. Na página de configuração do Webhook, você precisará:
    - Selecionar os produtos que deseja integrar
-   - Informar a URL do Webhook (link que você copiou da Mentorfy)
+   - Informar a URL do Webhook: cole a **URL de Entrada** que você copiou da Mentorfy
    - Escolher as variáveis que deseja receber
    - Selecionar os eventos que você quer ser avisado
 

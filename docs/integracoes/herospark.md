@@ -8,16 +8,15 @@ Siga esse passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Me
 
 ## Link Webhook
 
-Acesse o seu produto que você deseja integrar:
+Antes de configurar o webhook na Herospark, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Herospark confirmar uma compra.
 
-```bash
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
-Copie o link e salve ele, iremos usar logo em seguida. Ele irá parecer com esse:
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
+2. Preencha a URL com um nome descritivo, selecione **HeroSpark** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados.
+3. Clique em **Criar** e copie a URL gerada.
 
-```bash
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 ## Plataforma Herospark
 
@@ -41,7 +40,7 @@ Acesse a plataforma da herospark
 
 3- Dê um nome adequado para seu webhook
 ```
-Mentoria Escolhida - Pagamento Confirmado | Mentorfy
+Produto Escolhido - Pagamento Confirmado | Mentorfy
 ```
 <img src="/docs/img/herospark_nome_adequado.jpg" alt="Nome Adequado Webhook" width="350" />
 <br/>
@@ -52,7 +51,7 @@ Mentoria Escolhida - Pagamento Confirmado | Mentorfy
 <br/>
 <br/>
 
-5- Cole o link que você copiou no início desse tutorial e selecione o método **POST**.
+5- Cole a URL de Entrada que você copiou da Mentorfy e selecione o método **POST**.
 <img src="/docs/img/herospark_link_post.jpg" alt="Configuração do Link POST" width="350" />
 <br/>
 <br/>

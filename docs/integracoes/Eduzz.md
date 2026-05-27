@@ -10,6 +10,12 @@ Guia passo a passo — Eduzz · Developer Hub
 
 Este guia explica como migrar e configurar integrações via webhook usando o Developer Hub da Eduzz (MyEduzz), desde o acesso à plataforma até a criação e teste da configuração.
 
+Antes de configurar o webhook no Developer Hub, crie uma **URL de Entrada** na Mentorfy. Acesse **Integrações > Entrada**, clique em **+ Nova URL**, selecione **Eduzz** como gateway de pagamento, escolha os produtos e/ou categorias que devem ser liberados, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
+
 ## **Passo 1 — Acesse a seção de Webhooks no MyEduzz**
 
 No painel do MyEduzz, acesse o menu lateral esquerdo, role até a seção Avançado e clique em Webhooks.
@@ -37,7 +43,7 @@ Na tela Lista de configurações do Developer Hub, clique no botão "+ Nova conf
 Na tela de Criação de configuração, preencha os seguintes campos obrigatórios:
 
 - Nome da configuração — Ex: testementorfy
-- URL para envio dos dados — Ex: https://api.mentorfy.io/api/v1/webhooks/...
+- URL para envio dos dados — cole a URL de Entrada copiada da Mentorfy
 - Máximo de eventos enviados em paralelo para a URL — use o slider (padrão: 10)
 - Secret — mantenha o padrão ou configure conforme necessário
 
@@ -95,7 +101,7 @@ Com todos os testes validados com sucesso, feche o modal de resultados e clique 
 - Acesse MyEduzz → Avançado → Webhooks
 - Acesse o Developer Hub pelo banner de migração
 - Crie uma nova configuração de webhook
-- Preencha nome, URL, paralelo e secret
+- Preencha nome, URL de Entrada, paralelo e secret
 - Verifique a URL (HTTP 200 = sucesso)
 - Selecione os eventos desejados
 - Teste os eventos e envie os testes

@@ -6,17 +6,15 @@ sidebar_position: 6
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Kirvano.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar para salvar na Mentorfy e **copiar o token secreto** que fica junto.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Kirvano confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Kirvano. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Kirvano** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 3. Entre na sua conta
 ```
@@ -38,7 +36,7 @@ Navegue até Produtos > Adicionar Produto caso não tenha nenhum produto cadastr
 <br/>
 <br/>
 
-6. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy** e o produto que você criou na Kirvano. O token é o que copiamos no inicio. 
+6. Preencha o formulário com as informações solicitadas, usando a **URL de Entrada** que você copiou da Mentorfy e o produto que você criou na Kirvano.
 
 Aproveite e use o botão **Testar Integração** para confirmar que o link está certo.
 

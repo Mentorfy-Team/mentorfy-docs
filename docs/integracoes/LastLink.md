@@ -6,28 +6,30 @@ sidebar_position: 9
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a LastLink.
 
-Antes de configurar o webhook na LastLink, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar.
+Antes de configurar o webhook na LastLink, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a LastLink confirmar uma compra.
 
-1. Acesse o produto que deseja integrar na Mentorfy:
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+2. Preencha os dados da URL:
 
-2. **Copie o link** fornecido pela Mentorfy. Ele será usado como URL do webhook na LastLink e se parecerá com:
+- Em **Nome**, use algo fácil de identificar, como `LastLink - Nome do Produto`.
+- Em **Gateway de Pagamento**, selecione **LastLink**. Se a opção não aparecer, selecione **Genérico**.
+- Em **Produtos a Liberar** e/ou **Categorias a Liberar**, selecione o acesso que deve ser liberado após a compra.
 
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
-3. Entre na sua conta da LastLink e acesse o produto que deve disparar o webhook.
+3. Clique em **Criar** e depois use a ação **Copiar** para copiar a URL de Entrada gerada.
+
+4. Entre na sua conta da LastLink e acesse o produto que deve disparar o webhook.
 
 <img src="/docs/img/lastlink_produtos.png" width="360" alt="Lista de produtos na LastLink" decoding="async" loading="lazy" />
 
 <br/>
 <br/>
 
-4. No menu lateral do produto, clique em **Integrações**. Procure por **Lastlink - Webhook** e clique em **Ativar**.
+5. No menu lateral do produto, clique em **Integrações**. Procure por **Lastlink - Webhook** e clique em **Ativar**.
 
 <img src="/docs/img/lastlink_integracoes.png" alt="Menu Integrações no produto da LastLink" decoding="async" loading="lazy" />
 
@@ -39,24 +41,24 @@ https://app.mentorfy.io/api/webhooks/codigo123
 <br/>
 <br/>
 
-5. Com a integração ativa, clique em **Novo webhook** no canto superior direito.
+6. Com a integração ativa, clique em **Novo webhook** no canto superior direito.
 
 <img src="/docs/img/lastlink_novo_webhook.png" alt="Botão Novo webhook na LastLink" decoding="async" loading="lazy" />
 
 <br/>
 <br/>
 
-6. Preencha os dados do webhook:
+7. Preencha os dados do webhook:
 
 - Em **Nome do webhook**, use um nome fácil de identificar, como `Mentorfy`.
-- Em **URL**, cole exatamente o link copiado da Mentorfy.
+- Em **URL**, cole exatamente a URL de Entrada copiada da Mentorfy.
 
 <img src="/docs/img/lastlink_formulario_webhook.png" alt="Formulário de webhook da LastLink com nome e URL" decoding="async" loading="lazy" />
 
 <br/>
 <br/>
 
-7. Na seção **Eventos**, clique em **Selecionar** para escolher os eventos que a Mentorfy deve receber.
+8. Na seção **Eventos**, clique em **Selecionar** para escolher os eventos que a Mentorfy deve receber.
 
 <img src="/docs/img/lastlink_botao_selecionar_eventos.png" alt="Botão Selecionar eventos no webhook da LastLink" decoding="async" loading="lazy" />
 
@@ -86,7 +88,7 @@ Depois de marcar os eventos desejados, clique em **Confirmar**.
 <br/>
 <br/>
 
-8. Antes de salvar, você pode clicar em **Testar** para conferir se a URL cadastrada responde corretamente. Para finalizar, clique em **Salvar**.
+9. Antes de salvar, você pode clicar em **Testar** para conferir se a URL cadastrada responde corretamente. Para finalizar, clique em **Salvar**.
 
 <img src="/docs/img/lastlink_testar_salvar.png" alt="Botões Testar e Salvar do webhook da LastLink" decoding="async" loading="lazy" />
 
@@ -100,7 +102,7 @@ Após configurar o webhook na LastLink e na Mentorfy:
 1. Faça uma venda de teste ou utilize um evento de teste disponível na LastLink.
 2. Verifique se o evento aparece nos logs de integração da Mentorfy.
 3. Confirme se o cliente aparece na jornada e na lista de clientes da Mentorfy.
-4. Se o acesso não for liberado, confira se a URL copiada da Mentorfy está correta e se os eventos recomendados foram selecionados.
+4. Se o acesso não for liberado, confira se a URL de Entrada copiada da Mentorfy está correta e se os eventos recomendados foram selecionados.
 
 Caso queira visualizar o conteúdo técnico enviado pela LastLink, use uma ferramenta como o Webhook.site apenas para teste. Para liberar acessos reais, a URL precisa ser a URL da Mentorfy.
 

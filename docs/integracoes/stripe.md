@@ -30,12 +30,12 @@ Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Me
 
 
 
-1. Acesse a página de Integrações:
+1. Acesse a página de Integrações na Mentorfy:
 
-Acesse o painel de Integrações neste link: [https://mentorfy.io/mentor/integracoes](https://mentorfy.io/mentor/integracoes)
+Acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 <br/>
 
-2. **Crie uma URL**, vamos preencher as informações básicas:
+2. **Crie uma URL de Entrada**, preenchendo as informações básicas:
 <img src="/docs/img/stripe_integracao_mentorfy.png" height="200" alt="chave da API"  />
 <img src="/docs/img/stripe_integracao_mentorfy_2.png" height="200" alt="chave da API"  />
 <br/>
@@ -54,7 +54,7 @@ Para conseguir os price_id você precisa acessar o seu produto na stripe, clicar
 Dessa forma quando uma venda acontecer poderemos associar aos produtos da mentorfy que serão liberados.
 ```
 
-2.2 **Copie a URL criada**, usaremos ela lá na Stripe agora.
+2.2 **Copie a URL de Entrada criada**, usaremos ela lá na Stripe agora.
 <img src="/docs/img/stripe_integracao_mentorfy_link.png" height="200" alt="chave da API"  />
 <br/>
 <br/>
@@ -67,7 +67,7 @@ Dessa forma quando uma venda acontecer poderemos associar aos produtos da mentor
 
 4. Clique em **Add endpoint (Adicionar endpoint)**.
 
-5. No campo **Endpoint URL**, cole o link que você copiou da Mentorfy.
+5. No campo **Endpoint URL**, cole a URL de Entrada que você copiou da Mentorfy.
 
 6. Em **Select events to listen to (Selecione os eventos para ouvir)**, adicione os seguintes eventos:
    - `invoice.payment_succeeded`

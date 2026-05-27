@@ -8,16 +8,15 @@ Siga esse passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Me
 
 ## Link Webhook
 
-Acesse o seu produto que você deseja integrar:
+Antes de configurar o webhook no Digital Manager Guru, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando o Guru confirmar uma venda.
 
-```bash
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
-Copie o link e salve ele, iremos usar logo em seguida. Ele irá parecer com esse:
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
+2. Preencha a URL com um nome descritivo, selecione **DM Guru** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados.
+3. Clique em **Criar** e copie a URL gerada.
 
-```bash
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 ## Plataforma Digital Manager Guru
 
@@ -45,7 +44,7 @@ Acesse a plataforma do Digital Manager Guru:
 3- No modal **Add Webhook**, configure os seguintes campos:
 
 - **Name**: Dê um nome para identificar a integração (ex: "Mentorfy - Entrega de Curso")
-- **URL**: Cole aqui a URL de Entrada que você gerou dentro da Mentorfy (na aba Integrações > Entrada)
+- **URL**: Cole aqui a URL de Entrada que você gerou na Mentorfy
 - **Concurrent Requests**: Define o limite de requisições simultâneas (o padrão costuma ser 5)
 - **Status**: Selecione quais status de venda devem disparar o aviso (ex: selecione "Aprovada/Paga" para liberar o acesso ao aluno)
 - **Filter by**: Escolha **All** para enviar todas as vendas ou **Products** se quiser filtrar apenas produtos específicos

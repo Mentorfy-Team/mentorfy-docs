@@ -6,17 +6,15 @@ sidebar_position: 3
 
 Siga este passo a passo para integrar seu fluxo de vendas ao fluxo de entrega Mentorfy usando a Pagar.me.
 
-Antes de configurar o webhook, precisamos **copiar o link fornecido pela Mentorfy** do produto que deseja integrar e **copiar a chave da API da Pagar.me** para salvar na Mentorfy.
+Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL define quais produtos, categorias ou turmas serão liberados quando a Pagar.me confirmar uma compra.
 
-1. Acesse o seu produto que deseja integrar:
-```
-Minhas mentorias > Mentoria Escolhida > Integrações
-```
+1. Na Mentorfy, acesse **Integrações > Entrada** e clique em **+ Nova URL**.
 
-2. **Copie o link** fornecido pela Mentorfy, usaremos ele para configurar o webhook na Pagar.me. Ele se parecerá com:
-```
-https://app.mentorfy.io/api/webhooks/codigo123
-```
+2. Preencha a URL com um nome descritivo, selecione **Pagar.me** como gateway de pagamento e escolha os produtos e/ou categorias que devem ser liberados. Depois, clique em **Criar** e copie a URL gerada.
+
+:::tip
+Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
+:::
 
 3. Entre na sua conta
 ```
@@ -30,7 +28,7 @@ Navegue até Configurações > Webhooks.
 <img src="/docs/img/pagarme_cadastrar.jpg" height="200" alt="chave da API" /> 
 <br/>
 
-5. Preencha o formulário com as seguintes informações, **lembrando que o link deve ser o mesmo que você copiou da Mentorfy**:
+5. Preencha o formulário com as informações solicitadas, usando a **URL de Entrada** que você copiou da Mentorfy:
 
 <img src="/docs/img/pagarme_form1.jpg" alt="chave da API" />
 <img src="/docs/img/pagarme_form2.jpg" alt="chave da API" /> 
