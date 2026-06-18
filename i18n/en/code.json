@@ -1,54 +1,54 @@
 {
   "homepage.hero.title": {
-    "message": "Documentação Mentorfy"
+    "message": "Mentorfy Documentation"
   },
   "homepage.hero.subtitle": {
-    "message": "De mentores para mentores. Guias, integrações e suporte em um só lugar."
+    "message": "From mentors to mentors. Guides, integrations, and support in one place."
   },
   "homepage.hero.cta.explore": {
-    "message": "Explorar documentação"
+    "message": "Explore documentation"
   },
   "homepage.hero.cta.help": {
-    "message": "Central de ajuda"
+    "message": "Help center"
   },
   "homepage.layout.title": {
-    "message": "Início"
+    "message": "Home"
   },
   "homepage.layout.description": {
-    "message": "Documentação oficial da Mentorfy. Guia do mentor, API e suporte."
+    "message": "Official Mentorfy documentation. Mentor's guide, API, and support."
   },
   "guideSections.ariaLabel": {
-    "message": "Seções do guia"
+    "message": "Guide sections"
   },
   "guideSections.title": {
-    "message": "Seções do guia"
+    "message": "Guide sections"
   },
   "homepage.features.construction.title": {
-    "message": "Em construção"
+    "message": "Under construction"
   },
   "homepage.features.construction.description": {
-    "message": "Estamos expandindo, e para levamos todo o potencial da Mentorfy estamos disponibilizando uma central de informações para que você possa tirar o máximo de proveito da plataforma. Essa é a Mentorfy Docs, guiando mentores e mentorados para o sucesso."
+    "message": "We are expanding, and to bring you the full potential of Mentorfy we are providing an information hub so you can get the most out of the platform. This is Mentorfy Docs, guiding mentors and mentees toward success."
   },
   "search.hero.typingPlaceholder": {
-    "message": "Pesquisa rápida"
+    "message": "Quick search"
   },
   "search.hero.openAriaLabel": {
-    "message": "Abrir pesquisa"
+    "message": "Open search"
   },
   "search.input.placeholder": {
-    "message": "Buscar na documentação..."
+    "message": "Search the documentation..."
   },
   "search.navbar.openAriaLabel": {
-    "message": "Buscar"
+    "message": "Search"
   },
   "search.input.ariaLabel": {
-    "message": "Buscar na documentação"
+    "message": "Search the documentation"
   },
   "search.clear": {
-    "message": "Limpar"
+    "message": "Clear"
   },
   "search.close": {
-    "message": "Fechar"
+    "message": "Close"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
     "message": "Close navigation bar",
@@ -378,6 +378,6 @@
     "description": "The title of the tag list page"
   },
   "search.hero.inputAriaLabel": {
-    "message": "Pesquisa rápida"
+    "message": "Quick search"
   }
 }

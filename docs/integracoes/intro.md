@@ -14,7 +14,7 @@ A área de Integrações permite configurar webhooks e conexões com plataformas
 
 As URLs de Entrada são utilizadas para receber webhooks de gateways de pagamento. Cada URL gerada aqui libera automaticamente o acesso do aluno ao produto correspondente quando uma compra é confirmada na plataforma de origem.
 
-### **Como criar uma nova URL de Entrada**
+### **Como criar uma nova URL de Entrada** {#como-criar-uma-nova-url-de-entrada}
 
 Clique em **"+ Nova URL"** no canto superior direito. Um formulário será exibido com os seguintes campos:
 

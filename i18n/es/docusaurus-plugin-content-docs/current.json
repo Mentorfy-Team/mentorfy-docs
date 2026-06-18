@@ -1,22 +1,22 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Siguiente",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Área de Membros": {
-    "message": "Área de Membros",
+    "message": "Área de Miembros",
     "description": "The label for category 'Área de Membros' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Área de Membros.link.generated-index.description": {
-    "message": "Informações básicas sobre o funcionamento da Área de Membros",
+    "message": "Información básica sobre el funcionamiento del Área de Miembros",
     "description": "The generated-index page description for category 'Área de Membros' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Área do Mentor": {
-    "message": "Área do Mentor",
+    "message": "Área del Mentor",
     "description": "The label for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Área do Mentor.link.generated-index.description": {
-    "message": "Ferramentas e funcionalidades disponíveis na Área do Mentor",
+    "message": "Herramientas y funcionalidades disponibles en el Área del Mentor",
     "description": "The generated-index page description for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Clientes": {
@@ -24,15 +24,15 @@
     "description": "The label for category 'Clientes' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Clientes.link.generated-index.description": {
-    "message": "Gerencies seus clientes e seus acessos, assim como seus times de mentores.",
+    "message": "Gestiona tus clientes y sus accesos, así como sus equipos de mentores.",
     "description": "The generated-index page description for category 'Clientes' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Integrações": {
-    "message": "Integrações",
+    "message": "Integraciones",
     "description": "The label for category 'Integrações' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Integrações.link.generated-index.description": {
-    "message": "Guia para integrar a Mentorfy em getways de pagamento.",
+    "message": "Guía para integrar Mentorfy con pasarelas de pago.",
     "description": "The generated-index page description for category 'Integrações' in sidebar 'tutorialSidebar'"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "label": "Clients",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Manage your clients and their accesses, as well as your mentor teams."
+  }
+}

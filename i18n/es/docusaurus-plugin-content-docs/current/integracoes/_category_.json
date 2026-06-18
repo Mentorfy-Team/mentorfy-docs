@@ -1,0 +1,8 @@
+{
+  "label": "Integraciones",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Guía para integrar Mentorfy con gateways de pago."
+  }
+}
