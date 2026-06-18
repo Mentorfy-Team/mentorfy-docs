@@ -1,23 +1,23 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { translate } from '@docusaurus/Translate';
 import useSearch, { MIN_CHARS } from './useSearch';
 import { ResultsDropdown, SearchIcon } from './index';
 import styles from './styles.module.css';
 
-const TYPING_TEXT = 'Pesquisa rápida';
 const CHAR_DELAY = 80;
 const PAUSE_AFTER_TYPING = 1800;
 const ERASE_DELAY = 40;
 
-function useTypingAnimation(onComplete) {
+function useTypingAnimation(text, onComplete) {
   const [displayed, setDisplayed] = useState('');
   const [phase, setPhase] = useState('typing');
   const timeoutRef = useRef(null);
 
   useEffect(() => {
     if (phase === 'typing') {
-      if (displayed.length < TYPING_TEXT.length) {
+      if (displayed.length < text.length) {
         timeoutRef.current = setTimeout(() => {
-          setDisplayed(TYPING_TEXT.slice(0, displayed.length + 1));
+          setDisplayed(text.slice(0, displayed.length + 1));
         }, CHAR_DELAY);
       } else {
         timeoutRef.current = setTimeout(() => setPhase('pause'), PAUSE_AFTER_TYPING);
@@ -35,7 +35,7 @@ function useTypingAnimation(onComplete) {
       }
     }
     return () => clearTimeout(timeoutRef.current);
-  }, [displayed, phase]);
+  }, [displayed, phase, text]);
 
   return { displayed, phase, cancel: () => { clearTimeout(timeoutRef.current); setPhase('done'); } };
 }
@@ -47,7 +47,11 @@ export default function HeroSearch() {
   const containerRef = useRef(null);
   const search = useSearch();
 
-  const typing = useTypingAnimation(() => setAnimDone(true));
+  const typingText = translate({
+    id: 'search.hero.typingPlaceholder',
+    message: 'Pesquisa rápida',
+  });
+  const typing = useTypingAnimation(typingText, () => setAnimDone(true));
 
   const expand = useCallback(() => {
     typing.cancel();
@@ -90,7 +94,10 @@ export default function HeroSearch() {
           className={styles.heroTeaser}
           onClick={expand}
           type="button"
-          aria-label="Abrir pesquisa"
+          aria-label={translate({
+            id: 'search.hero.openAriaLabel',
+            message: 'Abrir pesquisa',
+          })}
         >
           <span className={`${styles.heroTeaserIcon} ${animDone ? styles.heroTeaserIconPulse : ''}`}>
             <SearchIcon size={15} />
@@ -115,7 +122,10 @@ export default function HeroSearch() {
             ref={inputRef}
             type="text"
             className={styles.heroSearchInput}
-            placeholder="Buscar na documentação..."
+            placeholder={translate({
+              id: 'search.input.placeholder',
+              message: 'Buscar na documentação...',
+            })}
             value={search.query}
             onChange={search.handleChange}
             onKeyDown={handleKeyDown}
@@ -124,7 +134,10 @@ export default function HeroSearch() {
                 search.setIsOpen(true);
               }
             }}
-            aria-label="Pesquisa rápida"
+            aria-label={translate({
+              id: 'search.hero.inputAriaLabel',
+              message: 'Pesquisa rápida',
+            })}
             aria-expanded={search.isOpen}
             aria-haspopup="listbox"
             role="combobox"

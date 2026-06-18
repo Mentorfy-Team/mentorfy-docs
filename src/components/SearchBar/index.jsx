@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { translate } from '@docusaurus/Translate';
 import useSearch, { MIN_CHARS } from './useSearch';
 import styles from './styles.module.css';
 
@@ -147,7 +148,10 @@ export default function SearchBar() {
         <button
           className={styles.lupaButton}
           onClick={() => setExpanded(true)}
-          aria-label="Buscar"
+          aria-label={translate({
+            id: 'search.navbar.openAriaLabel',
+            message: 'Buscar',
+          })}
           type="button"
         >
           <SearchIcon size={18} />
@@ -163,11 +167,17 @@ export default function SearchBar() {
               ref={inputRef}
               type="text"
               className={styles.searchInput}
-              placeholder="Buscar na documentação..."
+              placeholder={translate({
+                id: 'search.input.placeholder',
+                message: 'Buscar na documentação...',
+              })}
               value={search.query}
               onChange={search.handleChange}
               onKeyDown={handleKeyDown}
-              aria-label="Buscar na documentação"
+              aria-label={translate({
+                id: 'search.input.ariaLabel',
+                message: 'Buscar na documentação',
+              })}
               aria-expanded={search.isOpen}
               aria-haspopup="listbox"
               aria-controls="search-results"
@@ -177,7 +187,11 @@ export default function SearchBar() {
             <button
               className={styles.clearButton}
               onClick={search.query ? () => { search.clear(); inputRef.current?.focus(); } : closeSearch}
-              aria-label={search.query ? 'Limpar' : 'Fechar'}
+              aria-label={
+                search.query
+                  ? translate({ id: 'search.clear', message: 'Limpar' })
+                  : translate({ id: 'search.close', message: 'Fechar' })
+              }
               type="button"
             >
               <CloseIcon />

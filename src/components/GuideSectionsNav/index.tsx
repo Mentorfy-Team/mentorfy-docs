@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "@docusaurus/Link";
+import Translate, { translate } from "@docusaurus/Translate";
 import { useLocation } from "@docusaurus/router";
 import {
   useDoc,
@@ -70,8 +71,16 @@ export default function GuideSectionsNav(): React.ReactElement | null {
   if (!entries.length) return null;
 
   return (
-    <nav className={styles.nav} aria-label="Seções do guia">
-      <h2 className={styles.title}>Seções do guia</h2>
+    <nav
+      className={styles.nav}
+      aria-label={translate({
+        id: "guideSections.ariaLabel",
+        message: "Seções do guia",
+      })}
+    >
+      <h2 className={styles.title}>
+        <Translate id="guideSections.title">Seções do guia</Translate>
+      </h2>
       <ul className={styles.list}>
         {entries.map(({ href, label, key }) => (
           <li key={key}>

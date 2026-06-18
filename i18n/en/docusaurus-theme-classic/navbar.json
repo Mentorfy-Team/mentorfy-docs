@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Mentorfy Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Mentorfy Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guia do Mentor": {
+    "message": "Guia do Mentor",
+    "description": "Navbar item with label Guia do Mentor"
+  }
+}

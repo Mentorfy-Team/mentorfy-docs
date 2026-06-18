@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ArrowUpRight } from "lucide-react";
 import HeroSearch from "@site/src/components/SearchBar/HeroSearch";
@@ -23,17 +24,23 @@ function HomeHero() {
       <div className={styles.heroContent}>
         <HeroSearch />
 
-        <h1 className={styles.heroTitle}>Documentação Mentorfy</h1>
+        <h1 className={styles.heroTitle}>
+          <Translate id="homepage.hero.title">Documentação Mentorfy</Translate>
+        </h1>
 
         <p className={styles.heroSubtitle}>
-          De mentores para mentores. Guias, integrações e suporte em um só
-          lugar.
+          <Translate id="homepage.hero.subtitle">
+            De mentores para mentores. Guias, integrações e suporte em um só
+            lugar.
+          </Translate>
         </p>
 
         <div className={styles.heroActions}>
           <Link to="/docs/intro" className={styles.heroButton}>
             <span className={styles.heroButtonLabel}>
-              Explorar documentação
+              <Translate id="homepage.hero.cta.explore">
+                Explorar documentação
+              </Translate>
             </span>
             <span className={styles.heroButtonIcon}>
               <ArrowUpRight className={styles.arrowDefault} />
@@ -45,7 +52,7 @@ function HomeHero() {
             href="https://help.mentorfy.io"
             className={styles.heroSecondaryLink}
           >
-            Central de ajuda
+            <Translate id="homepage.hero.cta.help">Central de ajuda</Translate>
           </Link>
         </div>
       </div>
@@ -56,8 +63,15 @@ function HomeHero() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title="Início"
-      description="Documentação oficial da Mentorfy. Guia do mentor, API e suporte."
+      title={translate({
+        id: "homepage.layout.title",
+        message: "Início",
+      })}
+      description={translate({
+        id: "homepage.layout.description",
+        message:
+          "Documentação oficial da Mentorfy. Guia do mentor, API e suporte.",
+      })}
     >
       <HomeHero />
       <main />

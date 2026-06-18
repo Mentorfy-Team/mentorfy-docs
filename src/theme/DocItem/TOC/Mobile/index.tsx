@@ -6,6 +6,7 @@ import React, { type ReactNode } from "react";
 import clsx from "clsx";
 import { ThemeClassNames } from "@docusaurus/theme-common";
 import { useCollapsible, Collapsible } from "@docusaurus/theme-common";
+import Translate from "@docusaurus/Translate";
 
 import GuideSectionsNav from "@site/src/components/GuideSectionsNav";
 
@@ -30,7 +31,7 @@ export default function DocItemTOCMobile(): ReactNode {
         className={clsx("clean-btn", styles.toggle, !collapsed && styles.toggleExpanded)}
         aria-expanded={!collapsed}
       >
-        Seções do guia
+        <Translate id="guideSections.title">Seções do guia</Translate>
       </button>
       <Collapsible lazy collapsed={collapsed} className={styles.collapsible}>
         <GuideSectionsNav />

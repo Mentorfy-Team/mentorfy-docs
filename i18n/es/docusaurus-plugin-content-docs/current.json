@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Área de Membros": {
+    "message": "Área de Membros",
+    "description": "The label for category 'Área de Membros' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Área de Membros.link.generated-index.description": {
+    "message": "Informações básicas sobre o funcionamento da Área de Membros",
+    "description": "The generated-index page description for category 'Área de Membros' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Área do Mentor": {
+    "message": "Área do Mentor",
+    "description": "The label for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Área do Mentor.link.generated-index.description": {
+    "message": "Ferramentas e funcionalidades disponíveis na Área do Mentor",
+    "description": "The generated-index page description for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Clientes": {
+    "message": "Clientes",
+    "description": "The label for category 'Clientes' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Clientes.link.generated-index.description": {
+    "message": "Gerencies seus clientes e seus acessos, assim como seus times de mentores.",
+    "description": "The generated-index page description for category 'Clientes' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Integrações": {
+    "message": "Integrações",
+    "description": "The label for category 'Integrações' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Integrações.link.generated-index.description": {
+    "message": "Guia para integrar a Mentorfy em getways de pagamento.",
+    "description": "The generated-index page description for category 'Integrações' in sidebar 'tutorialSidebar'"
+  }
+}

@@ -145,50 +145,71 @@ function collectMdFiles(dir) {
   return files;
 }
 
+// Resolve the docs source directory for the locale currently being built.
+// The default locale reads from `docs/`; other locales read their translated
+// copies under `i18n/<locale>/docusaurus-plugin-content-docs/current/`.
+// If a locale hasn't been translated yet, fall back to the default `docs/`
+// so the search box still works (matching Docusaurus's own content fallback).
+function resolveDocsDir(siteDir, i18n) {
+  const defaultDir = path.join(siteDir, 'docs');
+  const { currentLocale, defaultLocale } = i18n;
+  if (currentLocale && currentLocale !== defaultLocale) {
+    const localeDir = path.join(
+      siteDir,
+      'i18n',
+      currentLocale,
+      'docusaurus-plugin-content-docs',
+      'current',
+    );
+    if (fs.existsSync(localeDir)) return localeDir;
+  }
+  return defaultDir;
+}
+
+function buildSections(docsDir) {
+  loadCategoryLabels(docsDir);
+  const mdFiles = collectMdFiles(docsDir);
+  const allSections = [];
+  for (const file of mdFiles) {
+    const content = fs.readFileSync(file, 'utf-8');
+    allSections.push(...extractSections(content, file, docsDir));
+  }
+  return allSections;
+}
+
 module.exports = function searchIndexPlugin(context) {
   return {
     name: 'mentorfy-search-index',
 
     async postBuild({ outDir }) {
-      const docsDir = path.join(context.siteDir, 'docs');
+      // `outDir` is already locale-specific (e.g. build/, build/en, build/es),
+      // so the frontend's useBaseUrl('/search-index.json') resolves per locale.
+      const docsDir = resolveDocsDir(context.siteDir, context.i18n);
       if (!fs.existsSync(docsDir)) {
-        console.warn('[search-index] No docs directory found, skipping index generation.');
+        console.warn(
+          `[search-index] No docs directory found at ${docsDir}, skipping index generation.`,
+        );
         return;
       }
 
-      loadCategoryLabels(docsDir);
-
-      const mdFiles = collectMdFiles(docsDir);
-      const allSections = [];
-
-      for (const file of mdFiles) {
-        const content = fs.readFileSync(file, 'utf-8');
-        const sections = extractSections(content, file, docsDir);
-        allSections.push(...sections);
-      }
-
+      const allSections = buildSections(docsDir);
       const outputPath = path.join(outDir, 'search-index.json');
       fs.writeFileSync(outputPath, JSON.stringify(allSections, null, 0));
-      console.log(`[search-index] Generated index with ${allSections.length} entries → ${outputPath}`);
+      console.log(
+        `[search-index] [${context.i18n.currentLocale}] Generated index with ${allSections.length} entries → ${outputPath}`,
+      );
     },
 
     configureWebpack() {
       return {
         devServer: {
           setupMiddlewares(middlewares, devServer) {
-            const docsDir = path.join(context.siteDir, 'docs');
+            const docsDir = resolveDocsDir(context.siteDir, context.i18n);
             devServer.app.get('/search-index.json', (_req, res) => {
               if (!fs.existsSync(docsDir)) {
                 return res.json([]);
               }
-              loadCategoryLabels(docsDir);
-              const mdFiles = collectMdFiles(docsDir);
-              const allSections = [];
-              for (const file of mdFiles) {
-                const content = fs.readFileSync(file, 'utf-8');
-                allSections.push(...extractSections(content, file, docsDir));
-              }
-              res.json(allSections);
+              res.json(buildSections(docsDir));
             });
             return middlewares;
           },

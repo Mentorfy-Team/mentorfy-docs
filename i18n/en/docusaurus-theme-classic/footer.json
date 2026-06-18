@@ -1,0 +1,38 @@
+{
+  "link.title.Documentação": {
+    "message": "Documentação",
+    "description": "The title of the footer links column with title=Documentação in the footer"
+  },
+  "link.title.Suporte": {
+    "message": "Suporte",
+    "description": "The title of the footer links column with title=Suporte in the footer"
+  },
+  "link.title.Legal": {
+    "message": "Legal",
+    "description": "The title of the footer links column with title=Legal in the footer"
+  },
+  "link.item.label.Guia do Mentor": {
+    "message": "Guia do Mentor",
+    "description": "The label of footer link with label=Guia do Mentor linking to /docs/intro"
+  },
+  "link.item.label.Central de Ajuda": {
+    "message": "Central de Ajuda",
+    "description": "The label of footer link with label=Central de Ajuda linking to https://help.mentorfy.io"
+  },
+  "link.item.label.Fale Conosco": {
+    "message": "Fale Conosco",
+    "description": "The label of footer link with label=Fale Conosco linking to mailto:suporte@mentorfy.io"
+  },
+  "link.item.label.Termos de Uso": {
+    "message": "Termos de Uso",
+    "description": "The label of footer link with label=Termos de Uso linking to https://mentorfy.io/terms"
+  },
+  "link.item.label.Privacidade": {
+    "message": "Privacidade",
+    "description": "The label of footer link with label=Privacidade linking to https://mentorfy.io/privacy"
+  },
+  "copyright": {
+    "message": "© 2026 Mentorfy. Todos os direitos reservados.",
+    "description": "The footer copyright"
+  }
+}

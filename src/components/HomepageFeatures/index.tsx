@@ -1,23 +1,28 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: string;
+  title: JSX.Element;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Em contrução',
+    title: (
+      <Translate id="homepage.features.construction.title">
+        Em construção
+      </Translate>
+    ),
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
+      <Translate id="homepage.features.construction.description">
         Estamos expandindo, e para levamos todo o potencial da Mentorfy estamos disponibilizando
         uma central de informações para que você possa tirar o máximo de proveito da plataforma.
         Essa é a Mentorfy Docs, guiando mentores e mentorados para o sucesso.
-      </>
+      </Translate>
     ),
     Svg: undefined
   },
