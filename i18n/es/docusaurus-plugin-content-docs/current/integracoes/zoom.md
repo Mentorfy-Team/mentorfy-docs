@@ -6,6 +6,27 @@ sidebar_position: 10
 
 La integración Zoom permite conectar la cuenta del mentor con Mentorfy para crear **eventos Zoom** directamente en las reuniones y poner el acceso a disposición en el área del alumno. Tras la configuración, mentor y participantes viven una experiencia **100% Zoom**, optimizada también para dispositivos móviles.
 
+## Tutorial de integración en video
+
+Mira el paso a paso en video para configurar tu integración Zoom con Mentorfy:
+<div style={{ position: "relative", width: "100%", paddingBottom: "56.25%", marginBottom: "24px" }}>
+  <iframe
+    src="https://player.mediadelivery.net/play/373508/ac92a23a-9bbd-48e6-a081-f07de11d8ec5"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      border: "none",
+      borderRadius: "8px"
+    }}
+    allowFullScreen
+    allow="encrypted-media"
+    title="Tutorial Zoom Mentorfy"
+  ></iframe>
+</div>
+
 ---
 
 ## **Visión general**
