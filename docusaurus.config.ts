@@ -133,8 +133,16 @@ const config: Config = {
           title: 'Suporte',
           items: [
             {
-              label: 'Central de Ajuda',
-              href: 'https://help.mentorfy.io',
+              label: 'Support (English)',
+              href: 'https://mentorfy.io/support',
+            },
+            {
+              label: 'Suporte (Português)',
+              href: 'https://mentorfy.io/suporte',
+            },
+            {
+              label: 'Documentation',
+              to: '/en/docs/suporte',
             },
             {
               label: 'Fale Conosco',
@@ -147,11 +155,11 @@ const config: Config = {
           items: [
             {
               label: 'Termos de Uso',
-              href: 'https://mentorfy.io/terms',
+              href: 'https://mentorfy.io/docs/terms-of-use',
             },
             {
               label: 'Privacidade',
-              href: 'https://mentorfy.io/privacy',
+              href: 'https://mentorfy.io/docs/privacy-policy',
             },
           ],
         },
