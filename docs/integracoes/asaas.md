@@ -16,45 +16,23 @@ Antes de configurar o webhook, crie uma **URL de Entrada** na Mentorfy. Essa URL
 Veja o passo a passo completo em [Como criar uma URL de Entrada](/docs/integracoes/intro#como-criar-uma-nova-url-de-entrada).
 :::
 
-3. Entre na sua conta Asaas e acesse o menu do usuário
-```
-Navegue até Integrações > Chave da API
-```
-<img src="/docs/img/asaas_apikey_nav.png" alt="chave da API"  /> 
-<br/>
-
-4. Clique em **Gerar nova chave de API**, após a verificação ele irá permitir copiar sua chave, **copie essa chave** gerada.
-
-<img src="/docs/img/asaas_apikey.png" alt="chave da API" /> 
-<br/>
-
-5. Volte para a Mentorfy, acesse **Integrações > Chaves** e cadastre a chave gerada para a plataforma Asaas.
-
-<img src="/docs/img/asaas_apikey_mentorfy.png" alt="chave da API" /> 
-<br/>
-<br/>
-
-6. **Salve as configurações.**
-
 ## Configurando o Webhook no Asaas
 
-1. Acesse o menu do usuário no Asaas.
-```
-Navegue até Integrações > Webhooks
-```
+1. Clique no **ícone da conta** no canto superior direito do Asaas.
 
-2. Na sua primeira visita, você verá um botão para criar seu primeiro Webhook. Clique em "**Criar Webhook**".
+2. Selecione **Integrações**. Será aberta a página de integrações, onde você verá a aba **Webhooks**.
 
-<img src="/docs/img/asaas_webhooks.png" alt="webhooks" />
+<img src="/docs/img/asaas_webhooks.png" alt="Navegação até Integrações > Webhooks no Asaas" />
 <br/>
 
-3. **Preencha o formulário** com as seguintes informações:
+3. Na sua primeira visita, você verá um botão para criar seu primeiro Webhook. Clique em "**Criar Webhook**".
+
+4. **Preencha o formulário** com as seguintes informações:
    - Webhook deve ser marcado como ativo
    - Nome para o webhook
    - URL que receberá as informações do evento: cole a **URL de Entrada** que você copiou da Mentorfy
    - E-mail para notificações em caso de erros de comunicação
    - Versão da API V3
-   - Token de autenticação (chave da API que você copiou do Asaas)
    - Ative a fila de sincronização
    - Tipo de envio Sequencial
 
@@ -62,13 +40,13 @@ Navegue até Integrações > Webhooks
 <br/>
 <br/>
 
-4. **Selecione todos os eventos de Cobrança**. Você pode consultar a lista completa de eventos na documentação do Asaas.
+5. **Selecione todos os eventos de Cobrança**. Você pode consultar a lista completa de eventos na documentação do Asaas.
 
 <img src="/docs/img/asaas_adicionar_webhook_eventos.png" alt="Adicionar Webhook" />
 <br/>
 <br/>
 
-5. **Salve as configurações**.
+6. **Salve as configurações**.
 
 Você pode ter até 10 Webhooks configurados por conta, sem restrições de endereço. Também é possível editar ou excluir Webhooks criados.
 
@@ -77,7 +55,7 @@ Você pode ter até 10 Webhooks configurados por conta, sem restrições de ende
 
 ## Testando a integração
 
-Após configurar o webhook no Asaas e na Mentorfy:
+Após configurar o webhook no Asaas:
 
 1. Faça uma venda de teste no Asaas.
 2. Verifique se o evento é recebido corretamente na Mentorfy.
