@@ -142,7 +142,7 @@ const config: Config = {
             },
             {
               label: 'Documentation',
-              to: '/en/docs/suporte',
+              href: 'https://docs.mentorfy.io/en/docs/suporte',
             },
             {
               label: 'Fale Conosco',

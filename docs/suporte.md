@@ -6,7 +6,7 @@ sidebar_position: 1
 
 **Este aplicativo está disponível principalmente em português brasileiro (pt-BR).** A interface, materiais de suporte e comunicações são fornecidos em português para mentores e alunos no Brasil.
 
-Para documentação em inglês, acesse a [versão em inglês desta página](/en/docs/suporte) e a [documentação Zoom em inglês](/en/docs/integracoes/zoom).
+Para documentação em inglês, acesse a [versão em inglês desta página](https://docs.mentorfy.io/en/docs/suporte) e a [documentação Zoom em inglês](https://docs.mentorfy.io/en/docs/integracoes/zoom).
 
 ## Como obter ajuda
 

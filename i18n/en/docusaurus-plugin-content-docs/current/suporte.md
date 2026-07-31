@@ -6,7 +6,7 @@ sidebar_position: 1
 
 **This app is currently available in Brazilian Portuguese (pt-BR) only.** The user interface, support materials, and communications are provided in Portuguese for mentors and students in Brazil.
 
-Portuguese version: [Suporte (pt-BR)](/docs/suporte)
+Portuguese version: [Suporte (pt-BR)](https://docs.mentorfy.io/docs/suporte)
 
 ## How to get help
 
@@ -23,7 +23,7 @@ Portuguese version: [Suporte (pt-BR)](/docs/suporte)
 
 ### How do I connect Zoom?
 
-Go to **Integrations > Zoom** in the mentor area, click **Connect Zoom**, and authorize your account. See the full guide in [Zoom Integration](/en/docs/integracoes/zoom).
+Go to **Integrations > Zoom** in the mentor area, click **Connect Zoom**, and authorize your account. See the full guide in [Zoom Integration](/docs/integracoes/zoom).
 
 ### Where is the privacy policy?
 
@@ -37,4 +37,4 @@ Go to **Integrations > Zoom** in the mentor area, click **Connect Zoom**, and au
 
 ## Documentation
 
-Browse the [Mentor Guide](/en/docs/intro) for tutorials on integrations, member area, meetings, and platform tools.
+Browse the [Mentor Guide](/docs/intro) for tutorials on integrations, member area, meetings, and platform tools.
