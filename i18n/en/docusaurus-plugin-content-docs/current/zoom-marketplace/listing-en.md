@@ -28,14 +28,16 @@ Mentorfy is a mentoring platform for creators and educators. This Zoom integrati
 - Zoom Meeting SDK embedded in the student member area
 - Optional Mentorfy login before joining
 - Waiting room, mute on entry, join before host, and recording settings
-- Attendance tracking (join, heartbeat, leave) synced with Mentorfy
+- Cloud recording import: after the session, the replay is copied automatically into the mentor's private Mentorfy media library so students can watch it in the member area
+- Attendance tracking (join, heartbeat, leave) synced with Mentorfy, reconciled with Zoom's participant data after the meeting ends
 
 **How it works**
 
 1. Mentor opens **Integrations > Zoom** and clicks **Connect Zoom**
 2. Mentor authorizes Mentorfy on Zoom OAuth
-3. Mentor creates a meeting with type **Zoom Event**
+3. Mentor creates a meeting with type **Zoom Event** (optionally enabling **Record to cloud**)
 4. Students open the guest link from the member area and join via Zoom Meeting SDK
+5. After the session, the cloud recording is imported automatically and the meeting shows **View Recording**
 
 **Support**
 
@@ -67,16 +69,17 @@ Paste into each scope field in the Zoom App Marketplace / Developer console:
 | Scope | Usage description |
 | ----- | ----------------- |
 | `user:read:user` | Read the connected mentor's Zoom user profile (user ID, email) to display connection status on the Integrations page and associate meetings with the correct Zoom account. |
-| `user:read:zak` | Obtain a Zoom Access Token (ZAK) so the meeting host can start or join as host through the Zoom Meeting SDK from Mentorfy. |
+| `user:read:token` | Together with `user:read:zak`, retrieve the short-lived host token used to start meetings via the Zoom Meeting SDK. Never stored. |
+| `user:read:zak` | Obtain a Zoom Access Token (ZAK) so the meeting host can start or join as host through the Zoom Meeting SDK from Mentorfy. Never stored. |
 | `meeting:write:meeting` | Create Zoom meetings on behalf of the connected mentor when they schedule a **Zoom Event** in Mentorfy. |
-| `meeting:update:meeting` | Update Zoom meeting settings (time, password, waiting room, etc.) when the mentor edits a meeting in Mentorfy. |
-| `meeting:delete:meeting` | Delete or cancel Zoom meetings when the mentor removes or cancels a meeting in Mentorfy. |
-| `meeting:read:meeting` | Read meeting details to display join links, meeting number, and status to mentors and authorized students. |
-| `webinar:write:webinar` | Create Zoom webinars when the mentor selects webinar as the event type. |
-| `webinar:update:webinar` | Update webinar settings when the mentor edits an event in Mentorfy. |
-| `webinar:delete:webinar` | Delete webinars when the mentor cancels an event in Mentorfy. |
+| `meeting:read:meeting` | Read meeting details to keep the Mentorfy session record in sync with Zoom. |
+| `meeting:read:participant` | Reconcile attendance after a session ends (participant name, email, join/leave times shown to the session's mentor). |
+| `meeting:read:list_past_instances` | List a past meeting's instances so recordings of ended-and-restarted sessions can all be located. |
+| `cloud_recording:read:list_recording_files` | List a meeting's cloud recording files after the session (recording.completed webhook or scheduled reconciliation) to import the replay into the mentor's private media library. |
+| `cloud_recording:read:list_user_recordings` | Date-range fallback lookup of the mentor's recordings when a per-meeting lookup cannot locate one (e.g. missed webhook). |
+| `cloud_recording:read:recording` | Read an individual recording's details when resolving a playable/downloadable file for the import. |
 
-Only include scopes that are enabled on your Zoom app. Remove rows for scopes you do not request.
+Only include scopes that are enabled on your Zoom app. Remove rows for scopes you do not request. The full per-scope storage disclosure (what is stored, encrypted vs plain text) lives in the app's Scope Description field in the Marketplace console.
 
 ## App Gallery
 

@@ -31,12 +31,13 @@ Mira el paso a paso en video para configurar tu integración Zoom con Mentorfy:
 
 ## **Visión general**
 
-El flujo completo involucra cuatro etapas principales:
+El flujo completo involucra cinco etapas principales:
 
 1. **Conectar la cuenta Zoom** — autorización OAuth en la pestaña Integraciones.
 2. **Crear una reunión** — en el área Reuniones, con el tipo *Evento Zoom*.
 3. **Compartir los enlaces** — enlace de invitado para participantes y enlace de moderador para el mentor.
 4. **Unirse a la reunión** — acceso a la sala con la interfaz nativa de Zoom.
+5. **Ver el replay** — después de la sesión, la grabación en la nube se importa automáticamente y la asistencia se sincroniza.
 
 :::info Requisitos previos
 - Cuenta activa en Mentorfy con permiso de acceso a **Integraciones** y **Reuniones**.
@@ -84,6 +85,7 @@ En el modal de creación, selecciona el tipo **Evento Zoom** y completa la infor
 | **Sala de espera** | Los participantes esperan la aprobación del moderador antes de entrar. |
 | **Unirse antes del host** | Permite que los participantes entren antes que el mentor. |
 | **Silenciar al entrar** | El micrófono de los participantes comienza desactivado. |
+| **Grabar en la nube** | Graba la sesión en la nube de Zoom; después de la reunión, el replay se importa automáticamente a tu biblioteca de Mentorfy. |
 
 ![Modal de creación de reunión con Evento Zoom seleccionado](/docs/img/Zoom_Mentorfy_Criar_reuniao.png)
 
@@ -126,6 +128,27 @@ Haz clic en **Join** para entrar a la sala. A partir de ahí, la experiencia es 
 
 ---
 
+## **6. Grabación en la nube y asistencia**
+
+### Replay de la sesión
+
+Activa **Grabar en la nube** al crear la reunión (o inicia la grabación en la nube manualmente desde el menú **Grabar** de Zoom durante la sesión). Cuando la reunión termina y Zoom concluye el procesamiento de la grabación, Mentorfy importa el replay automáticamente:
+
+- La reunión muestra el botón **Ver Grabación** en cuanto el replay está listo — normalmente pocos minutos después del fin de la sesión.
+- El replay se almacena en tu biblioteca de medios privada de Mentorfy, y los alumnos con acceso a la reunión pueden verlo en el área de miembros.
+- Si finalizas y reabres la misma reunión, las grabaciones de todas las instancias se localizan e importan.
+- La grabación original permanece intacta en tu cuenta Zoom — Mentorfy nunca modifica ni elimina nada.
+
+### Asistencia
+
+Después del fin de la sesión, Mentorfy sincroniza la lista de participantes de Zoom (nombre de visualización, correo electrónico y horarios de entrada/salida) para que puedas revisar la asistencia en la página de la reunión.
+
+:::info Reconexión necesaria para integraciones existentes
+La importación de grabaciones y la sincronización de asistencia usan nuevos permisos de lectura (grabaciones en la nube y participantes). Si conectaste Zoom antes de esta actualización, ve a **Integraciones > Zoom** y reautoriza la app (desconecta y conecta de nuevo) para conceder los nuevos permisos. Las reuniones siguen funcionando normalmente — pero los replays solo se importan después de la reautorización.
+:::
+
+---
+
 ## **Conclusión**
 
 Con la integración Zoom configurada, puedes:
@@ -133,5 +156,6 @@ Con la integración Zoom configurada, puedes:
 - Crear eventos en vivo directamente desde Mentorfy.
 - Compartir enlaces de acceso con alumnos en el área del miembro.
 - Conducir reuniones con la infraestructura y calidad de Zoom.
+- Poner el replay a disposición de los alumnos en el área de miembros.
 
 En caso de duda, comunícate con nuestro soporte a través del chat en la plataforma o por correo electrónico a contato@mentorfy.io.
