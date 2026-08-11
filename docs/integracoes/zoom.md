@@ -61,7 +61,7 @@ In the sidebar menu, go to **Integrations** and select the **Zoom** tab.
 
 The page displays the connection status. While the account is not linked, the card will show **"Zoom not connected"**.
 
-![Zoom integration page in Mentorfy (English UI)](/docs/img/zoom-marketplace/integrations-zoom-en.svg)
+![Zoom integration page in Mentorfy](/docs/img/Zoom_Mentorfy_Pagina_Integracao.png)
 
 Click **Connect Zoom**. You will be redirected to the Zoom authorization page — log in to your Zoom account (if not already authenticated) and confirm access.
 
@@ -127,6 +127,10 @@ Enable **Record to cloud** when creating the meeting (or start a cloud recording
 - The replay is stored in your private Mentorfy media library, and students with access to the meeting can watch it in the member area.
 - If you end and restart the same meeting, the recordings of every instance are located and imported.
 - The original recording remains untouched in your Zoom account — Mentorfy never modifies or deletes it.
+
+In **Meetings > My Meetings**, the **Recording** column shows the replay status of each session — **Available** when the replay is ready to watch.
+
+![My Meetings page with the Recording column showing an available replay](/docs/img/Zoom_Mentorfy_Minhas_Reunioes_Gravacao.png)
 
 ### Attendance
 
@@ -283,6 +287,10 @@ Ative **Gravar na nuvem** ao criar a reunião (ou inicie a gravação em nuvem m
 - O replay fica armazenado na sua biblioteca de mídia privada da Mentorfy, e alunos com acesso à reunião podem assistir pela área de membros.
 - Se você encerrar e reabrir a mesma reunião, as gravações de todas as instâncias são localizadas e importadas.
 - A gravação original permanece intacta na sua conta Zoom — a Mentorfy nunca modifica nem exclui nada.
+
+Em **Reuniões > Minhas Reuniões**, a coluna **Gravação** mostra o status do replay de cada sessão — **Disponível** quando o replay está pronto para assistir.
+
+![Página Minhas Reuniões com a coluna Gravação exibindo replay disponível](/docs/img/Zoom_Mentorfy_Minhas_Reunioes_Gravacao.png)
 
 ### Presença
 

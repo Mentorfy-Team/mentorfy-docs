@@ -139,6 +139,10 @@ Activa **Grabar en la nube** al crear la reunión (o inicia la grabación en la 
 - Si finalizas y reabres la misma reunión, las grabaciones de todas las instancias se localizan e importan.
 - La grabación original permanece intacta en tu cuenta Zoom — Mentorfy nunca modifica ni elimina nada.
 
+En **Reuniones > Mis Reuniones**, la columna **Grabación** muestra el estado del replay de cada sesión — **Disponible** cuando el replay está listo para ver.
+
+![Página Mis Reuniones con la columna Grabación mostrando replay disponible](/docs/img/Zoom_Mentorfy_Minhas_Reunioes_Gravacao.png)
+
 ### Asistencia
 
 Después del fin de la sesión, Mentorfy sincroniza la lista de participantes de Zoom (nombre de visualización, correo electrónico y horarios de entrada/salida) para que puedas revisar la asistencia en la página de la reunión.
