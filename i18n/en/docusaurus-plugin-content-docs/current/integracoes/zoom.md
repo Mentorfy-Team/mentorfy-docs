@@ -56,7 +56,7 @@ Go to [app.mentorfy.io](https://app.mentorfy.io) and log in with your email and 
 
 ## **2. Connect the Zoom account**
 
-In the sidebar menu, go to **Integrations** and select the **Zoom** tab.
+In the sidebar menu, go to **Integrations** and select the **Zoom** tab — or open [mentorfy.io/mentor/integracoes?tab=zoom](https://mentorfy.io/mentor/integracoes?tab=zoom) directly.
 
 The page displays the connection status. While the account is not linked, the card will show **"Zoom not connected"**.
 
@@ -70,7 +70,7 @@ After authorizing, return to Mentorfy. The integration will be active and ready 
 
 ## **3. Create a Zoom meeting**
 
-In the sidebar menu, go to **Meetings > My Meetings** and click **+ New Meeting**.
+In the sidebar menu, go to **Meetings > My Meetings** ([mentorfy.io/mentor/reunioes/geral](https://mentorfy.io/mentor/reunioes/geral)) and click **+ New Meeting**.
 
 In the creation modal, select the **Zoom Event** type and fill in the basic information:
 
@@ -127,7 +127,7 @@ Enable **Record to cloud** when creating the meeting (or start a cloud recording
 - If you end and restart the same meeting, the recordings of every instance are located and imported.
 - The original recording remains untouched in your Zoom account — Mentorfy never modifies or deletes it.
 
-In **Meetings > My Meetings**, the **Recording** column shows the replay status of each session — **Available** when the replay is ready to watch.
+In **Meetings > My Meetings** ([mentorfy.io/mentor/reunioes/geral](https://mentorfy.io/mentor/reunioes/geral)), the **Recording** column shows the replay status of each session — **Available** when the replay is ready to watch.
 
 ![My Meetings page with the Recording column showing an available replay](/docs/img/Zoom_Mentorfy_Minhas_Reunioes_Gravacao.png)
 
