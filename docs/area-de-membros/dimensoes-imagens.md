@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-description: Dimensões, proporções e formatos aceitos para imagens configuráveis na plataforma Mentorfy.
+description: Dimensões, proporções e formatos aceitos para imagens configuráveis na plataforma Mentorfy, incluindo App Whitelabel.
 ---
 
 # Dimensões das imagens
 
 Guia de referência para upload de imagens — personalização, SEO e conteúdo.
 
-Este documento reúne todas as dimensões, proporções e formatos aceitos para as imagens configuráveis na plataforma Mentorfy: identidade visual, área de login, home, SEO, categorias e capas de mentorias. Use-o como referência rápida ao preparar artes para upload.
+Este documento reúne todas as dimensões, proporções e formatos aceitos para as imagens configuráveis na plataforma Mentorfy: identidade visual, área de login, home, SEO, categorias, capas de mentorias e App Whitelabel. Use-o como referência rápida ao preparar artes para upload.
 
 ## 1. Identidade visual
 
@@ -61,3 +61,21 @@ Ajuste da imagem: opções **Preencher** ou **Conter**.
 | --- | --- | --- | --- |
 | **Capa vertical** | 900×1440 px | PNG, JPG, WebP | Siga as orientações de dimensão para evitar cortes na visualização final. |
 | **Capa horizontal** | 2160×900 px | PNG, JPG, WebP | Siga as orientações de dimensão para evitar cortes na visualização final. |
+
+## 7. App Whitelabel
+
+Use este checklist **antes** de acessar o painel de criação do app. Ter todos os arquivos prontos evita retrabalho e travas no fluxo de publicação nas lojas.
+
+| Elemento | Dimensão / proporção | Formatos aceitos | Observações |
+| --- | --- | --- | --- |
+| **Logo** | 792×156 px | PNG, JPG, WebP | Usado no cabeçalho e na tela de login do app. |
+| **Background do Login** | 430×932 px | PNG, JPG, WebP | Imagem de fundo da tela de boas-vindas/login. |
+| **Ícone do App** | 512×512 px | PNG, JPG, WebP | Ícone principal exibido nas lojas. |
+| **Ícone Adaptativo Android** | 512×512 px | PNG, JPG, WebP | Versão adaptativa do ícone para Android. |
+| **Tela de Abertura (Splash)** | 1284×2778 px | PNG, JPG, WebP | Tela exibida ao abrir o app. |
+| **Banner de Destaque** | 1024×500 px | PNG, JPG, WebP | Obrigatório para a listagem na loja. |
+
+### Notas
+
+- Todas as imagens podem ser geradas via IA diretamente no painel (botão **Gerar com IA**), ou enviadas manualmente.
+- As screenshots que aparecem na listagem da loja **não precisam ser enviadas** — são geradas automaticamente a partir das telas do preview do app.
