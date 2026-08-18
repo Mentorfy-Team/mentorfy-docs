@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-description: Dimensiones, proporciones y formatos aceptados para imágenes configurables en la plataforma Mentorfy.
+description: Dimensiones, proporciones y formatos aceptados para imágenes configurables en la plataforma Mentorfy, incluyendo App Whitelabel.
 ---
 
 # Dimensiones de las imágenes
 
 Guía de referencia para la carga de imágenes — personalización, SEO y contenido.
 
-Este documento reúne todas las dimensiones, proporciones y formatos aceptados para las imágenes configurables en la plataforma Mentorfy: identidad visual, área de login, home, SEO, categorías y portadas de mentorías. Úselo como referencia rápida al preparar artes para la carga.
+Este documento reúne todas las dimensiones, proporciones y formatos aceptados para las imágenes configurables en la plataforma Mentorfy: identidad visual, área de login, home, SEO, categorías, portadas de mentorías y App Whitelabel. Úselo como referencia rápida al preparar artes para la carga.
 
 ## 1. Identidad visual
 
@@ -61,3 +61,21 @@ Ajuste de la imagen: opciones **Rellenar** o **Contener**.
 | --- | --- | --- | --- |
 | **Portada vertical** | 900×1440 px | PNG, JPG, WebP | Siga las orientaciones de dimensión para evitar recortes en la visualización final. |
 | **Portada horizontal** | 2160×900 px | PNG, JPG, WebP | Siga las orientaciones de dimensión para evitar recortes en la visualización final. |
+
+## 7. App Whitelabel
+
+Use este checklist **antes** de acceder al panel de creación del app. Tener todos los archivos listos evita retrabajo y bloqueos en el flujo de publicación en las tiendas.
+
+| Elemento | Dimensión / proporción | Formatos aceptados | Observaciones |
+| --- | --- | --- | --- |
+| **Logo** | 792×156 px | PNG, JPG, WebP | Usado en el encabezado y en la pantalla de login del app. |
+| **Background del Login** | 430×932 px | PNG, JPG, WebP | Imagen de fondo de la pantalla de bienvenida/login. |
+| **Ícono del App** | 512×512 px | PNG, JPG, WebP | Ícono principal mostrado en las tiendas. |
+| **Ícono Adaptativo Android** | 512×512 px | PNG, JPG, WebP | Versión adaptativa del ícono para Android. |
+| **Pantalla de Apertura (Splash)** | 1284×2778 px | PNG, JPG, WebP | Pantalla mostrada al abrir el app. |
+| **Banner de Destacado** | 1024×500 px | PNG, JPG, WebP | Obligatorio para el listado en la tienda. |
+
+### Notas
+
+- Todas las imágenes pueden generarse vía IA directamente en el panel (botón **Generar con IA**), o enviarse manualmente.
+- Las capturas de pantalla que aparecen en el listado de la tienda **no necesitan enviarse** — se generan automáticamente a partir de las pantallas del preview del app.
