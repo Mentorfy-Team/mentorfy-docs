@@ -165,8 +165,8 @@
       "description": "O Meu Copiloto responde com os seus dados, em gráfico",
       "route": "/mentor/copiloto",
       "external": false,
-      "durationSec": 36,
-      "guid": "d0e5fca9-b5e0-4926-ad50-599156593817"
+      "durationSec": 38,
+      "guid": "b9523aca-4e0d-46e8-bc86-3b3a2275edf9"
     },
     {
       "slug": "copiloto-p2-executar",
