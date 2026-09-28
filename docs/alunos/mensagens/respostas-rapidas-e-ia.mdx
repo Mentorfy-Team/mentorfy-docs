@@ -1,0 +1,77 @@
+---
+title: Responda em um clique e deixe a IA ajudar
+sidebar_label: Respostas rápidas e IA
+sidebar_position: 3
+description: Crie respostas rápidas para usar com a barra e ligue o Atendimento Rápido, em que a IA responde as dúvidas comuns.
+---
+
+Duas ajudas para a equipe responder menos a mesma coisa: **respostas rápidas**, que entram na conversa em um clique, e o **Atendimento Rápido**, em que a IA responde as dúvidas comuns antes da equipe.
+
+<Aula slug="mensagens-p3-respostas" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>Em <strong>Configurar atendimento</strong>, abra <strong>Respostas rápidas</strong> e clique em <strong>Nova resposta</strong>.</>} />
+  <Passo titulo={<>Dê um <strong>Título</strong>, um <strong>Atalho</strong> e escreva o texto. Clique em <strong>Salvar</strong>.</>}>
+    Escreva `{nome}` onde deve entrar o nome do aluno e `{mentor}` para o seu.
+
+    ![Nova resposta rápida com título, atalho e texto](/img/guia/mensagens-p3-respostas/nova-resposta.jpg)
+  </Passo>
+  <Passo titulo={<>Na conversa, digite <strong>/</strong> e escolha a resposta.</>}>
+    Ela entra pronta, com o nome do aluno no lugar.
+  </Passo>
+  <Passo titulo={<>Em <strong>Atendimento Rápido</strong>, clique em <strong>Nova pergunta</strong> e cadastre as dúvidas que mais chegam.</>}>
+    Para cada uma, escreva a **Pergunta** e a **Resposta** e clique em **Salvar**. Tem uma lista pronta? Use **Importar**.
+  </Passo>
+  <Passo titulo={<>Ligue o <strong>Atendimento Rápido</strong> e escolha as <strong>Tentativas antes de chamar a equipe</strong>.</>}>
+    Ele só liga depois que você cadastra pelo menos uma pergunta.
+  </Passo>
+  <Passo titulo={<>Clique em <strong>Salvar alterações</strong>.</>}>
+    A partir daí, a IA tenta resolver. Se não conseguir, passa a conversa para a equipe.
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::caution O Atendimento Rápido usa créditos de IA
+Cada resposta da IA gasta 0,35 crédito de IA da sua conta. Sem créditos, a conversa vai direto para a equipe. Veja seus créditos em [Plano e créditos](/docs/conta/plano-e-creditos).
+:::
+
+:::info A IA só responde o que você cadastrou
+Ela usa as suas perguntas e respostas e não inventa prazo, valor, link ou senha. Dinheiro, cancelamento, reclamação ou aluno irritado vão sempre para a equipe.
+:::
+
+## Referência
+
+| Ajuste | Padrão | Limite |
+| --- | --- | --- |
+| **Atendimento Rápido** | Desligado | Precisa de pelo menos 1 pergunta |
+| **Tentativas antes de chamar a equipe** | 3 | De 1 a 5 |
+| **Perguntas frequentes** | Nenhuma | Até 50 |
+| **Usar também os materiais do copiloto** | Desligado | Procura também nos materiais do Copiloto do Aluno |
+
+## Dúvidas comuns
+
+<details>
+<summary>A IA está respondendo e eu quero assumir. Como faço?</summary>
+
+Na conversa, clique em **Assumir conversa**. O Atendimento Rápido para ali, e a conversa é sua.
+
+</details>
+
+<details>
+<summary>O aluno pode pedir para falar com uma pessoa?</summary>
+
+Pode. Quando ele pede, a IA passa a conversa para a equipe e avisa o aluno.
+
+</details>
+
+<details>
+<summary>Como importo várias perguntas de uma vez?</summary>
+
+Em **Atendimento Rápido**, clique em **Importar**. Cole a lista (uma pergunta por linha, com a resposta ao lado) ou anexe uma planilha .csv ou .xlsx com as colunas "pergunta" e "resposta". Você confere tudo antes de salvar.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/acompanhar/visao-geral" titulo="Leia a saúde da sua mentoria">Em um minuto, veja se seus alunos estão ativos.</ProximoPasso>

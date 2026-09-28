@@ -43,6 +43,28 @@ const config: Config = {
 
   plugins: [
     require.resolve('./src/plugins/search-index-plugin'),
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // Old guide URLs (the app links to some of them) -> the page that replaced them.
+        redirects: [
+          {from: '/docs/intro', to: '/docs/comece/bem-vindo'},
+          {from: '/docs/suporte', to: '/docs/conta/suporte'},
+          {from: ['/docs/area-de-membros/intro', '/docs/area-de-membros/dimensoes-imagens'], to: '/docs/cursos/area-de-membros'},
+          {from: '/docs/vitrine/intro', to: '/docs/cursos/vitrine'},
+          {from: '/docs/vitrine/turmas', to: '/docs/grupos-e-equipe/grupos'},
+          {from: '/docs/vitrine/brand-studio', to: '/docs/marca-e-ia/brand-studio'},
+          {from: '/docs/vitrine/ai-studio', to: '/docs/marca-e-ia/ai-studio'},
+          {from: '/docs/vitrine/copiloto', to: '/docs/marca-e-ia/copiloto'},
+          {from: '/docs/meus-clientes/clientes', to: '/docs/alunos/cadastrar-aluno'},
+          {from: '/docs/meus-clientes/times', to: '/docs/grupos-e-equipe/meu-time'},
+          {from: '/docs/meus-clientes/comentarios', to: '/docs/alunos/comentarios'},
+          {from: '/docs/category/área-de-membros', to: '/docs/cursos/area-de-membros'},
+          {from: '/docs/category/área-do-mentor', to: '/docs/cursos'},
+          {from: '/docs/category/clientes', to: '/docs/alunos'},
+        ],
+      },
+    ],
   ],
 
   presets: [
@@ -57,13 +79,7 @@ const config: Config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -77,7 +93,8 @@ const config: Config = {
     docs: {
       sidebar: {
         hideable: true,
-        autoCollapseCategories: false,
+        // One open block at a time: a long open sidebar is a wall of choices.
+        autoCollapseCategories: true,
       },
     },
     tableOfContents: {
@@ -124,7 +141,11 @@ const config: Config = {
           items: [
             {
               label: 'Guia do Mentor',
-              to: '/docs/intro',
+              to: '/docs/comece/bem-vindo',
+            },
+            {
+              label: 'Todas as aulas em vídeo',
+              to: '/docs/comece/todas-as-aulas',
             },
 
           ],

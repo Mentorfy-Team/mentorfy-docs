@@ -1,0 +1,70 @@
+.passos {
+  counter-reset: passo;
+  list-style: none;
+  margin: 1.25rem 0 2rem;
+  padding: 0;
+}
+
+.passo {
+  counter-increment: passo;
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding: 0 0 22px;
+}
+
+/* The line that ties one step to the next. */
+.passo:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 38px;
+  bottom: 4px;
+  left: 16px;
+  width: 2px;
+  border-radius: 2px;
+  background: rgba(232, 98, 42, 0.22);
+}
+
+.passo::before {
+  content: counter(passo);
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(232, 98, 42, 0.14);
+  border: 1px solid rgba(232, 98, 42, 0.45);
+  color: var(--ifm-color-primary-light);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.body {
+  min-width: 0;
+  padding-top: 5px;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ifm-font-color-base);
+}
+
+.detalhe {
+  margin-top: 8px;
+  color: #aeb4c0;
+  font-size: 0.95rem;
+}
+
+.detalhe > :last-child {
+  margin-bottom: 0;
+}
+
+.detalhe img {
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}

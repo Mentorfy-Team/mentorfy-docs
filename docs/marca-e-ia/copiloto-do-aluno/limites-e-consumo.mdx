@@ -1,0 +1,85 @@
+---
+title: Defina limites e acompanhe o consumo do Copiloto do Aluno
+sidebar_label: Limites e consumo
+sidebar_position: 3
+description: Controle quantas mensagens cada aluno pode mandar, para quem o assistente fica liberado e quantos créditos ele usa.
+---
+
+Controle quanto o Copiloto do Aluno pode ser usado e para quem ele fica liberado, e acompanhe o uso pelos seus alunos.
+
+<Aula slug="copiloto-aluno-p3-limites" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>Em <strong>Limites por Aluno</strong>, preencha o <strong>Limite Diário</strong>, o <strong>Limite Semanal</strong> e o <strong>Limite Mensal</strong>.</>}>
+    É o número de mensagens que cada aluno pode mandar. Zero é sem limite.
+  </Passo>
+  <Passo titulo={<>Em <strong>Regras de Liberação</strong>, escolha depois de quantos dias do cadastro o assistente libera.</>}>
+    Use 0 para liberar na hora.
+  </Passo>
+  <Passo titulo={<>Se quiser, marque <strong>Liberar apenas para alunos com produtos específicos</strong> e escolha os produtos.</>}>
+    ![Regras de Liberação com um produto escolhido](/img/guia/copiloto-aluno-p3-limites/03-regras.jpg)
+  </Passo>
+  <Passo titulo={<>Confira o resumo em <strong>Como as regras se combinam</strong> e clique em <strong>Salvar</strong>.</>}>
+    Quando você usa as duas regras, o aluno precisa cumprir as duas.
+  </Passo>
+  <Passo titulo={<>Acompanhe o gasto em <strong>Consumo e Previsão</strong>.</>}>
+    Veja os créditos usados no mês, quanto ainda resta e a previsão. O **Ranking de Alunos** mostra quem mais usa.
+
+    ![Consumo e Previsão](/img/guia/copiloto-aluno-p3-limites/05-consumo.jpg)
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::info Quanto custa
+No plano pago, as mensagens dos alunos não descontam créditos. No período de teste, cada mensagem de aluno desconta 0,35 crédito de IA da **sua** conta.
+:::
+
+:::tip
+Se aparecer **Atenção!** em **Consumo e Previsão**, os créditos podem acabar antes do fim do mês. Baixe os limites por aluno ou compre mais créditos em **Minha Conta**. Sem créditos disponíveis, você não consegue ligar o assistente.
+:::
+
+## Referência
+
+| Configuração | Como funciona |
+| --- | --- |
+| **Limite Diário / Semanal / Mensal** | Mensagens por aluno em cada período. 0 = sem limite |
+| **Liberar após X dias do cadastro** | O aluno só usa depois desse número de dias. 0 = na hora |
+| **Liberar apenas para alunos com produtos específicos** | O aluno precisa ter acesso a pelo menos um dos produtos escolhidos |
+| As duas regras juntas | O aluno precisa cumprir as duas |
+
+O que o aluno vê quando esbarra numa regra:
+
+| Situação | Mensagem para o aluno |
+| --- | --- |
+| Passou do limite do dia | "Você atingiu o limite diário de … mensagens. Tente novamente amanhã." |
+| Passou do limite da semana ou do mês | Mensagem parecida, pedindo para tentar na próxima semana ou no próximo mês |
+| Ainda não tem os dias de cadastro | "O copiloto estará disponível em … dias." |
+| Não tem o produto exigido | "Você precisa ter acesso a um produto específico para usar o copiloto." |
+
+## Dúvidas comuns
+
+<details>
+<summary>O que acontece se os meus créditos acabarem?</summary>
+
+No período de teste, o assistente para de responder os alunos até você ter créditos de novo. Em qualquer plano, sem créditos disponíveis não dá para ligar o assistente. Compre mais em **Minha Conta**.
+
+</details>
+
+<details>
+<summary>O ranking está vazio.</summary>
+
+Ele só mostra alunos depois que eles começam a usar o assistente. Enquanto isso, aparece "Nenhum aluno utilizou o copiloto ainda."
+
+</details>
+
+<details>
+<summary>Mudei os limites e nada mudou.</summary>
+
+Confira se clicou em **Salvar**, no canto de cima. Sem salvar, as mudanças se perdem ao sair da página.
+
+</details>
+
+<ProximoPasso para="/docs/integracoes/intro" titulo="Conecte o Mentorfy às suas ferramentas">Veja as integrações disponíveis.</ProximoPasso>

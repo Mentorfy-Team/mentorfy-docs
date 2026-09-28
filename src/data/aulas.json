@@ -1,0 +1,512 @@
+{
+  "libraryId": 373508,
+  "cdnHostname": "vz-40f64caf-811.b-cdn.net",
+  "tracks": [
+    {
+      "key": "primeiros-passos",
+      "title": "Primeiros passos"
+    },
+    {
+      "key": "conteudo",
+      "title": "Criar e organizar conteúdo"
+    },
+    {
+      "key": "acompanhar",
+      "title": "Acompanhar alunos"
+    },
+    {
+      "key": "atendimento",
+      "title": "Atendimento"
+    },
+    {
+      "key": "equipe",
+      "title": "Equipe e encontros"
+    },
+    {
+      "key": "avancado",
+      "title": "Avançado"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "cadastrar-aluno",
+      "track": "primeiros-passos",
+      "title": "Como cadastrar um aluno",
+      "description": "Em Meus Clientes, em menos de 1 minuto",
+      "route": "/mentor/clientes/meus-clientes",
+      "external": false,
+      "durationSec": 34,
+      "guid": "10bac12e-f973-4e92-a573-e84ecd44839e"
+    },
+    {
+      "slug": "clientes-p2-importar",
+      "track": "primeiros-passos",
+      "title": "Meus Clientes · Parte 2: importe a turma",
+      "description": "Uma planilha e todo mundo com acesso",
+      "route": "/mentor/clientes/meus-clientes",
+      "external": false,
+      "durationSec": 38,
+      "guid": "b9af51dc-a1c2-4957-98c7-383fe099a314"
+    },
+    {
+      "slug": "clientes-p3-acesso",
+      "track": "primeiros-passos",
+      "title": "Meus Clientes · Parte 3: acesso em massa",
+      "description": "Libere, renove ou remova de uma vez só",
+      "route": "/mentor/clientes/meus-clientes",
+      "external": false,
+      "durationSec": 48,
+      "guid": "e1d8e170-8b57-4f05-ab6d-63b9b92d0b72"
+    },
+    {
+      "slug": "grupos",
+      "track": "primeiros-passos",
+      "title": "Grupos: organize alunos ou empresas",
+      "description": "Turmas de alunos ou empresas e seus funcionários, num quadro só",
+      "route": "/mentor/grupos",
+      "external": false,
+      "durationSec": 37,
+      "guid": "f1ed9116-aec4-420d-891f-ce65dda28e54"
+    },
+    {
+      "slug": "grupos-p2-kanban",
+      "track": "primeiros-passos",
+      "title": "Grupos · Parte 2: monte o seu processo",
+      "description": "Colunas, cores e prazos para cada fase",
+      "route": "/mentor/grupos",
+      "external": false,
+      "durationSec": 49,
+      "guid": "f0a65d7b-c11b-4af4-b3c9-2fbd7d1a5dd4"
+    },
+    {
+      "slug": "grupos-p3-organizar",
+      "track": "primeiros-passos",
+      "title": "Grupos · Parte 3: organize o time",
+      "description": "Quem cuida de cada grupo e quem pode ver cada coisa",
+      "route": "/mentor/grupos",
+      "external": false,
+      "durationSec": 40,
+      "guid": "df916ced-d174-4305-9836-d53082d6bcc3"
+    },
+    {
+      "slug": "grupos-p4-quadros",
+      "track": "primeiros-passos",
+      "title": "Grupos · Parte 4: vários quadros",
+      "description": "Um quadro para cada processo ou cada pessoa do time",
+      "route": "/mentor/grupos",
+      "external": false,
+      "durationSec": 60,
+      "guid": "3b708553-89d7-4cae-a550-3c3be7fff46c"
+    },
+    {
+      "slug": "grupos-p5-reunioes",
+      "track": "primeiros-passos",
+      "title": "Grupos · Parte 5: reuniões contam como contato",
+      "description": "Ligue as reuniões da agenda ao grupo e acompanhe nos Indicadores",
+      "route": "/mentor/grupos",
+      "external": false,
+      "durationSec": 43,
+      "guid": "841c1df2-c9e3-4424-b59d-e4c4c9afb721"
+    },
+    {
+      "slug": "ai-studio",
+      "track": "primeiros-passos",
+      "title": "Crie a capa do seu curso com IA",
+      "description": "No AI Studio, em segundos e sem designer",
+      "route": "/mentor/studio-ia",
+      "external": false,
+      "durationSec": 44,
+      "guid": "09ef7b7b-bf06-4479-8f7c-71de5f07a516"
+    },
+    {
+      "slug": "ai-studio-p2-audio",
+      "track": "primeiros-passos",
+      "title": "AI Studio · Parte 2: narração com IA",
+      "description": "O seu texto vira áudio em segundos",
+      "route": "/mentor/studio-ia",
+      "external": false,
+      "durationSec": 36,
+      "guid": "f3cb70e8-6f17-463a-8463-2596bc3e542b"
+    },
+    {
+      "slug": "ai-studio-p3-podcast",
+      "track": "primeiros-passos",
+      "title": "AI Studio · Parte 3: crie um podcast",
+      "description": "Do seu material para uma conversa em áudio",
+      "route": "/mentor/studio-ia",
+      "external": false,
+      "durationSec": 44,
+      "guid": "66443aa4-8a92-4738-93d6-3ed880f48ddb"
+    },
+    {
+      "slug": "brand-studio",
+      "track": "primeiros-passos",
+      "title": "Deixe a área do aluno com a sua marca",
+      "description": "No Brand Studio: cores, logo e layout, sem código",
+      "route": "/redirect-brand-studio",
+      "external": true,
+      "durationSec": 48,
+      "guid": "0b3acb9d-479f-4515-9d2f-31854827c658"
+    },
+    {
+      "slug": "brand-studio-p2-login",
+      "track": "primeiros-passos",
+      "title": "Brand Studio · Parte 2: login e banner",
+      "description": "A primeira tela que o seu aluno vê",
+      "route": "/redirect-brand-studio",
+      "external": true,
+      "durationSec": 45,
+      "guid": "060d9077-bc75-4943-a9a4-0cabaad9ee9b"
+    },
+    {
+      "slug": "copiloto",
+      "track": "primeiros-passos",
+      "title": "Pergunte ao Copiloto como estão seus alunos",
+      "description": "O Meu Copiloto responde com os seus dados, em gráfico",
+      "route": "/mentor/copiloto",
+      "external": false,
+      "durationSec": 36,
+      "guid": "d0e5fca9-b5e0-4926-ad50-599156593817"
+    },
+    {
+      "slug": "copiloto-p2-executar",
+      "track": "primeiros-passos",
+      "title": "Copiloto · Parte 2: peça e ele faz",
+      "description": "Tarefas do dia a dia em uma frase",
+      "route": "/mentor/copiloto",
+      "external": false,
+      "durationSec": 29,
+      "guid": "7c6a3271-e9cc-4c62-a6b9-5fe466f6fdc7"
+    },
+    {
+      "slug": "copiloto-p3-templates",
+      "track": "primeiros-passos",
+      "title": "Copiloto · Parte 3: salve perguntas prontas",
+      "description": "Templates para não digitar tudo de novo",
+      "route": "/mentor/copiloto",
+      "external": false,
+      "durationSec": 36,
+      "guid": "fc38fd08-570b-407c-b217-06ced78b6984"
+    },
+    {
+      "slug": "minhas-mentorias",
+      "track": "conteudo",
+      "title": "Crie a sua primeira mentoria",
+      "description": "Em Minhas Mentorias, em menos de um minuto",
+      "route": "/mentor/mentorias/minhas-mentorias",
+      "external": false,
+      "durationSec": 35,
+      "guid": "29253306-7778-47fa-942f-9bb4ca5b5162"
+    },
+    {
+      "slug": "mentorias-p2-modulos",
+      "track": "conteudo",
+      "title": "Mentorias · Parte 2: monte módulos e aulas",
+      "description": "O passo que transforma a mentoria em conteúdo",
+      "route": "/mentor/mentorias/minhas-mentorias",
+      "external": false,
+      "durationSec": 48,
+      "guid": "9bb75a93-5328-4406-b6b3-46ac8eca87e2"
+    },
+    {
+      "slug": "mentorias-p3-ia",
+      "track": "conteudo",
+      "title": "Mentorias · Parte 3: crie um módulo com IA",
+      "description": "Você descreve, a IA monta as aulas",
+      "route": "/mentor/mentorias/minhas-mentorias",
+      "external": false,
+      "durationSec": 45,
+      "guid": "0d546b4d-5c81-4603-80de-18d285b53a31"
+    },
+    {
+      "slug": "armazenamento",
+      "track": "conteudo",
+      "title": "Suba os vídeos das suas aulas",
+      "description": "No Armazenamento, a biblioteca de vídeos e arquivos",
+      "route": "/mentor/mentorias/armazenamento",
+      "external": false,
+      "durationSec": 37,
+      "guid": "98eefb0b-30d7-4a03-9191-15bde0d898a6"
+    },
+    {
+      "slug": "armazenamento-p2-pastas",
+      "track": "conteudo",
+      "title": "Armazenamento · Parte 2: organize em pastas",
+      "description": "Cada curso com a sua pasta, sem vídeo perdido",
+      "route": "/mentor/mentorias/armazenamento",
+      "external": false,
+      "durationSec": 34,
+      "guid": "6236b1d0-9254-40b3-947b-fd92cdba87a4"
+    },
+    {
+      "slug": "certificados",
+      "track": "conteudo",
+      "title": "Entregue certificados automáticos",
+      "description": "Em Certificados, pronto em quatro passos",
+      "route": "/mentor/mentorias/certificados",
+      "external": false,
+      "durationSec": 45,
+      "guid": "022bfff2-7f3e-42f1-8d00-4ec1d0137084"
+    },
+    {
+      "slug": "certificados-p2-marca",
+      "track": "conteudo",
+      "title": "Certificados · Parte 2: marca e emitidos",
+      "description": "Configure uma vez, use em todos",
+      "route": "/mentor/mentorias/certificados",
+      "external": false,
+      "durationSec": 42,
+      "guid": "13b6c3af-177d-415e-ace0-129e5e0eadab"
+    },
+    {
+      "slug": "banco-questoes",
+      "track": "conteudo",
+      "title": "Guarde as suas perguntas para usar nas aulas",
+      "description": "No Banco de Questões, crie uma vez e reaproveite",
+      "route": "/mentor/mentorias/banco-de-questoes",
+      "external": false,
+      "durationSec": 45,
+      "guid": "8fed3218-0ed9-4292-b305-f731908121d3"
+    },
+    {
+      "slug": "banco-p2-aula",
+      "track": "conteudo",
+      "title": "Banco de Questões · Parte 2: use numa aula",
+      "description": "Um quiz pronto com as suas questões",
+      "route": "/mentor/mentorias/minhas-mentorias",
+      "external": false,
+      "durationSec": 38,
+      "guid": "a4d70d46-3e0b-4edf-8c0d-bfb2e4f5376a"
+    },
+    {
+      "slug": "categorias-vitrine",
+      "track": "conteudo",
+      "title": "Organize a sua vitrine em categorias",
+      "description": "Em Categorias da Vitrine, as prateleiras da sua loja",
+      "route": "/mentor/vitrine-config/geral",
+      "external": false,
+      "durationSec": 38,
+      "guid": "79c3774a-3fe0-4487-8117-12503f34d8fb"
+    },
+    {
+      "slug": "categorias-p2-visibilidade",
+      "track": "conteudo",
+      "title": "Vitrine · Parte 2: controle o que aparece",
+      "description": "Oculte, bloqueie ou coloque em construção",
+      "route": "/mentor/vitrine-config/geral",
+      "external": false,
+      "durationSec": 39,
+      "guid": "98d067a8-ab8b-4473-8245-a6793585d0da"
+    },
+    {
+      "slug": "visao-geral",
+      "track": "acompanhar",
+      "title": "Leia a saúde da sua mentoria",
+      "description": "Na Visão Geral, em um minuto",
+      "route": "/mentor/jornada/visao-geral",
+      "external": false,
+      "durationSec": 42,
+      "guid": "779f68c0-dca6-4e83-97a1-87b711dec7b7"
+    },
+    {
+      "slug": "acompanhamento",
+      "track": "acompanhar",
+      "title": "Acompanhe o progresso de cada aluno",
+      "description": "No Acompanhamento, produto por produto",
+      "route": "/mentor/jornada/acompanhamento",
+      "external": false,
+      "durationSec": 40,
+      "guid": "a2e43cdb-65cf-430c-99f8-1de660b91512"
+    },
+    {
+      "slug": "acompanhamento-p2-excel",
+      "track": "acompanhar",
+      "title": "Acompanhamento · Parte 2: exporte em Excel",
+      "description": "Um relatório pronto para a empresa ou a equipe",
+      "route": "/mentor/jornada/acompanhamento",
+      "external": false,
+      "durationSec": 34,
+      "guid": "aa4e8cee-96ac-41e6-85bf-3a7177cb9505"
+    },
+    {
+      "slug": "mensagens",
+      "track": "atendimento",
+      "title": "Atenda seus alunos pela central",
+      "description": "Em Mensagens, a central de suporte da sua equipe",
+      "route": "/mentor/clientes/mensagens",
+      "external": false,
+      "durationSec": 47,
+      "guid": "00c403e5-b3ef-4e1d-a576-7c882146fd1b"
+    },
+    {
+      "slug": "mensagens-p2-configurar",
+      "track": "atendimento",
+      "title": "Mensagens · Parte 2: configure o atendimento",
+      "description": "Horário, meta de resposta, equipe e assuntos",
+      "route": "/mentor/clientes/mensagens",
+      "external": false,
+      "durationSec": 49,
+      "guid": "79a94662-c5e1-43c4-8e55-416536b36c69"
+    },
+    {
+      "slug": "mensagens-p3-respostas",
+      "track": "atendimento",
+      "title": "Mensagens · Parte 3: respostas rápidas e IA",
+      "description": "Responda em um clique e deixe a IA ajudar",
+      "route": "/mentor/clientes/mensagens",
+      "external": false,
+      "durationSec": 48,
+      "guid": "3bf67108-3f20-4799-9d4f-189325686f33"
+    },
+    {
+      "slug": "meus-times",
+      "track": "equipe",
+      "title": "Meu time: monte a sua equipe",
+      "description": "Crie um time, convide pessoas e escolha o que cada uma acessa",
+      "route": "/mentor/clientes/meus-times",
+      "external": false,
+      "durationSec": 53,
+      "guid": "ac6adb9f-980d-4103-b73a-1fd69bb9fb9b"
+    },
+    {
+      "slug": "times-p2-permissoes",
+      "track": "equipe",
+      "title": "Meu time · Parte 2: o que cada pessoa acessa",
+      "description": "Perfis prontos, ajuste área por área e modelos",
+      "route": "/mentor/clientes/meus-times",
+      "external": false,
+      "durationSec": 51,
+      "guid": "29622794-4248-4334-a50f-6642ecdd6245"
+    },
+    {
+      "slug": "times-p3-distribuir",
+      "track": "equipe",
+      "title": "Meu time · Parte 3: produtos e alunos",
+      "description": "O que o time vê e quais alunos cada pessoa acompanha",
+      "route": "/mentor/clientes/meus-times",
+      "external": false,
+      "durationSec": 52,
+      "guid": "2e3c46c6-6713-49a9-b09b-b7415feb977f"
+    },
+    {
+      "slug": "reunioes",
+      "track": "equipe",
+      "title": "Crie uma reunião ao vivo com gravação",
+      "description": "Em Minhas Reuniões, com a sala do Mentorfy",
+      "route": "/mentor/reunioes/geral",
+      "external": false,
+      "durationSec": 38,
+      "guid": "8db5e37b-10ef-410c-8040-795353e3e317"
+    },
+    {
+      "slug": "reunioes-p2-gravacoes",
+      "track": "equipe",
+      "title": "Minhas Reuniões · Parte 2: assista e compartilhe a gravação",
+      "description": "A gravação fica pronta sozinha depois do encontro",
+      "route": "/mentor/reunioes/geral",
+      "external": false,
+      "durationSec": 40,
+      "guid": "01c7c58e-f393-422a-adb9-896d755c30ca"
+    },
+    {
+      "slug": "integracoes",
+      "track": "avancado",
+      "title": "Libere o acesso quando alguém compra",
+      "description": "Em Integrações, com Hotmart, Kiwify, Stripe e outras",
+      "route": "/mentor/integracoes",
+      "external": false,
+      "durationSec": 39,
+      "guid": "c7b54257-9431-43ad-bd93-3e120131c718"
+    },
+    {
+      "slug": "integracoes-p2-automacao",
+      "track": "avancado",
+      "title": "Integrações · Parte 2: crie uma automação",
+      "description": "Quando algo acontece, a plataforma age sozinha",
+      "route": "/mentor/integracoes",
+      "external": false,
+      "durationSec": 40,
+      "guid": "436af189-aefb-46a5-970c-a9dd2d4da759"
+    },
+    {
+      "slug": "integracoes-p3-conectar",
+      "track": "avancado",
+      "title": "Integrações · Parte 3: conecte Zoom, Meet ou Agendafy",
+      "description": "Crie reuniões com as ferramentas que você já usa",
+      "route": "/mentor/integracoes",
+      "external": false,
+      "durationSec": 47,
+      "guid": "20a38988-7117-4f02-8f11-a9a0a84db003"
+    },
+    {
+      "slug": "notificacoes",
+      "track": "avancado",
+      "title": "Avise seus alunos em poucos cliques",
+      "description": "Em Notificações: e-mail, WhatsApp, SMS e ligação",
+      "route": "/mentor/jornada/notificacoes",
+      "external": false,
+      "durationSec": 46,
+      "guid": "338441de-1aad-4380-8994-ab98855a8db1"
+    },
+    {
+      "slug": "notificacoes-p2-agendar",
+      "track": "avancado",
+      "title": "Notificações · Parte 2: agende e confira o envio",
+      "description": "Programe o aviso para a hora certa e veja se ele chegou",
+      "route": "/mentor/jornada/notificacoes",
+      "external": false,
+      "durationSec": 44,
+      "guid": "918671f6-4886-41a7-b5f5-acd7a1a1ee09"
+    },
+    {
+      "slug": "dominio",
+      "track": "avancado",
+      "title": "Use o seu próprio domínio",
+      "description": "Em Domínio customizado, com passo a passo guiado",
+      "route": "/mentor/vitrine-config/links",
+      "external": false,
+      "durationSec": 44,
+      "guid": "4c95876b-e044-437d-a2b8-b843713ae0d6"
+    },
+    {
+      "slug": "copiloto-aluno",
+      "track": "avancado",
+      "title": "Dê um assistente de IA aos seus alunos",
+      "description": "No Copiloto do Aluno, com as suas instruções",
+      "route": "/mentor/copiloto-aluno",
+      "external": false,
+      "durationSec": 38,
+      "guid": "c61b531b-4f8c-4e76-8dc9-98752268fe61"
+    },
+    {
+      "slug": "copiloto-aluno-p2-base",
+      "track": "avancado",
+      "title": "Copiloto do Aluno · Parte 2: base de conhecimento",
+      "description": "Ensine o assistente com o seu próprio material",
+      "route": "/mentor/copiloto-aluno",
+      "external": false,
+      "durationSec": 36,
+      "guid": "0f0b1398-5058-4707-abee-9494a5b32b1a"
+    },
+    {
+      "slug": "copiloto-aluno-p3-limites",
+      "track": "avancado",
+      "title": "Copiloto do Aluno · Parte 3: limites, liberação e consumo",
+      "description": "Decida quanto e para quem o assistente fica liberado",
+      "route": "/mentor/copiloto-aluno",
+      "external": false,
+      "durationSec": 45,
+      "guid": "5c4ee36e-7be9-4cbb-8850-162790d6c6db"
+    },
+    {
+      "slug": "minha-conta",
+      "track": "avancado",
+      "title": "Conheça o seu plano e os seus créditos",
+      "description": "Em Minha Conta, tudo num lugar só",
+      "route": "/mentor/meu-perfil/assinatura",
+      "external": false,
+      "durationSec": 39,
+      "guid": "15b0c8fa-4d9e-4b17-9511-de78b9d24797"
+    }
+  ]
+}

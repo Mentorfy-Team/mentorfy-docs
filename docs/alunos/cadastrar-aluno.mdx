@@ -1,0 +1,94 @@
+---
+title: Cadastre um aluno
+sidebar_label: Cadastrar um aluno
+sidebar_position: 1
+slug: /alunos/cadastrar-aluno
+description: Cadastre um aluno em Meus Clientes e libere a mentoria para ele em menos de um minuto.
+---
+
+Use quando alguém entrou fora das plataformas de venda (um pagamento por Pix, uma cortesia, um convidado). O aluno recebe um e-mail com o acesso e já encontra a mentoria na área dele.
+
+Na tela da Mentorfy, o aluno aparece como **cliente**, no menu **Clientes**.
+
+<Aula slug="cadastrar-aluno" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>No menu, abra <strong>Clientes</strong> › <strong>Meus Clientes</strong> e clique em <strong>Cadastrar</strong>.</>}>
+    É o botão laranja, no fim da fila de botões, acima da lista.
+
+    ![Tela Meus Clientes com o botão Cadastrar à direita](/img/guia/cadastrar-aluno/botoes.jpg)
+  </Passo>
+  <Passo titulo={<>Preencha <strong>Email</strong> e <strong>Nome</strong>.</>}>
+    São os únicos campos obrigatórios. Telefone, tags e **Expiração do Acesso** são opcionais.
+  </Passo>
+  <Passo titulo={<>Deixe <strong>Notificar usuário por email</strong> ligado.</>}>
+    Ligado, o aluno recebe o e-mail com o acesso. Desligado, ele ganha o acesso, mas não recebe aviso nenhum.
+  </Passo>
+  <Passo titulo={<>Em <strong>Selecione a trilha para atribuir</strong>, escolha uma trilha, se quiser.</>}>
+    A trilha libera de uma vez todas as mentorias dela.
+  </Passo>
+  <Passo titulo={<>Em <strong>Selecione o produto para atribuir</strong>, escolha a mentoria.</>}>
+    Dá para escolher mais de uma. Você precisa escolher pelo menos uma trilha ou um produto.
+  </Passo>
+  <Passo titulo={<>Clique em <strong>Criar Cliente</strong>.</>}>
+    O aviso verde confirma, e o aluno aparece na lista.
+
+    ![Formulário Cadastrar Cliente preenchido, com o botão Criar Cliente](/img/guia/cadastrar-aluno/formulario.jpg)
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::tip Quer ver o que o aluno vê?
+Na lista, clique nos três pontos da linha do aluno e escolha **Logar como Aluno**. Você entra na área dele sem precisar da senha.
+:::
+
+:::info O aluno já tinha cadastro?
+Pode cadastrar de novo com o mesmo e-mail. Ninguém fica duplicado: ele só ganha os produtos novos. Se ele já tinha o produto, nada muda.
+:::
+
+## Referência
+
+| Campo | Obrigatório? | Para que serve |
+| --- | --- | --- |
+| **Email** | Sim | É o login do aluno. O e-mail de acesso vai para cá. |
+| **Nome** | Sim | Aparece na lista e no e-mail de boas-vindas. |
+| **Telefone (Opcional)** | Não | Com DDD. Aparece na coluna **Contato** da lista. |
+| **Tags** | Não | Etiquetas para separar os alunos (ex.: "VIP"). |
+| **Expiração do Acesso (opcional)** | Não | Data em que o acesso acaba. Vazio = sem prazo. |
+| **Notificar usuário por email** | Já vem ligado | Decide se o aluno recebe o e-mail de acesso. |
+| **Selecione a trilha / o produto para atribuir** | Pelo menos um dos dois | O que o aluno vai poder acessar. |
+
+## Dúvidas comuns
+
+<details>
+<summary>O que chega no e-mail do aluno?</summary>
+
+Aluno novo recebe as boas-vindas com o link da sua área e a senha, ou um botão para criar a senha. Quem já tinha conta recebe o aviso de que há produtos novos, e a senha dele não muda.
+
+</details>
+
+<details>
+<summary>Apareceu um aviso de que o e-mail de acesso não foi enviado. E agora?</summary>
+
+O cadastro foi feito, só o e-mail falhou. Para mandar de novo, clique nos três pontos da linha do aluno e escolha **Enviar acesso à área**. A senha dele não muda. Veja mais causas em [Minha aluna não recebeu o acesso](/docs/alunos/aluna-sem-acesso).
+
+</details>
+
+<details>
+<summary>O botão Cadastrar está apagado. Por quê?</summary>
+
+Duas causas possíveis: sua conta está sem um plano Mentorfy ativo, ou você faz parte de uma equipe e não tem permissão para criar clientes. Nesse caso, peça ao dono da conta para liberar.
+
+</details>
+
+<details>
+<summary>Não vejo as opções "Solicitar criação de senha no primeiro acesso" ou "Cadastrar Responsável".</summary>
+
+Elas só aparecem quando a sua área do aluno está configurada para isso: a criação de senha no primeiro acesso e o cadastro de responsável (pais ou tutores). Sem essas configurações, o formulário fica mais curto.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/importar-alunos" titulo="Importe a turma inteira de uma vez">Uma planilha no lugar de vários cadastros.</ProximoPasso>

@@ -1,0 +1,92 @@
+---
+title: Importe vários alunos de uma vez
+sidebar_label: Importar alunos
+sidebar_position: 2
+description: Traga uma turma inteira com uma planilha CSV e libere a mentoria para todos de uma vez.
+---
+
+Tem uma turma inteira para cadastrar? Em vez de um por um, envie uma planilha com nome e e-mail de todos. No fim, um relatório mostra quem entrou.
+
+Na tela da Mentorfy, o aluno aparece como **cliente**, no menu **Clientes**.
+
+<Aula slug="clientes-p2-importar" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>Em <strong>Meus Clientes</strong>, clique em <strong>Importar</strong>.</>} />
+  <Passo titulo={<>Envie a planilha em <strong>.CSV</strong>, com as colunas Nome e E-mail.</>}>
+    Arraste o arquivo para o quadro ou clique para escolher. Não tem planilha pronta? Em **Baixar modelo de planilha**, pegue um modelo (o **Modelo Simples** serve para a maioria).
+
+    ![Tela Importar Clientes, etapa Envio, com os modelos de planilha](/img/guia/clientes-p2-importar/envio.jpg)
+  </Passo>
+  <Passo titulo={<>Na <strong>Revisão</strong>, confira quem é novo, quem já existe e quem tem erro. Clique em <strong>Avançar</strong>.</>}>
+    Linhas com erro (sem nome ou com e-mail inválido) ficam de fora.
+  </Passo>
+  <Passo titulo={<>Em <strong>Configuração</strong>, escolha o produto que todos vão receber.</>}>
+    Use a aba **Categorias** para liberar uma trilha inteira. **Data de expiração**, **Grupo** e **Membro de time** são opcionais.
+  </Passo>
+  <Passo titulo={<>Na <strong>Confirmação</strong>, revise o resumo e clique em <strong>Importar</strong>.</>}>
+    O botão mostra quantos alunos vão entrar. Não feche a aba enquanto importa. Com muitos alunos, pode levar alguns minutos.
+  </Passo>
+  <Passo titulo={<>Leia o <strong>Relatório de importação</strong> e clique em <strong>Fechar</strong>.</>}>
+    Cada linha mostra **Sucesso** ou **Erro**, com o motivo. Use **Mostrar apenas erros** para achar o que falhou.
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::info Quem recebe e-mail
+Todo aluno **novo** recebe o e-mail de boas-vindas com o acesso. Quem **já tinha cadastro** só recebe se você marcar **Enviar e-mail de boas-vindas para clientes existentes** na Confirmação.
+:::
+
+:::tip Aluno repetido não duplica
+Quem já está cadastrado não vira uma segunda conta: só ganha os acessos novos.
+:::
+
+## Referência
+
+Formato da planilha. Nome e E-mail são obrigatórios; as outras colunas são opcionais. Uma coluna com outro nome faz o arquivo ser recusado ("Colunas não reconhecidas"). Na dúvida, parta de um modelo.
+
+| Coluna (escreva assim) | O que colocar |
+| --- | --- |
+| `Nome` ou `name` | Nome do aluno. **Obrigatória.** |
+| `E-mail`, `Email` ou `email` | E-mail do aluno. **Obrigatória.** |
+| `Telefone` ou `phone` | Telefone com DDD. |
+| `Vencimento` ou `expiration` | Fim do acesso, como `31/12/2026` ou `2026-12-31`. Vale mais que a data escolhida na Configuração. |
+| `tag` ou `Tags` | Nome da tag. Várias na mesma célula, separadas por vírgula. |
+| `Grupo` | Nome do grupo. Se o grupo não existir, ele é criado. |
+| `Membro de time` ou `team_member` | E-mail da pessoa da sua equipe que vai cuidar do aluno. |
+| `guardian_name`, `guardian_email`, `guardian_phone` | Nome, e-mail e telefone do responsável (pais ou tutores). |
+
+## Dúvidas comuns
+
+<details>
+<summary>O botão Importar está apagado. Por quê?</summary>
+
+Quando a sua conta chega ao limite de clientes do plano, o botão fica apagado e mostra "Limite de clientes atingido". Ele também fica apagado sem um plano ativo ou sem permissão para criar clientes.
+
+</details>
+
+<details>
+<summary>Apareceu "O arquivo deve conter as colunas Nome e E-mail".</summary>
+
+A primeira linha da planilha precisa ter os nomes das colunas, exatamente como na tabela acima. Baixe o **Modelo Simples**, cole os seus dados nele e envie de novo.
+
+</details>
+
+<details>
+<summary>Não consigo escolher um grupo na Configuração.</summary>
+
+O grupo padrão só pode ser escolhido quando você marca **exatamente um** produto. Com mais de um, use a coluna `Grupo` na planilha.
+
+</details>
+
+<details>
+<summary>Minha planilha está em Excel (.xlsx).</summary>
+
+A importação aceita só .CSV. No Excel ou no Google Planilhas, use "Salvar como" ou "Fazer download" e escolha CSV.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/acesso-em-massa" titulo="Libere ou renove o acesso de muitos alunos">Sem cadastrar ninguém de novo.</ProximoPasso>

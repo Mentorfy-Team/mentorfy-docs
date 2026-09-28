@@ -1,0 +1,94 @@
+---
+title: Minha aluna não recebeu o acesso
+sidebar_label: Aluna sem acesso
+sidebar_position: 4
+description: Um checklist com as causas mais comuns de aluno sem acesso, como conferir cada uma e como resolver.
+---
+
+Siga a lista de cima para baixo. Cada item diz **como conferir** e **como resolver**. Quase sempre o problema está nos três primeiros.
+
+:::tip Comece por aqui
+Em **Clientes** › **Meus Clientes**, busque a aluna pelo nome ou e-mail. Se ela **não aparece**, pule direto para o item 5. Se aparece, clique nos três pontos da linha dela e escolha **Logar como Aluno**: você vê exatamente o que ela vê.
+:::
+
+Na tela da Mentorfy, o aluno aparece como **cliente**, no menu **Clientes**.
+
+## 1. O e-mail de acesso não saiu ou não chegou
+
+**Como conferir:** olhe a coluna **Email Status** da aluna.
+
+- **Entregue**, **Aberto** ou **Clicou**: o e-mail chegou. Vá para o item 2.
+- **Rejeitado**: o endereço não existe ou está bloqueado. Vá para o item 3.
+- **Adiado**: o provedor dela está recusando por enquanto; o envio é tentado de novo sozinho.
+- **Sem info**: não há registro de e-mail para ela. Pode ser que nenhum e-mail tenha saído, o que acontece quando o cadastro foi feito com **Notificar usuário por email** desligado, ou pelo [acesso em massa](/docs/alunos/acesso-em-massa), que não manda e-mail.
+
+**Como resolver:**
+
+<Passos>
+  <Passo titulo={<>Clique nos três pontos da linha da aluna.</>} />
+  <Passo titulo={<>Escolha <strong>Enviar acesso à área</strong>.</>}>
+    A senha dela não muda. O e-mail pode levar de 1 a 3 minutos para chegar.
+  </Passo>
+</Passos>
+
+## 2. O e-mail caiu no spam
+
+**Como conferir:** a coluna **Email Status** mostra **Spam**, ou mostra **Entregue** e ela diz que não achou nada.
+
+**Como resolver:** peça para ela procurar nas pastas **Spam**, **Lixo eletrônico** e **Promoções**, marcar o e-mail como "não é spam" e clicar no link. Não achou mesmo assim? Reenvie pelo item 1.
+
+## 3. O e-mail foi digitado errado
+
+**Como conferir:** compare o e-mail da lista, letra por letra, com o que ela usa. Erros comuns: `gmail.con`, `hotmial.com`, um ponto a mais.
+
+**Como resolver:**
+
+<Passos>
+  <Passo titulo={<>Clique em <strong>Cadastrar</strong> e cadastre a aluna com o e-mail certo e o mesmo produto.</>}>
+    Veja [Cadastre um aluno](/docs/alunos/cadastrar-aluno).
+  </Passo>
+  <Passo titulo={<>Se quiser, apague o cadastro errado: três pontos › <strong>Remover Cliente</strong>.</>} />
+</Passos>
+
+:::danger Remover Cliente apaga tudo
+Remover um cliente exclui todo o histórico dele e não dá para desfazer. Só remova o cadastro que foi feito com o e-mail errado.
+:::
+
+## 4. O produto não está liberado ou venceu
+
+**Como conferir:** na coluna **Produtos**, veja se a mentoria aparece para ela e se está **Ativo** ou **Expirado**. Na área dela, a mentoria aparece como **ACESSO EXPIRADO** ou **NÃO LIBERADO**.
+
+**Como resolver:**
+
+- **Não tem o produto:** três pontos › **Adicionar Produto**.
+- **Venceu:** use o [acesso em massa](/docs/alunos/acesso-em-massa) com **Acesso vitalício**, **Estender validade** ou **Data específica**. A opção **Manter validade atual** não renova quem já venceu.
+
+## 5. A liberação está esperando a sua aprovação
+
+**Como conferir:** no menu, abra **Clientes** › **Aprovações**. Estão ali os alunos que pediram acesso pela área do aluno (botão **SOLICITAR ACESSO**) e compras com pagamento ainda pendente. Para a aluna, a mentoria aparece como **AGUARDANDO APROVAÇÃO**.
+
+**Como resolver:** clique em **Aprovar Acesso** na linha dela. **Rejeitar Acesso** apaga o pedido.
+
+## 6. A compra por integração não chegou
+
+**Como conferir:** a aluna comprou pela Hotmart, Kiwify ou outra plataforma, mas não aparece em **Meus Clientes**. Se ela aparece, clique nos três pontos › **Ver Perfil** e abra **Ver eventos de pagamento** para ver o que a plataforma mandou.
+
+**Como resolver:** confira se a plataforma de vendas está conectada e se o produto vendido está ligado à mentoria certa. O passo a passo de cada plataforma está em [Integrações](/docs/integracoes/intro). Enquanto isso, você pode [cadastrar a aluna](/docs/alunos/cadastrar-aluno) à mão.
+
+## Dúvidas comuns
+
+<details>
+<summary>Reenviar o acesso troca a senha da aluna?</summary>
+
+Não. **Enviar acesso à área** manda de novo os dados de acesso e a senha continua a mesma. Se ela esqueceu a senha, use **Gerar nova senha**, no mesmo menu dos três pontos.
+
+</details>
+
+<details>
+<summary>Cadastrar a aluna de novo com o mesmo e-mail dá problema?</summary>
+
+Não. Ela não é duplicada: só ganha os produtos novos. Com **Notificar usuário por email** ligado, recebe um e-mail avisando.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/mensagens/central-de-atendimento" titulo="Atenda seus alunos pela central">Onde os alunos pedem ajuda e a equipe responde.</ProximoPasso>

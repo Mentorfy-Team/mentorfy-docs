@@ -1,0 +1,99 @@
+---
+title: O que conta como contato nos Indicadores
+sidebar_label: O que conta como contato
+sidebar_position: 4
+description: A regra exata por trás dos dias sem contato, dos registros de acompanhamento e do grupo em risco, e onde mudar os prazos.
+---
+
+Em **Grupos**, o botão **Indicadores** mostra há quantos dias cada grupo está sem contato e quais estão **em risco**. Esta página explica o que a Mentorfy conta como contato, como a cor é decidida e onde você muda os prazos.
+
+:::info O contato é contado por grupo
+Os dias sem contato são do **card do grupo** no quadro, não de cada aluno. Um grupo pode ser uma pessoa, uma turma ou uma empresa.
+:::
+
+## O que conta como contato
+
+Hoje, duas coisas contam. Os dias sem contato são contados a partir da **mais recente** delas.
+
+| Conta como contato | Quando vale |
+| --- | --- |
+| **Comentário no card** do grupo | Qualquer comentário que a equipe deixa no card. Vale na hora. |
+| **Reunião da agenda com o cliente** | Uma reunião **sua**, publicada e que **já aconteceu**, desde que: a equipe tenha ligado a reunião ao grupo (em **Ligar reunião** ou respondendo **Sim, foi**), **ou** um aluno do grupo estava entre os convidados. |
+
+A soma dos dois aparece como **Registros de acompanhamento** ("comentários e reuniões com os clientes").
+
+**Não contam:**
+
+- reuniões que ainda não aconteceram (passam a contar no dia e hora marcados);
+- aulas em grupo, em que a turma inteira foi convidada;
+- convites cancelados;
+- uma reunião que você marcou como **Não foi** para aquele grupo;
+- mudar o card de coluna no quadro (isso só mede o tempo na etapa).
+
+**Feedback numa entrega do aluno** aparece na tela como "em breve": ainda não conta.
+
+Para ligar uma reunião a um grupo, veja [Reuniões contam como contato](/docs/grupos-e-equipe/grupos/reunioes-contam-como-contato).
+
+## Como a cor é decidida
+
+| Cor | Quando |
+| --- | --- |
+| **em dia** | Contato mais recente há menos dias que o prazo amarelo. |
+| **em atenção** (amarelo) | Passou do prazo amarelo. Padrão: **7 dias** sem contato. |
+| **em risco** (vermelho) | Passou do prazo vermelho. Padrão: **14 dias** sem contato. |
+
+Três regras completam a conta:
+
+- **Grupo que nunca teve registro**: conta os dias desde que o card entrou no quadro. Com a opção **Card que nunca teve registro fica vermelho** ligada (vem ligada), ele fica vermelho ao passar do prazo vermelho.
+- **Coluna de atenção**: com **Quem está numa coluna de atenção fica vermelho** ligada (vem ligada), todo card numa coluna do tipo **Atenção imediata** fica vermelho, mesmo com contato em dia.
+- **Colunas fora da conta**: cards em colunas **Concluídas ou arquivadas** ou **Quadro interno do time** não entram em nenhum número.
+
+A Mentorfy sugere o tipo de cada coluna pelo nome. Por exemplo: "Arquivado", "Finalizado", "Concluído" ou "Cancelado" viram **Concluídas ou arquivadas**; "Não respondem", "Atenção", "Em risco" ou "Inadimplente" viram **Atenção imediata**. Você pode mudar.
+
+## Mude os prazos
+
+<Passos>
+  <Passo titulo={<>No menu, abra <strong>Grupos</strong> e clique em <strong>Indicadores</strong>.</>} />
+  <Passo titulo={<>Clique em <strong>Configurar</strong>.</>} />
+  <Passo titulo={<>Em <strong>Qual é o seu ritmo de contato?</strong>, escolha um ritmo.</>}>
+    A tela mostra na hora quantos grupos ficariam em risco com a regra nova. A mudança é salva sozinha.
+  </Passo>
+  <Passo titulo={<>Para dias exatos, abra <strong>Ajuste fino (dias exatos e exceções)</strong>.</>}>
+    Ali também ficam as duas opções de vermelho (card sem registro e coluna de atenção).
+  </Passo>
+  <Passo titulo={<>Em <strong>O que cada coluna do quadro significa?</strong>, toque numa coluna para mudar o tipo dela.</>} />
+</Passos>
+
+## Referência
+
+| Ritmo | Amarelo depois de | Vermelho depois de |
+| --- | --- | --- |
+| **Contato semanal** | 4 dias | 7 dias |
+| **Equilibrado** (recomendado, é o padrão) | 7 dias | 14 dias |
+| **Ritmo quinzenal** | 14 dias | 30 dias |
+| **Ajuste fino** | de 1 a 365 dias | maior que o amarelo, até 365 dias |
+
+## Dúvidas comuns
+
+<details>
+<summary>Quem pode mudar essas regras?</summary>
+
+Só o dono da conta. As pessoas da equipe veem o painel com as regras que o dono escolheu.
+
+</details>
+
+<details>
+<summary>Fiz uma reunião com o cliente, mas o grupo continua em risco.</summary>
+
+Confira três coisas: a reunião já aconteceu; ela aparece na agenda da sua conta na Mentorfy; e ou um aluno do grupo estava convidado, ou alguém ligou a reunião ao grupo em **Reuniões com o cliente**. Se foi uma aula para a turma toda, ela não conta.
+
+</details>
+
+<details>
+<summary>Mandar mensagem ou notificação para o aluno conta como contato?</summary>
+
+Não. Hoje só contam o comentário no card do grupo e a reunião com o cliente. Depois de falar com o cliente por outro canal, deixe um comentário no card: isso registra o contato.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/notificacoes/avisar-alunos" titulo="Avise seus alunos em poucos cliques">E-mail, WhatsApp, SMS ou ligação.</ProximoPasso>

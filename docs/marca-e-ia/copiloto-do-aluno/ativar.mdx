@@ -1,0 +1,77 @@
+---
+title: Dê um assistente de IA aos seus alunos
+sidebar_label: Ligar o assistente
+sidebar_position: 1
+description: Configure nome, cor, instruções e limites do Copiloto do Aluno e ligue quando quiser.
+---
+
+O Copiloto do Aluno é um assistente que tira as dúvidas dos seus alunos a qualquer hora, do jeito que você ensinar. Ele aparece como um botão flutuante na área do aluno.
+
+<Aula slug="copiloto-aluno" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>No menu, abra <strong>Copiloto</strong> e depois <strong>Copiloto do Aluno</strong>.</>} />
+  <Passo titulo={<>Em <strong>Personalização Visual</strong>, preencha o <strong>Nome de Exibição</strong> e escolha a <strong>Cor Primária</strong>.</>}>
+    A **Preview do Botão** mostra o botão que o aluno vai ver. Se deixar o nome vazio, aparece "Copiloto".
+
+    ![Nome e cor do assistente, com a prévia do botão](/img/guia/copiloto-aluno/03-nome-cor.jpg)
+  </Passo>
+  <Passo titulo={<>Em <strong>Instruções do Copiloto</strong>, diga como ele deve responder.</>}>
+    Para começar rápido, clique num dos **Exemplos de Prompts**: **Suporte Geral**, **Mentor de Negócios** ou **Coach de Desenvolvimento Pessoal**. Depois, ajuste com as suas palavras.
+  </Passo>
+  <Passo titulo={<>Em <strong>Limites por Aluno</strong>, defina o <strong>Limite Diário</strong> de mensagens.</>}>
+    Use 0 para sem limite.
+
+    ![Limites de mensagens por aluno](/img/guia/copiloto-aluno/06-limites.jpg)
+  </Passo>
+  <Passo titulo={<>Clique em <strong>Salvar</strong>, no canto de cima.</>} />
+  <Passo titulo={<>Quando quiser liberar para os alunos, ligue o <strong>Status do Copiloto</strong>.</>}>
+    Desligado, ele não aparece para os alunos. Você pode configurar tudo com calma antes de ligar.
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::tip
+Seja específico nas instruções. Quanto mais detalhado, melhores as respostas.
+:::
+
+:::caution
+Para ligar o assistente, você precisa ter créditos de IA disponíveis. No período de teste, cada mensagem dos alunos desconta créditos da **sua** conta; no plano pago, não desconta. Veja o consumo em [Limites e consumo](/docs/marca-e-ia/copiloto-do-aluno/limites-e-consumo).
+:::
+
+## Referência
+
+| Campo | O que aceita |
+| --- | --- |
+| **Nome de Exibição** | Texto livre. Vazio = "Copiloto" |
+| **Cor Primária** | Uma das cores prontas ou uma **Cor personalizada** |
+| **Avatar do Copiloto** | PNG, JPG ou GIF, até 2 MB (recomendado 128x128 px) |
+| **Limite Diário / Semanal / Mensal** | Número de mensagens por aluno. 0 = sem limite |
+
+## Dúvidas comuns
+
+<details>
+<summary>Salvei, mas meus alunos não veem o botão. Por quê?</summary>
+
+Confira se o **Status do Copiloto** está ligado: desligado, o assistente não aparece para os alunos. Confira também as **Regras de Liberação**: se você exigiu dias de cadastro ou um produto específico, o aluno só consegue usar o assistente quando cumprir as regras.
+
+</details>
+
+<details>
+<summary>Apareceu um aviso de que não tenho créditos.</summary>
+
+Sem créditos disponíveis, não dá para ligar o assistente, mesmo no plano pago. Compre mais créditos em **Minha Conta** e tente de novo.
+
+</details>
+
+<details>
+<summary>O assistente responde com o conteúdo das minhas aulas?</summary>
+
+Ele usa as suas instruções e os documentos que você enviar na **Base de Conhecimento**. Veja como enviar na próxima página.
+
+</details>
+
+<ProximoPasso para="/docs/marca-e-ia/copiloto-do-aluno/base-de-conhecimento" titulo="Ensine o assistente com o seu material">Envie PDFs e documentos para ele responder com o seu conteúdo.</ProximoPasso>

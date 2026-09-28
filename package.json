@@ -16,11 +16,13 @@
     "translate:ui": "node scripts/translate-ui.mjs",
     "translate:docs": "node scripts/translate-docs.mjs",
     "translate": "yarn i18n:extract && yarn translate:ui && yarn translate:docs",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "sync:aulas": "node scripts/sync-aulas.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
     "@docusaurus/core": "3.9.2",
+    "@docusaurus/plugin-client-redirects": "3.9.2",
     "@docusaurus/plugin-content-docs": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@docusaurus/theme-common": "3.9.2",

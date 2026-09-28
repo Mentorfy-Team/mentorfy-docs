@@ -5,6 +5,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import { ArrowUpRight } from "lucide-react";
 import HeroSearch from "@site/src/components/SearchBar/HeroSearch";
+import HomeGuia from "@site/src/components/HomeGuia";
 
 import styles from "./index.module.css";
 
@@ -30,16 +31,16 @@ function HomeHero() {
 
         <p className={styles.heroSubtitle}>
           <Translate id="homepage.hero.subtitle">
-            De mentores para mentores. Guias, integrações e suporte em um só
-            lugar.
+            Aprenda a usar a Mentorfy com aulas de menos de 1 minuto e passo a
+            passo curto. Do primeiro aluno às integrações.
           </Translate>
         </p>
 
         <div className={styles.heroActions}>
-          <Link to="/docs/intro" className={styles.heroButton}>
+          <Link to="/docs/comece/bem-vindo" className={styles.heroButton}>
             <span className={styles.heroButtonLabel}>
               <Translate id="homepage.hero.cta.explore">
-                Explorar documentação
+                Começar pelo guia
               </Translate>
             </span>
             <span className={styles.heroButtonIcon}>
@@ -49,10 +50,12 @@ function HomeHero() {
           </Link>
 
           <Link
-            href="https://help.mentorfy.io"
+            to="/docs/comece/todas-as-aulas"
             className={styles.heroSecondaryLink}
           >
-            <Translate id="homepage.hero.cta.help">Central de ajuda</Translate>
+            <Translate id="homepage.hero.cta.videos">
+              Ver as aulas em vídeo
+            </Translate>
           </Link>
         </div>
       </div>
@@ -70,11 +73,11 @@ export default function Home(): JSX.Element {
       description={translate({
         id: "homepage.layout.description",
         message:
-          "Documentação oficial da Mentorfy. Guia do mentor, API e suporte.",
+          "Guia oficial da Mentorfy: aulas em vídeo e passo a passo para mentores.",
       })}
     >
       <HomeHero />
-      <main />
+      <HomeGuia />
     </Layout>
   );
 }

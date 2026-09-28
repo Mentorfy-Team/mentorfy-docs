@@ -1,0 +1,75 @@
+---
+title: Monte o seu processo em colunas
+sidebar_label: Monte o processo
+sidebar_position: 2
+description: Crie as fases do quadro de Grupos, dê cor e prazo a cada uma e arraste os grupos conforme avançam.
+---
+
+Cada coluna do quadro é uma fase do seu processo, do começo até a conclusão. Com as fases certas, você bate o olho e sabe em que ponto cada grupo está.
+
+<Aula slug="grupos-p2-kanban" />
+
+## Passo a passo
+
+<Passos>
+  <Passo titulo={<>No fim do quadro, clique em <strong>Adicionar coluna</strong>.</>} />
+  <Passo titulo={<>Dê um nome para a fase, como "Reunião inicial", e clique em <strong>Adicionar</strong>.</>} />
+  <Passo titulo={<>No menu da coluna, em <strong>Cor</strong>, escolha uma cor.</>}>
+    Assim você acha a fase de longe. No mesmo menu ficam **Renomear**, **Alterar duração**, **Quem pode ver** e **Excluir coluna**.
+
+    ![Menu da coluna com Renomear, Cor, Alterar duração, Quem pode ver e Excluir coluna](/img/guia/grupos-p2-kanban/04-menu.jpg)
+  </Passo>
+  <Passo titulo={<>Em <strong>Alterar duração</strong>, escolha um ritmo e clique em <strong>Salvar prazo</strong>.</>}>
+    O grupo parado na coluna fica amarelo (em atenção) e, depois, vermelho (em atraso).
+
+    ![Janela de duração com os ritmos e o botão Salvar prazo](/img/guia/grupos-p2-kanban/08-ritmo.jpg)
+  </Passo>
+  <Passo titulo={<>Arraste a coluna para o lugar certo, e os grupos de uma fase para a outra.</>}>
+    O quadro mostra em que fase cada grupo está.
+  </Passo>
+</Passos>
+
+## Bom saber
+
+:::tip
+Na dúvida, use **Equilibrado**: é o ritmo sugerido pela tela. Você pode ajustar os dias com os botões **-** e **+**.
+:::
+
+:::info
+O prazo muda o que o time inteiro vê como atrasado. Por isso, só o dono da conta ou quem tem **Editar** em **Grupos** pode mudar o prazo de uma coluna.
+:::
+
+## Referência
+
+| Ritmo | Fica em atenção após | Fica em atraso após |
+| --- | --- | --- |
+| **Ritmo curto** | 3 dias | 5 dias |
+| **Equilibrado** (sugerido) | 7 dias | 14 dias |
+| **Ciclo longo** | 15 dias | 30 dias |
+
+Em **Como contar os dias**, escolha **Dias úteis** (sem fim de semana e feriado) ou **Dias corridos** (todos os dias contam). O padrão é dias úteis. Para tirar o aviso de uma coluna, use **Remover prazo**.
+
+## Dúvidas comuns
+
+<details>
+<summary>Excluí uma coluna com grupos dentro. Os grupos somem?</summary>
+
+Não. Excluir uma coluna nunca exclui um grupo. Se a coluna tem grupos, a tela pede para você escolher em **Mover grupos para** qual coluna eles vão. Se for a única coluna, crie outra antes, para os grupos terem para onde ir.
+
+</details>
+
+<details>
+<summary>A partir de quando o prazo começa a contar?</summary>
+
+Do dia em que o grupo entrou na coluna. Se ele nunca foi movido, conta desde que o grupo foi criado. Quando o grupo entra em atenção ou em atraso, o card ganha um selo amarelo ou vermelho com os dias na coluna, como "6d na coluna". Passe o mouse no selo para ler o motivo.
+
+</details>
+
+<details>
+<summary>O prazo vale para todas as colunas?</summary>
+
+Não. Cada coluna tem o seu prazo, e o aviso vale só para os grupos que estão nela.
+
+</details>
+
+<ProximoPasso para="/docs/grupos-e-equipe/grupos/organizar-o-time" titulo="Organize o time">Diga quem cuida de cada grupo e quem pode ver cada coisa.</ProximoPasso>
