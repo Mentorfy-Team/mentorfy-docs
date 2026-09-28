@@ -1,0 +1,99 @@
+---
+title: Qué cuenta como contacto en los Indicadores
+sidebar_label: Qué cuenta como contacto
+sidebar_position: 4
+description: La regla exacta detrás de los días sin contacto, de los registros de seguimiento y del grupo en riesgo, y dónde cambiar los plazos.
+---
+
+En **Grupos**, el botón **Indicadores** muestra cuántos días lleva cada grupo sin contacto y cuáles están **em risco** (en riesgo). Esta página explica qué cuenta Mentorfy como contacto, cómo se decide el color y dónde cambias los plazos.
+
+:::info El contacto se cuenta por grupo
+Los días sin contacto son de la **tarjeta del grupo** en el tablero, no de cada alumno. Un grupo puede ser una persona, un grupo de alumnos o una empresa.
+:::
+
+## Qué cuenta como contacto
+
+Hoy cuentan dos cosas. Los días sin contacto se cuentan desde la **más reciente** de ellas.
+
+| Cuenta como contacto | Cuándo vale |
+| --- | --- |
+| **Comentário no card** (comentario en la tarjeta) del grupo | Cualquier comentario que el equipo deja en la tarjeta. Vale al instante. |
+| **Reunión de la agenda con el cliente** | Una reunión **tuya**, publicada y que **ya ocurrió**, siempre que: el equipo haya vinculado la reunión al grupo (en **Vincular reunión** o respondiendo **Sí, fue**), **o** un alumno del grupo estaba entre los invitados. |
+
+La suma de los dos aparece como **Registros de acompanhamento** (registros de seguimiento: "comentarios y reuniones con los clientes").
+
+**No cuentan:**
+
+- reuniones que todavía no ocurrieron (empiezan a contar en el día y la hora programados);
+- clases en grupo, en las que se invitó a todo el grupo;
+- invitaciones canceladas;
+- una reunión que marcaste como **No fue** para ese grupo;
+- cambiar la tarjeta de columna en el tablero (eso solo mide el tiempo en la etapa).
+
+**Feedback numa entrega do aluno** (feedback en una entrega del alumno) aparece en la pantalla como "próximamente": todavía no cuenta.
+
+Para vincular una reunión a un grupo, mira [Las reuniones cuentan como contacto](/docs/grupos-e-equipe/grupos/reunioes-contam-como-contato).
+
+## Cómo se decide el color
+
+| Color | Cuándo |
+| --- | --- |
+| **em dia** (al día) | El contacto más reciente fue hace menos días que el plazo amarillo. |
+| **em atenção** (en atención, amarillo) | Pasó el plazo amarillo. Predeterminado: **7 días** sin contacto. |
+| **em risco** (en riesgo, rojo) | Pasó el plazo rojo. Predeterminado: **14 días** sin contacto. |
+
+Tres reglas completan la cuenta:
+
+- **Grupo que nunca tuvo registro**: cuenta los días desde que la tarjeta entró al tablero. Con la opción **Card que nunca teve registro fica vermelho** (la tarjeta que nunca tuvo registro se pone roja) activada (viene activada), se pone roja al pasar el plazo rojo.
+- **Columna de atención**: con **Quem está numa coluna de atenção fica vermelho** (quien está en una columna de atención se pone rojo) activada (viene activada), toda tarjeta en una columna del tipo **Atenção imediata** (atención inmediata) se pone roja, aunque el contacto esté al día.
+- **Columnas fuera de la cuenta**: las tarjetas en columnas **Concluídas ou arquivadas** (terminadas o archivadas) o **Quadro interno do time** (tablero interno del equipo) no entran en ningún número.
+
+Mentorfy sugiere el tipo de cada columna por su nombre. Por ejemplo: "Archivado", "Finalizado", "Concluido" o "Cancelado" pasan a **Concluídas ou arquivadas**; "No responden", "Atención", "En riesgo" o "Moroso" pasan a **Atenção imediata**. Puedes cambiarlo.
+
+## Cambia los plazos
+
+<Passos>
+  <Passo titulo={<>En el menú, abre <strong>Grupos</strong> y haz clic en <strong>Indicadores</strong>.</>} />
+  <Passo titulo={<>Haz clic en <strong>Configurar</strong>.</>} />
+  <Passo titulo={<>En <strong>Qual é o seu ritmo de contato?</strong> (¿cuál es tu ritmo de contacto?), elige un ritmo.</>}>
+    La pantalla muestra al instante cuántos grupos quedarían en riesgo con la regla nueva. El cambio se guarda solo.
+  </Passo>
+  <Passo titulo={<>Para días exactos, abre <strong>Ajuste fino (dias exatos e exceções)</strong> (ajuste fino: días exactos y excepciones).</>}>
+    Ahí también están las dos opciones de rojo (tarjeta sin registro y columna de atención).
+  </Passo>
+  <Passo titulo={<>En <strong>O que cada coluna do quadro significa?</strong> (¿qué significa cada columna del tablero?), toca una columna para cambiar su tipo.</>} />
+</Passos>
+
+## Referencia
+
+| Ritmo | Amarillo después de | Rojo después de |
+| --- | --- | --- |
+| **Contato semanal** (contacto semanal) | 4 días | 7 días |
+| **Equilibrado** (recomendado, es el predeterminado) | 7 días | 14 días |
+| **Ritmo quinzenal** (ritmo quincenal) | 14 días | 30 días |
+| **Ajuste fino** | de 1 a 365 días | mayor que el amarillo, hasta 365 días |
+
+## Preguntas frecuentes
+
+<details>
+<summary>¿Quién puede cambiar estas reglas?</summary>
+
+Solo el dueño de la cuenta. Las personas del equipo ven el panel con las reglas que eligió el dueño.
+
+</details>
+
+<details>
+<summary>Hice una reunión con el cliente, pero el grupo sigue en riesgo.</summary>
+
+Revisa tres cosas: la reunión ya ocurrió; aparece en la agenda de tu cuenta en Mentorfy; y o un alumno del grupo estaba invitado, o alguien vinculó la reunión al grupo en **Reuniones con el cliente**. Si fue una clase para todo el grupo, no cuenta.
+
+</details>
+
+<details>
+<summary>¿Enviarle un mensaje o una notificación al alumno cuenta como contacto?</summary>
+
+No. Hoy solo cuentan el comentario en la tarjeta del grupo y la reunión con el cliente. Después de hablar con el cliente por otro canal, deja un comentario en la tarjeta: eso registra el contacto.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/notificacoes/avisar-alunos" titulo="Avisa a tus alumnos en pocos clics">Correo, WhatsApp, SMS o llamada.</ProximoPasso>

@@ -1,0 +1,75 @@
+---
+title: Set up your process in columns
+sidebar_label: Set up the process
+sidebar_position: 2
+description: Create the stages of the Groups board, give each one a color and a deadline, and drag groups as they move forward.
+---
+
+Each column on the board is a stage of your process, from start to finish. With the right stages, you can tell at a glance where each group is.
+
+<Aula slug="grupos-p2-kanban" />
+
+## Step by step
+
+<Passos>
+  <Passo titulo={<>At the end of the board, click <strong>Add column</strong>.</>} />
+  <Passo titulo={<>Give the stage a name, like "Kickoff meeting", and click <strong>Add</strong>.</>} />
+  <Passo titulo={<>In the column menu, under <strong>Color</strong>, pick a color.</>}>
+    That way you spot the stage from afar. The same menu has **Rename**, **Change duration**, **Who can see it**, and **Delete column**.
+
+    ![Column menu with Rename, Color, Change duration, Who can see it, and Delete column](/img/guia/grupos-p2-kanban/04-menu.jpg)
+  </Passo>
+  <Passo titulo={<>In <strong>Change duration</strong>, pick a rhythm and click <strong>Save duration</strong>.</>}>
+    A group that stays still in the column turns yellow (needs attention) and then red (overdue).
+
+    ![Duration window with the rhythms and the Save duration button](/img/guia/grupos-p2-kanban/08-ritmo.jpg)
+  </Passo>
+  <Passo titulo={<>Drag the column to the right place, and drag groups from one stage to the next.</>}>
+    The board shows which stage each group is in.
+  </Passo>
+</Passos>
+
+## Good to know
+
+:::tip
+When in doubt, use **Balanced**: it's the rhythm the screen suggests. You can adjust the days with the **-** and **+** buttons.
+:::
+
+:::info
+The deadline changes what the whole team sees as overdue. That's why only the account owner or someone with **Edit** on **Groups** can change a column's deadline.
+:::
+
+## Reference
+
+| Rhythm | Needs attention after | Overdue after |
+| --- | --- | --- |
+| **Short cycle** | 3 days | 5 days |
+| **Balanced** (suggested) | 7 days | 14 days |
+| **Long cycle** | 15 days | 30 days |
+
+In **How to count the days**, pick **Business days** (no weekends or holidays) or **Calendar days** (every day counts). The default is business days. To remove the warning from a column, use **Remove duration**.
+
+## Common questions
+
+<details>
+<summary>I deleted a column with groups in it. Do the groups disappear?</summary>
+
+No. Deleting a column never deletes a group. If the column has groups, the screen asks you to choose in **Move groups to** which column they go to. If it's the only column, create another one first, so the groups have somewhere to go.
+
+</details>
+
+<details>
+<summary>When does the deadline start counting?</summary>
+
+From the day the group entered the column. If it was never moved, it counts from when the group was created. When the group needs attention or is overdue, the card gets a yellow or red badge with the days in the column, like "6d in column". Hover over the badge to read the reason.
+
+</details>
+
+<details>
+<summary>Does the deadline apply to every column?</summary>
+
+No. Each column has its own deadline, and the warning only applies to the groups in it.
+
+</details>
+
+<ProximoPasso para="/docs/grupos-e-equipe/grupos/organizar-o-time" titulo="Organize your team">Say who looks after each group and who can see each thing.</ProximoPasso>

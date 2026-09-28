@@ -1,0 +1,94 @@
+---
+title: Registra un alumno
+sidebar_label: Registrar un alumno
+sidebar_position: 1
+slug: /alunos/cadastrar-aluno
+description: Registra un alumno en Mis clientes y dale acceso a la mentoría en menos de un minuto.
+---
+
+Úsalo cuando alguien entró por fuera de las plataformas de venta (un pago por Pix, una cortesía, un invitado). El alumno recibe un correo con el acceso y ya encuentra la mentoría en su área.
+
+En la pantalla de Mentorfy, el alumno aparece como **cliente**, en el menú **Clientes**.
+
+<Aula slug="cadastrar-aluno" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>En el menú, abre <strong>Clientes</strong> › <strong>Mis clientes</strong> y haz clic en <strong>Registrarse</strong>.</>}>
+    Es el botón naranja, al final de la fila de botones, arriba de la lista.
+
+    ![Pantalla Mis clientes con el botón Registrarse a la derecha](/img/guia/cadastrar-aluno/botoes.jpg)
+  </Passo>
+  <Passo titulo={<>Completa <strong>Correo</strong> y <strong>Nombre</strong>.</>}>
+    Son los únicos campos obligatorios. Teléfono, etiquetas y **Vencimiento de acceso (opcional)** son opcionales.
+  </Passo>
+  <Passo titulo={<>Deja <strong>Notificar al usuario por correo</strong> activado.</>}>
+    Activado, el alumno recibe el correo con el acceso. Desactivado, recibe el acceso, pero ningún aviso.
+  </Passo>
+  <Passo titulo={<>En <strong>Selecciona la ruta a asignar</strong>, elige una ruta, si quieres.</>}>
+    La ruta da acceso de una vez a todas sus mentorías.
+  </Passo>
+  <Passo titulo={<>En <strong>Selecciona el producto a asignar</strong>, elige la mentoría.</>}>
+    Puedes elegir más de una. Tienes que elegir al menos una ruta o un producto.
+  </Passo>
+  <Passo titulo={<>Haz clic en <strong>Crear cliente</strong>.</>}>
+    El aviso verde lo confirma, y el alumno aparece en la lista.
+
+    ![Formulario para registrar un cliente completado, con el botón Crear cliente](/img/guia/cadastrar-aluno/formulario.jpg)
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::tip ¿Quieres ver lo que ve el alumno?
+En la lista, haz clic en los tres puntos de la fila del alumno y elige **Iniciar sesión como estudiante**. Entras a su área sin necesitar la contraseña.
+:::
+
+:::info ¿El alumno ya estaba registrado?
+Puedes registrarlo de nuevo con el mismo correo. Nadie queda duplicado: solo recibe los productos nuevos. Si ya tenía el producto, nada cambia.
+:::
+
+## Referencia
+
+| Campo | ¿Obligatorio? | Para qué sirve |
+| --- | --- | --- |
+| **Correo** | Sí | Es el usuario con el que el alumno entra. El correo de acceso llega aquí. |
+| **Nombre** | Sí | Aparece en la lista y en el correo de bienvenida. |
+| **Teléfono (opcional)** | No | Con código de área. Aparece en la columna **Contacto** de la lista. |
+| **Etiquetas** | No | Etiquetas para separar a los alumnos (ej.: "VIP"). |
+| **Vencimiento de acceso (opcional)** | No | Fecha en que termina el acceso. Vacío = sin plazo. |
+| **Notificar al usuario por correo** | Viene activado | Decide si el alumno recibe el correo de acceso. |
+| **Selecciona la ruta / el producto a asignar** | Al menos uno de los dos | Lo que el alumno podrá ver. |
+
+## Preguntas frecuentes
+
+<details>
+<summary>¿Qué le llega al correo del alumno?</summary>
+
+El alumno nuevo recibe la bienvenida con el enlace de tu área y la contraseña, o un botón para crear la contraseña. Quien ya tenía cuenta recibe el aviso de que hay productos nuevos, y su contraseña no cambia.
+
+</details>
+
+<details>
+<summary>Apareció un aviso de que el correo de acceso no se envió. ¿Y ahora?</summary>
+
+El registro se hizo, solo falló el correo. Para enviarlo de nuevo, haz clic en los tres puntos de la fila del alumno y elige **Enviar correo electrónico de acceso**. Su contraseña no cambia. Mira más causas en [Mi alumna no recibió el acceso](/docs/alunos/aluna-sem-acesso).
+
+</details>
+
+<details>
+<summary>El botón Registrarse está apagado. ¿Por qué?</summary>
+
+Hay dos causas posibles: tu cuenta no tiene un plan Mentorfy activo, o formas parte de un equipo y no tienes permiso para crear clientes. En ese caso, pide al dueño de la cuenta que te lo habilite.
+
+</details>
+
+<details>
+<summary>No veo las opciones "Solicitar creación de contraseña en el primer acceso" o "Registrar tutor".</summary>
+
+Solo aparecen cuando tu área del alumno está configurada para eso: la creación de contraseña en el primer acceso y el registro de un tutor (padres o tutores). Sin esas configuraciones, el formulario es más corto.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/importar-alunos" titulo="Importa el grupo completo de una vez">Una hoja de cálculo en lugar de muchos registros.</ProximoPasso>

@@ -1,0 +1,77 @@
+---
+title: Dale un asistente de IA a tus alumnos
+sidebar_label: Activar el asistente
+sidebar_position: 1
+description: Configura el nombre, el color, las instrucciones y los límites del Copilot del estudiante y actívalo cuando quieras.
+---
+
+El Copilot del estudiante es un asistente que responde las dudas de tus alumnos a cualquier hora, de la forma en que tú le enseñes. Aparece como un botón flotante en el área del alumno.
+
+<Aula slug="copiloto-aluno" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>En el menú, abre <strong>Copiloto</strong> y después <strong>Copilot del estudiante</strong>.</>} />
+  <Passo titulo={<>En <strong>Personalización visual</strong>, completa el <strong>Nombre visible</strong> y elige el <strong>Color principal</strong>.</>}>
+    La **Vista previa del botón** muestra el botón que va a ver el alumno. Si dejas el nombre vacío, aparece "Copilot".
+
+    ![Nombre y color del asistente, con la vista previa del botón](/img/guia/copiloto-aluno/03-nome-cor.jpg)
+  </Passo>
+  <Passo titulo={<>En <strong>Instrucciones del Copilot</strong>, di cómo debe responder.</>}>
+    Para empezar rápido, haz clic en uno de los **Ejemplos de prompt**: **Soporte general**, **Mentor de negocios** o **Coach de desarrollo personal**. Después, ajústalo con tus palabras.
+  </Passo>
+  <Passo titulo={<>En <strong>Límites por estudiante</strong>, define el <strong>Límite diario</strong> de mensajes.</>}>
+    Usa 0 para sin límite.
+
+    ![Límites de mensajes por alumno](/img/guia/copiloto-aluno/06-limites.jpg)
+  </Passo>
+  <Passo titulo={<>Haz clic en <strong>Guardar</strong>, en la esquina de arriba.</>} />
+  <Passo titulo={<>Cuando quieras habilitarlo para los alumnos, activa el <strong>Estado del Copilot</strong>.</>}>
+    Desactivado, no les aparece a los alumnos. Puedes configurar todo con calma antes de activarlo.
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::tip
+Sé específico en las instrucciones. Cuanto más detalladas, mejores las respuestas.
+:::
+
+:::caution
+Para activar el asistente, necesitas tener créditos de IA disponibles. En el periodo de prueba, cada mensaje de los alumnos descuenta créditos de **tu** cuenta; en el plan pago, no descuenta. Mira el consumo en [Límites y consumo](/docs/marca-e-ia/copiloto-do-aluno/limites-e-consumo).
+:::
+
+## Referencia
+
+| Campo | Qué acepta |
+| --- | --- |
+| **Nombre visible** | Texto libre. Vacío = "Copilot" |
+| **Color principal** | Uno de los colores listos o un **Color personalizado** |
+| **Avatar del Copilot** | PNG, JPG o GIF, hasta 2 MB (recomendado 128x128 px) |
+| **Límite diario / semanal / mensual** | Cantidad de mensajes por alumno. 0 = sin límite |
+
+## Preguntas frecuentes
+
+<details>
+<summary>Guardé, pero mis alumnos no ven el botón. ¿Por qué?</summary>
+
+Revisa si el **Estado del Copilot** está activado: desactivado, el asistente no les aparece a los alumnos. Revisa también las **Reglas de liberación**: si exigiste días de registro o un producto específico, el alumno solo puede usar el asistente cuando cumple las reglas.
+
+</details>
+
+<details>
+<summary>Apareció un aviso de que no tengo créditos.</summary>
+
+Sin créditos disponibles, no se puede activar el asistente, ni siquiera en el plan pago. Compra más créditos en **Mi cuenta** e inténtalo de nuevo.
+
+</details>
+
+<details>
+<summary>¿El asistente responde con el contenido de mis clases?</summary>
+
+Usa tus instrucciones y los documentos que subas a la **Base de conocimiento**. Mira cómo subirlos en la página siguiente.
+
+</details>
+
+<ProximoPasso para="/docs/marca-e-ia/copiloto-do-aluno/base-de-conhecimento" titulo="Enséñale al asistente con tu material">Sube PDFs y documentos para que responda con tu contenido.</ProximoPasso>

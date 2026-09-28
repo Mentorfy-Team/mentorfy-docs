@@ -379,5 +379,92 @@
   },
   "search.hero.inputAriaLabel": {
     "message": "Quick search"
+  },
+  "homepage.hero.cta.videos": {
+    "message": "Watch the video lessons"
+  },
+  "home.start.trial.title": {
+    "message": "Free trial roadmap"
+  },
+  "home.start.trial.text": {
+    "message": "The first missions, in the right order."
+  },
+  "home.start.student.title": {
+    "message": "Add a student"
+  },
+  "home.start.student.text": {
+    "message": "Bring in the people who bought."
+  },
+  "home.start.course.title": {
+    "message": "Create your mentorship"
+  },
+  "home.start.course.text": {
+    "message": "Build what you sell, with modules and lessons."
+  },
+  "home.block.courses.title": {
+    "message": "Mentorships and courses"
+  },
+  "home.block.courses.text": {
+    "message": "Lessons, videos, certificates, questions, and how it all looks to the student."
+  },
+  "home.block.students.title": {
+    "message": "Students"
+  },
+  "home.block.students.text": {
+    "message": "Add students, give access, support them, and track their progress."
+  },
+  "home.block.teams.title": {
+    "message": "Groups and team"
+  },
+  "home.block.teams.text": {
+    "message": "Organize classes and companies, your team, and live meetings."
+  },
+  "home.block.ai.title": {
+    "message": "Brand and AI"
+  },
+  "home.block.ai.text": {
+    "message": "Your brand in the student area, covers, audio, and the Copilots."
+  },
+  "home.block.integrations.title": {
+    "message": "Integrations"
+  },
+  "home.block.integrations.text": {
+    "message": "Give access automatically when someone buys, and connect Zoom, Meet, and more."
+  },
+  "home.block.account.title": {
+    "message": "Account and support"
+  },
+  "home.block.account.text": {
+    "message": "Your plan, your credits, and how to reach us."
+  },
+  "home.start.heading": {
+    "message": "Start here"
+  },
+  "home.blocks.heading": {
+    "message": "The guide"
+  },
+  "home.blocks.lessons": {
+    "message": "{count} video lessons"
+  },
+  "home.quick.heading": {
+    "message": "Lessons under 1 minute"
+  },
+  "home.quick.all": {
+    "message": "See all {count} lessons"
+  },
+  "aulas.trackMeta": {
+    "message": "{count} lessons · {minutes} min"
+  },
+  "proximoPasso.kicker": {
+    "message": "Next step"
+  },
+  "aula.play": {
+    "message": "Watch: {title}"
+  },
+  "aula.portugueseOnly": {
+    "message": "Video in Portuguese"
+  },
+  "aula.openApp": {
+    "message": "Open in Mentorfy"
   }
 }

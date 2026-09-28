@@ -1,0 +1,92 @@
+---
+title: Import many students at once
+sidebar_label: Import students
+sidebar_position: 2
+description: Bring in a whole class with a CSV spreadsheet and give them all the mentorship at once.
+---
+
+Have a whole class to register? Instead of one by one, upload a spreadsheet with everyone's name and email. At the end, a report shows who got in.
+
+On the Mentorfy screen, a student shows up as a **client**, in the **Clients** menu.
+
+<Aula slug="clientes-p2-importar" />
+
+## Step by step
+
+<Passos>
+  <Passo titulo={<>In <strong>My Clients</strong>, click <strong>Import</strong>.</>} />
+  <Passo titulo={<>Upload the spreadsheet as a <strong>.CSV</strong>, with the Name and Email columns.</>}>
+    Drag the file into the box or click to choose it. Don't have a spreadsheet ready? In **Download spreadsheet template**, grab a template (the **Simple Template** works for most people).
+
+    ![Import Clients screen, Upload step, with the spreadsheet templates](/img/guia/clientes-p2-importar/envio.jpg)
+  </Passo>
+  <Passo titulo={<>In <strong>Review</strong>, check who is new, who already exists, and who has an error. Click <strong>Next</strong>.</>}>
+    Rows with errors (no name or an invalid email) are left out.
+  </Passo>
+  <Passo titulo={<>In <strong>Configuration</strong>, pick the product everyone will get.</>}>
+    Use the **Categories** tab to give a whole track. **Expiration date**, **Group**, and **Team member** are optional.
+  </Passo>
+  <Passo titulo={<>In <strong>Confirmation</strong>, review the summary and click <strong>Import</strong>.</>}>
+    The button shows how many students will get in. Don't close the tab while it imports. With a lot of students, it can take a few minutes.
+  </Passo>
+  <Passo titulo={<>Read the <strong>Import report</strong> and click <strong>Close</strong>.</>}>
+    Each row shows **Success** or **Error**, with the reason. Use **Show errors only** to find what failed.
+  </Passo>
+</Passos>
+
+## Good to know
+
+:::info Who gets an email
+Every **new** student gets the welcome email with their access. Students who **were already registered** only get it if you check **Send welcome email to existing clients** in Confirmation.
+:::
+
+:::tip A repeated student isn't duplicated
+Someone who's already registered doesn't become a second account: they just get the new accesses.
+:::
+
+## Reference
+
+Spreadsheet format. Name and Email are required; the other columns are optional. A column with any other name makes the file get rejected ("Unrecognized columns"). When in doubt, start from a template.
+
+| Column (write it like this) | What to put in it |
+| --- | --- |
+| `Nome` or `name` | The student's name. **Required.** |
+| `E-mail`, `Email`, or `email` | The student's email. **Required.** |
+| `Telefone` or `phone` | Phone number with area code. |
+| `Vencimento` or `expiration` | When the access ends, like `31/12/2026` or `2026-12-31`. It takes priority over the date chosen in Configuration. |
+| `tag` or `Tags` | The tag name. Several in the same cell, separated by commas. |
+| `Grupo` | The group name. If the group doesn't exist, it gets created. |
+| `Membro de time` or `team_member` | The email of the person on your team who will look after the student. |
+| `guardian_name`, `guardian_email`, `guardian_phone` | Name, email, and phone of the guardian (parents or tutors). |
+
+## Common questions
+
+<details>
+<summary>The Import button is grayed out. Why?</summary>
+
+When your account reaches the client limit of your plan, the button is grayed out and shows "Client limit reached". It's also grayed out when there's no active plan or no permission to create clients.
+
+</details>
+
+<details>
+<summary>It said "The file must contain the Name and Email columns."</summary>
+
+The first row of the spreadsheet needs the column names, exactly as in the table above. Download the **Simple Template**, paste your data into it, and upload it again.
+
+</details>
+
+<details>
+<summary>I can't pick a group in Configuration.</summary>
+
+The default group can only be chosen when you check **exactly one** product. With more than one, use the `Grupo` column in the spreadsheet.
+
+</details>
+
+<details>
+<summary>My spreadsheet is in Excel (.xlsx).</summary>
+
+The import only accepts .CSV. In Excel or Google Sheets, use "Save as" or "Download" and choose CSV.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/acesso-em-massa" titulo="Give or renew access for many students">Without registering anyone again.</ProximoPasso>

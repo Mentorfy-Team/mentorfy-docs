@@ -1,0 +1,92 @@
+---
+title: Importa varios alumnos de una vez
+sidebar_label: Importar alumnos
+sidebar_position: 2
+description: Trae un grupo completo con una hoja de cálculo CSV y dales acceso a la mentoría a todos de una vez.
+---
+
+¿Tienes un grupo completo para registrar? En lugar de uno por uno, envía una hoja de cálculo con el nombre y el correo de todos. Al final, un informe muestra quién entró.
+
+En la pantalla de Mentorfy, el alumno aparece como **cliente**, en el menú **Clientes**.
+
+<Aula slug="clientes-p2-importar" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>En <strong>Mis clientes</strong>, haz clic en <strong>Importar</strong>.</>} />
+  <Passo titulo={<>Envía la hoja de cálculo en <strong>.CSV</strong>, con las columnas Nome y E-mail.</>}>
+    Arrastra el archivo al recuadro o haz clic para elegirlo. ¿No tienes una hoja lista? En **Descargar plantilla de hoja de cálculo**, toma una plantilla (la **Plantilla sencilla** sirve para la mayoría).
+
+    ![Pantalla para importar clientes, etapa Subir, con las plantillas de hoja de cálculo](/img/guia/clientes-p2-importar/envio.jpg)
+  </Passo>
+  <Passo titulo={<>En <strong>Revisión</strong>, revisa quién es nuevo, quién ya existe y quién tiene error. Haz clic en <strong>Siguiente</strong>.</>}>
+    Las filas con error (sin nombre o con correo inválido) quedan fuera.
+  </Passo>
+  <Passo titulo={<>En <strong>Configuración</strong>, elige el producto que todos van a recibir.</>}>
+    Usa la pestaña **Categorías** para dar una ruta completa. **Fecha de vencimiento**, **Grupo** y **Miembro del equipo** son opcionales.
+  </Passo>
+  <Passo titulo={<>En <strong>Confirmación</strong>, revisa el resumen y haz clic en <strong>Importar</strong>.</>}>
+    El botón muestra cuántos alumnos van a entrar. No cierres la pestaña mientras se importa. Con muchos alumnos, puede tardar unos minutos.
+  </Passo>
+  <Passo titulo={<>Lee el <strong>Informe de importación</strong> y haz clic en <strong>Cerrar</strong>.</>}>
+    Cada fila muestra **Éxito** o **Error**, con el motivo. Usa **Mostrar solo errores** para encontrar lo que falló.
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::info Quién recibe correo
+Todo alumno **nuevo** recibe el correo de bienvenida con el acceso. Quien **ya estaba registrado** solo lo recibe si marcas **Enviar correo electrónico de bienvenida a clientes existentes** en Confirmación.
+:::
+
+:::tip Un alumno repetido no se duplica
+Quien ya está registrado no se convierte en una segunda cuenta: solo recibe los accesos nuevos.
+:::
+
+## Referencia
+
+Formato de la hoja de cálculo. Nome y E-mail son obligatorias; las otras columnas son opcionales. Una columna con otro nombre hace que el archivo sea rechazado ("Columnas no reconocidas"). Si tienes dudas, parte de una plantilla.
+
+| Columna (escríbela así) | Qué poner |
+| --- | --- |
+| `Nome` o `name` | Nombre del alumno. **Obligatoria.** |
+| `E-mail`, `Email` o `email` | Correo del alumno. **Obligatoria.** |
+| `Telefone` o `phone` | Teléfono con código de área. |
+| `Vencimento` o `expiration` | Fin del acceso, como `31/12/2026` o `2026-12-31`. Tiene prioridad sobre la fecha elegida en Configuración. |
+| `tag` o `Tags` | Nombre de la etiqueta. Varias en la misma celda, separadas por coma. |
+| `Grupo` | Nombre del grupo. Si el grupo no existe, se crea. |
+| `Membro de time` o `team_member` | Correo de la persona de tu equipo que va a cuidar al alumno. |
+| `guardian_name`, `guardian_email`, `guardian_phone` | Nombre, correo y teléfono del tutor (padres o tutores). |
+
+## Preguntas frecuentes
+
+<details>
+<summary>El botón Importar está apagado. ¿Por qué?</summary>
+
+Cuando tu cuenta llega al límite de clientes del plan, el botón se apaga y muestra "Límite de clientes alcanzado". También se apaga si no tienes un plan activo o no tienes permiso para crear clientes.
+
+</details>
+
+<details>
+<summary>Apareció "El archivo debe contener las columnas Nombre y correo electrónico".</summary>
+
+La primera fila de la hoja de cálculo tiene que tener los nombres de las columnas, exactamente como en la tabla de arriba. Descarga la **Plantilla sencilla**, pega tus datos en ella y envíala de nuevo.
+
+</details>
+
+<details>
+<summary>No puedo elegir un grupo en Configuración.</summary>
+
+El grupo predeterminado solo se puede elegir cuando marcas **exactamente un** producto. Con más de uno, usa la columna `Grupo` en la hoja de cálculo.
+
+</details>
+
+<details>
+<summary>Mi hoja de cálculo está en Excel (.xlsx).</summary>
+
+La importación acepta solo .CSV. En Excel o en Google Sheets, usa "Guardar como" o "Descargar" y elige CSV.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/acesso-em-massa" titulo="Da o renueva el acceso de muchos alumnos">Sin volver a registrar a nadie.</ProximoPasso>

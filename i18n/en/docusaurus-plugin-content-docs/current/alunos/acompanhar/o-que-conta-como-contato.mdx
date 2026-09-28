@@ -1,0 +1,99 @@
+---
+title: What counts as contact in Indicators
+sidebar_label: What counts as contact
+sidebar_position: 4
+description: The exact rule behind days without contact, follow-up records, and groups at risk, and where to change the deadlines.
+---
+
+In **Groups**, the **Indicators** button shows how many days each group has gone without contact and which ones are **at risk**. This page explains what Mentorfy counts as contact, how the color is decided, and where you change the deadlines.
+
+:::info Contact is counted per group
+Days without contact belong to the **group's card** on the board, not to each student. A group can be one person, a class, or a company.
+:::
+
+## What counts as contact
+
+Right now, two things count. Days without contact are counted from the **most recent** of them.
+
+| Counts as contact | When it counts |
+| --- | --- |
+| **Comment on the card** of the group | Any comment your team leaves on the card. It counts right away. |
+| **Calendar meeting with the client** | A meeting of **yours**, published, that **has already happened**, as long as: your team linked the meeting to the group (with **Link a meeting** or by answering **Yes, it was**), **or** a student in the group was among the guests. |
+
+The two together show up as **Follow-up records** ("comments and meetings with clients").
+
+**These don't count:**
+
+- meetings that haven't happened yet (they start counting on the scheduled day and time);
+- group classes, where the whole class was invited;
+- canceled invitations;
+- a meeting you marked as **No** for that group;
+- moving the card to another column on the board (that only measures time in the stage).
+
+**Feedback on a student's delivery** shows on screen as "coming soon": it doesn't count yet.
+
+To link a meeting to a group, see [Meetings count as contact](/docs/grupos-e-equipe/grupos/reunioes-contam-como-contato).
+
+## How the color is decided
+
+| Color | When |
+| --- | --- |
+| **on track** | The most recent contact was fewer days ago than the yellow deadline. |
+| **watch** (yellow) | Past the yellow deadline. Default: **7 days** without contact. |
+| **at risk** (red) | Past the red deadline. Default: **14 days** without contact. |
+
+Three rules complete the count:
+
+- **A group that never had a record**: counts the days since the card joined the board. With the **A card that never had a record turns red** option on (it starts on), it turns red once it passes the red deadline.
+- **Attention column**: with **Anyone in an attention column turns red** on (it starts on), every card in a **Needs attention now** column turns red, even if contact is on track.
+- **Columns left out of the count**: cards in **Finished or archived** or **The team's own board** columns aren't included in any number.
+
+Mentorfy suggests each column's type from its name. For example: "Arquivado", "Finalizado", "Concluído", or "Cancelado" (Archived, Finished, Completed, Canceled) become **Finished or archived**; "Não respondem", "Atenção", "Em risco", or "Inadimplente" (Not responding, Attention, At risk, Late payment) become **Needs attention now**. You can change it.
+
+## Change the deadlines
+
+<Passos>
+  <Passo titulo={<>In the menu, open <strong>Groups</strong> and click <strong>Indicators</strong>.</>} />
+  <Passo titulo={<>Click <strong>Configure</strong>.</>} />
+  <Passo titulo={<>In <strong>What is your contact rhythm?</strong>, pick a rhythm.</>}>
+    The screen shows right away how many groups would be at risk with the new rule. The change saves on its own.
+  </Passo>
+  <Passo titulo={<>For exact days, open <strong>Fine tuning (exact days and exceptions)</strong>.</>}>
+    The two red options (card with no record and attention column) are there too.
+  </Passo>
+  <Passo titulo={<>In <strong>What does each column mean?</strong>, tap a column to change its type.</>} />
+</Passos>
+
+## Reference
+
+| Rhythm | Yellow after | Red after |
+| --- | --- | --- |
+| **Weekly contact** | 4 days | 7 days |
+| **Balanced** (recommended, the default) | 7 days | 14 days |
+| **Fortnightly** | 14 days | 30 days |
+| **Fine tuning** | from 1 to 365 days | more than yellow, up to 365 days |
+
+## Common questions
+
+<details>
+<summary>Who can change these rules?</summary>
+
+Only the account owner. People on the team see the panel with the rules the owner picked.
+
+</details>
+
+<details>
+<summary>I had a meeting with the client, but the group is still at risk.</summary>
+
+Check three things: the meeting has already happened; it shows up in your account's calendar on Mentorfy; and either a student in the group was invited, or someone linked the meeting to the group in **Meetings with the client**. If it was a class for the whole group, it doesn't count.
+
+</details>
+
+<details>
+<summary>Does sending a message or notification to the student count as contact?</summary>
+
+No. Right now, only a comment on the group's card and a meeting with the client count. After you talk to the client on another channel, leave a comment on the card: that records the contact.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/notificacoes/avisar-alunos" titulo="Notify your students in a few clicks">Email, WhatsApp, SMS, or phone call.</ProximoPasso>

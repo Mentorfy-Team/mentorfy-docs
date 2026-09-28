@@ -1,0 +1,81 @@
+---
+title: Da, renueva o quita accesos de una vez
+sidebar_label: Acceso masivo
+sidebar_position: 3
+description: Usa Gestionar acceso masivo para dar, renovar o quitar un producto a varios alumnos al mismo tiempo.
+---
+
+¿Necesitas dar una mentoría a todo el grupo, renovar el plazo de quien ya venció o quitar un producto a varios alumnos? Hazlo todo de una vez, sin abrir alumno por alumno.
+
+En la pantalla de Mentorfy, el alumno aparece como **cliente**, en el menú **Clientes**.
+
+<Aula slug="clientes-p3-acesso" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>En <strong>Mis clientes</strong>, haz clic en <strong>Gestionar acceso masivo</strong>.</>} />
+  <Passo titulo={<>Elige el producto y haz clic en <strong>Siguiente</strong>.</>}>
+    En la pestaña **Categorías**, eliges una ruta completa.
+  </Passo>
+  <Passo titulo={<>Elige a los alumnos y haz clic en <strong>Siguiente</strong>.</>}>
+    Busca por nombre o correo. Para tomar a todos los de la búsqueda, usa **Seleccionar todos los filtros coincidentes …**.
+  </Passo>
+  <Passo titulo={<>En <strong>Caducidad del acceso</strong>, elige qué pasa con el plazo.</>}>
+    **Acceso de por vida**, **Extender el vencimiento** (en meses), **Fecha específica** o **Mantener el vencimiento actual**. Para quitar el producto, elige **Quitar acceso**.
+
+    ![Paso Caducidad del acceso, con las opciones de plazo y Quitar acceso](/img/guia/clientes-p3-acesso/validade.jpg)
+  </Passo>
+  <Passo titulo={<>Revisa el resumen y haz clic en <strong>Conceder</strong>.</>}>
+    El botón muestra cuántos accesos se van a crear. Al final, el resumen separa **Creado**, **Actualizado**, **Sin cambios** y **Fallos**.
+  </Passo>
+  <Passo titulo={<>Para separar a los alumnos por interés, haz clic en <strong>Gestionar etiquetas</strong>.</>}>
+    En **Nova tag** (nueva etiqueta), ponle un nombre y elige un color. Después, filtra la lista por **Etiquetas**.
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::caution ¿Venció? Usa de por vida, extender o fecha
+**Mantener el vencimiento actual** no cambia ninguna fecha: quien tiene el acceso vencido sigue vencido. Para renovar, elige **Acceso de por vida**, **Extender el vencimiento** o **Fecha específica**.
+:::
+
+:::info El acceso masivo no envía correo
+Los alumnos reciben el acceso al instante, pero nadie recibe aviso. Para contarles la novedad, usa [Notificaciones](/docs/alunos/notificacoes/avisar-alunos).
+:::
+
+:::danger Quitar de la vitrina no se puede deshacer
+En **Quitar acceso**, la opción **Quitar de la vitrina del estudiante** borra el vínculo del alumno con el producto (incluido el grupo). No se puede deshacer. Si la dejas apagada, el producto solo queda bloqueado para el alumno, y puedes volver a darle acceso cuando quieras.
+:::
+
+## Preguntas frecuentes
+
+<details>
+<summary>¿Cuántos productos puedo dar de una vez?</summary>
+
+Hasta 100 productos por vez. Una ruta con muchos productos cuenta todos ellos. Si te pasas, el aviso te pide quitar algunos.
+
+</details>
+
+<details>
+<summary>Aparecieron fallos en el resumen. ¿Qué hago?</summary>
+
+Abre **Detalles del fallo** para ver el motivo de cada uno. Después, haz clic en **Reintentar solo errores**. A quienes ya les funcionó no se les vuelve a tocar.
+
+</details>
+
+<details>
+<summary>Apareció "Nada que hacer".</summary>
+
+Todos los alumnos elegidos ya tenían acceso activo y elegiste **Mantener el vencimiento actual**. Elige otra opción de vencimiento u otros alumnos.
+
+</details>
+
+<details>
+<summary>Si borro una etiqueta, ¿qué pasa?</summary>
+
+Se quita de todos los alumnos que la tenían. Los alumnos siguen registrados.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/aluna-sem-acesso" titulo="Mi alumna no recibió el acceso">Qué revisar cuando alguien no puede entrar.</ProximoPasso>

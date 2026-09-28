@@ -3,30 +3,6 @@
     "message": "Siguiente",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Área de Membros": {
-    "message": "Área de Miembros",
-    "description": "The label for category 'Área de Membros' in sidebar 'tutorialSidebar'"
-  },
-  "sidebar.tutorialSidebar.category.Área de Membros.link.generated-index.description": {
-    "message": "Información básica sobre el funcionamiento del Área de Miembros",
-    "description": "The generated-index page description for category 'Área de Membros' in sidebar 'tutorialSidebar'"
-  },
-  "sidebar.tutorialSidebar.category.Área do Mentor": {
-    "message": "Área del Mentor",
-    "description": "The label for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
-  },
-  "sidebar.tutorialSidebar.category.Área do Mentor.link.generated-index.description": {
-    "message": "Herramientas y funcionalidades disponibles en el Área del Mentor",
-    "description": "The generated-index page description for category 'Área do Mentor' in sidebar 'tutorialSidebar'"
-  },
-  "sidebar.tutorialSidebar.category.Clientes": {
-    "message": "Clientes",
-    "description": "The label for category 'Clientes' in sidebar 'tutorialSidebar'"
-  },
-  "sidebar.tutorialSidebar.category.Clientes.link.generated-index.description": {
-    "message": "Gestiona tus clientes y sus accesos, así como sus equipos de mentores.",
-    "description": "The generated-index page description for category 'Clientes' in sidebar 'tutorialSidebar'"
-  },
   "sidebar.tutorialSidebar.category.Integrações": {
     "message": "Integraciones",
     "description": "The label for category 'Integrações' in sidebar 'tutorialSidebar'"
@@ -34,5 +10,89 @@
   "sidebar.tutorialSidebar.category.Integrações.link.generated-index.description": {
     "message": "Guía para integrar Mentorfy con pasarelas de pago.",
     "description": "The generated-index page description for category 'Integrações' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Comece por aqui": {
+    "message": "Empieza aquí",
+    "description": "The label for category 'Comece por aqui' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Mentorias e cursos": {
+    "message": "Mentorías y cursos",
+    "description": "The label for category 'Mentorias e cursos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Minhas Mentorias": {
+    "message": "Mis mentorías",
+    "description": "The label for category 'Minhas Mentorias' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Armazenamento": {
+    "message": "Almacenamiento",
+    "description": "The label for category 'Armazenamento' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Certificados": {
+    "message": "Certificados",
+    "description": "The label for category 'Certificados' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Banco de Questões": {
+    "message": "Banco de preguntas",
+    "description": "The label for category 'Banco de Questões' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Como os cursos aparecem para o aluno": {
+    "message": "Cómo ve el alumno los cursos",
+    "description": "The label for category 'Como os cursos aparecem para o aluno' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Alunos": {
+    "message": "Alumnos",
+    "description": "The label for category 'Alunos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Mensagens": {
+    "message": "Mensajes",
+    "description": "The label for category 'Mensagens' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Acompanhar alunos": {
+    "message": "Seguir a los alumnos",
+    "description": "The label for category 'Acompanhar alunos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Notificações": {
+    "message": "Notificaciones",
+    "description": "The label for category 'Notificações' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Grupos e equipe": {
+    "message": "Grupos y equipo",
+    "description": "The label for category 'Grupos e equipe' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Grupos": {
+    "message": "Grupos",
+    "description": "The label for category 'Grupos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Meu time": {
+    "message": "Mi equipo",
+    "description": "The label for category 'Meu time' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Minhas Reuniões": {
+    "message": "Mis reuniones",
+    "description": "The label for category 'Minhas Reuniões' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Marca e IA": {
+    "message": "Marca e IA",
+    "description": "The label for category 'Marca e IA' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Brand Studio": {
+    "message": "Brand Studio",
+    "description": "The label for category 'Brand Studio' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AI Studio": {
+    "message": "AI Studio",
+    "description": "The label for category 'AI Studio' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Copiloto": {
+    "message": "Copilot",
+    "description": "The label for category 'Copiloto' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Copiloto do Aluno": {
+    "message": "Copilot del estudiante",
+    "description": "The label for category 'Copiloto do Aluno' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Conta e suporte": {
+    "message": "Cuenta y soporte",
+    "description": "The label for category 'Conta e suporte' in sidebar 'tutorialSidebar'"
   }
 }

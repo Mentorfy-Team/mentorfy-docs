@@ -379,5 +379,92 @@
   },
   "search.hero.inputAriaLabel": {
     "message": "Búsqueda rápida"
+  },
+  "homepage.hero.cta.videos": {
+    "message": "Ver las clases en video"
+  },
+  "aula.play": {
+    "message": "Ver: {title}"
+  },
+  "aula.portugueseOnly": {
+    "message": "Video en portugués"
+  },
+  "aula.openApp": {
+    "message": "Abrir en Mentorfy"
+  },
+  "aulas.trackMeta": {
+    "message": "{count} clases · {minutes} min"
+  },
+  "home.start.trial.title": {
+    "message": "Hoja de ruta de la prueba gratis"
+  },
+  "home.start.trial.text": {
+    "message": "Las primeras misiones, en el orden correcto."
+  },
+  "home.start.student.title": {
+    "message": "Registra un alumno"
+  },
+  "home.start.student.text": {
+    "message": "Da acceso a quien compró."
+  },
+  "home.start.course.title": {
+    "message": "Crea tu mentoría"
+  },
+  "home.start.course.text": {
+    "message": "Arma lo que vendes, con módulos y clases."
+  },
+  "home.block.courses.title": {
+    "message": "Mentorías y cursos"
+  },
+  "home.block.courses.text": {
+    "message": "Clases, videos, certificados, preguntas y cómo ve todo el alumno."
+  },
+  "home.block.students.title": {
+    "message": "Alumnos"
+  },
+  "home.block.students.text": {
+    "message": "Registrar, dar acceso, atender y seguir el progreso."
+  },
+  "home.block.teams.title": {
+    "message": "Grupos y equipo"
+  },
+  "home.block.teams.text": {
+    "message": "Organiza generaciones de alumnos y empresas, tu equipo y las reuniones en vivo."
+  },
+  "home.block.ai.title": {
+    "message": "Marca e IA"
+  },
+  "home.block.ai.text": {
+    "message": "Tu marca en el área del alumno, portadas, audios y los Copilots."
+  },
+  "home.block.integrations.title": {
+    "message": "Integraciones"
+  },
+  "home.block.integrations.text": {
+    "message": "Da el acceso automáticamente cuando alguien compra, y conecta Zoom, Meet y más."
+  },
+  "home.block.account.title": {
+    "message": "Cuenta y soporte"
+  },
+  "home.block.account.text": {
+    "message": "Tu plan, tus créditos y cómo hablar con nosotros."
+  },
+  "home.start.heading": {
+    "message": "Empieza aquí"
+  },
+  "home.blocks.heading": {
+    "message": "La guía"
+  },
+  "home.blocks.lessons": {
+    "message": "{count} clases en video"
+  },
+  "home.quick.heading": {
+    "message": "Clases de menos de 1 minuto"
+  },
+  "home.quick.all": {
+    "message": "Ver las {count} clases"
+  },
+  "proximoPasso.kicker": {
+    "message": "Siguiente paso"
   }
 }

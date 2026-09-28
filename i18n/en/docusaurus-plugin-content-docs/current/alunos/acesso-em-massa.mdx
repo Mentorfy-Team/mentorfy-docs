@@ -1,0 +1,81 @@
+---
+title: Give, renew, or remove access all at once
+sidebar_label: Bulk access
+sidebar_position: 3
+description: Use Manage access in bulk to give, renew, or remove a product for many students at the same time.
+---
+
+Need to give a mentorship to the whole class, renew the deadline for those who expired, or remove a product from several students? Do it all at once, without opening each student one by one.
+
+On the Mentorfy screen, a student shows up as a **client**, in the **Clients** menu.
+
+<Aula slug="clientes-p3-acesso" />
+
+## Step by step
+
+<Passos>
+  <Passo titulo={<>In <strong>My Clients</strong>, click <strong>Manage access in bulk</strong>.</>} />
+  <Passo titulo={<>Pick the product and click <strong>Next</strong>.</>}>
+    In the **Categories** tab, you pick a whole track.
+  </Passo>
+  <Passo titulo={<>Pick the students and click <strong>Next</strong>.</>}>
+    Search by name or email. To take everyone in the search, use **Select all … matching filter**.
+  </Passo>
+  <Passo titulo={<>In <strong>Access expiration</strong>, choose what happens to the deadline.</>}>
+    **Lifetime access**, **Extend expiration** (in months), **Specific date**, or **Keep current expiration**. To take the product away, choose **Remove access**.
+
+    ![Access expiration step, with the deadline options and Remove access](/img/guia/clientes-p3-acesso/validade.jpg)
+  </Passo>
+  <Passo titulo={<>Review the summary and click <strong>Grant</strong>.</>}>
+    The button shows how many accesses will be created. At the end, the summary splits them into **Created**, **Updated**, **No change**, and **Failures**.
+  </Passo>
+  <Passo titulo={<>To sort students by interest, click <strong>Manage tags</strong>.</>}>
+    In **Nova tag** (New tag), give it a name and pick a color. Then filter the list by **Tags**.
+  </Passo>
+</Passos>
+
+## Good to know
+
+:::caution Expired? Use lifetime, extend, or a date
+**Keep current expiration** doesn't touch any date: anyone whose access has expired stays expired. To renew, choose **Lifetime access**, **Extend expiration**, or **Specific date**.
+:::
+
+:::info Bulk access doesn't send emails
+Students get access right away, but nobody is notified. To share the news, use [Notifications](/docs/alunos/notificacoes/avisar-alunos).
+:::
+
+:::danger Removing from the showcase can't be undone
+In **Remove access**, the **Remove from the student's showcase** option deletes the student's link to the product (including the group). It can't be undone. With it off, the product is only locked for the student, and you can give it back whenever you want.
+:::
+
+## Common questions
+
+<details>
+<summary>How many products can I give at once?</summary>
+
+Up to 100 products per release. A track with many products counts all of them. If you go over that, a notice asks you to remove some.
+
+</details>
+
+<details>
+<summary>Failures showed up in the summary. What do I do?</summary>
+
+Open **Failure details** to see the reason for each one. Then click **Retry failures only**. Students that already worked aren't touched again.
+
+</details>
+
+<details>
+<summary>It said "Nothing to do".</summary>
+
+All the students you picked already had active access and you chose **Keep current expiration**. Pick another expiration option or other students.
+
+</details>
+
+<details>
+<summary>What happens if I delete a tag?</summary>
+
+It's removed from every student who had it. The students stay registered.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/aluna-sem-acesso" titulo="My student didn't get her access">What to check when someone can't get in.</ProximoPasso>

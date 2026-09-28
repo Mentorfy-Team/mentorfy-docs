@@ -1,0 +1,94 @@
+---
+title: Mi alumna no recibió el acceso
+sidebar_label: Alumna sin acceso
+sidebar_position: 4
+description: Una lista con las causas más comunes de un alumno sin acceso, cómo revisar cada una y cómo resolverla.
+---
+
+Sigue la lista de arriba hacia abajo. Cada punto dice **cómo revisar** y **cómo resolver**. Casi siempre el problema está en los tres primeros.
+
+:::tip Empieza aquí
+En **Clientes** › **Mis clientes**, busca a la alumna por nombre o correo. Si **no aparece**, salta directo al punto 5. Si aparece, haz clic en los tres puntos de su fila y elige **Iniciar sesión como estudiante**: ves exactamente lo que ella ve.
+:::
+
+En la pantalla de Mentorfy, el alumno aparece como **cliente**, en el menú **Clientes**.
+
+## 1. El correo de acceso no salió o no llegó
+
+**Cómo revisar:** mira la columna **Estado del correo electrónico** de la alumna.
+
+- **Entregado**, **Abierto** o **Se hizo clic**: el correo llegó. Ve al punto 2.
+- **Rebotado** o **Rechazado**: la dirección no existe o está bloqueada. Ve al punto 3.
+- **diferido**: su proveedor lo está rechazando por ahora; el envío se vuelve a intentar solo.
+- **Sin información**: no hay registro de correo para ella. Puede que no haya salido ningún correo, lo que pasa cuando el registro se hizo con **Notificar al usuario por correo** desactivado, o con el [acceso masivo](/docs/alunos/acesso-em-massa), que no envía correo.
+
+**Cómo resolver:**
+
+<Passos>
+  <Passo titulo={<>Haz clic en los tres puntos de la fila de la alumna.</>} />
+  <Passo titulo={<>Elige <strong>Enviar correo electrónico de acceso</strong>.</>}>
+    Su contraseña no cambia. El correo puede tardar de 1 a 3 minutos en llegar.
+  </Passo>
+</Passos>
+
+## 2. El correo cayó en spam
+
+**Cómo revisar:** la columna **Estado del correo electrónico** muestra **spam**, o muestra **Entregado** y ella dice que no encontró nada.
+
+**Cómo resolver:** pídele que busque en las carpetas **Spam**, **Correo no deseado** y **Promociones**, que marque el correo como "no es spam" y que haga clic en el enlace. ¿Aun así no lo encuentra? Reenvíalo como en el punto 1.
+
+## 3. El correo se escribió mal
+
+**Cómo revisar:** compara el correo de la lista, letra por letra, con el que ella usa. Errores comunes: `gmail.con`, `hotmial.com`, un punto de más.
+
+**Cómo resolver:**
+
+<Passos>
+  <Passo titulo={<>Haz clic en <strong>Registrarse</strong> y registra a la alumna con el correo correcto y el mismo producto.</>}>
+    Mira [Registra un alumno](/docs/alunos/cadastrar-aluno).
+  </Passo>
+  <Passo titulo={<>Si quieres, borra el registro equivocado: tres puntos › <strong>Eliminar cliente</strong>.</>} />
+</Passos>
+
+:::danger Eliminar cliente borra todo
+Eliminar un cliente borra todo su historial y no se puede deshacer. Elimina solo el registro que se hizo con el correo equivocado.
+:::
+
+## 4. El producto no está habilitado o venció
+
+**Cómo revisar:** en la columna **Productos**, mira si la mentoría aparece para ella y si está **Activo** o **Caducado**. En su área, la mentoría aparece como **ACCESO VENCIDO** o **NO LIBERADO**.
+
+**Cómo resolver:**
+
+- **No tiene el producto:** tres puntos › **Agregar producto**.
+- **Venció:** usa el [acceso masivo](/docs/alunos/acesso-em-massa) con **Acceso de por vida**, **Extender el vencimiento** o **Fecha específica**. La opción **Mantener el vencimiento actual** no renueva a quien ya venció.
+
+## 5. El acceso está esperando tu aprobación
+
+**Cómo revisar:** en el menú, abre **Clientes** › **Aprobaciones**. Ahí están los alumnos que pidieron acceso desde el área del alumno (botón **SOLICITAR ACCESO**) y las compras con pago todavía pendiente. Para la alumna, la mentoría aparece como **ESPERANDO APROBACIÓN**.
+
+**Cómo resolver:** haz clic en **Aprobar acceso** en su fila. **Rechazar acceso** borra la solicitud.
+
+## 6. La compra por integración no llegó
+
+**Cómo revisar:** la alumna compró por Hotmart, Kiwify u otra plataforma, pero no aparece en **Mis clientes**. Si aparece, haz clic en los tres puntos › **Ver perfil** y abre **Ver eventos de pago** para ver lo que envió la plataforma.
+
+**Cómo resolver:** revisa que la plataforma de ventas esté conectada y que el producto vendido esté vinculado a la mentoría correcta. El paso a paso de cada plataforma está en [Integraciones](/docs/integracoes/intro). Mientras tanto, puedes [registrar a la alumna](/docs/alunos/cadastrar-aluno) a mano.
+
+## Preguntas frecuentes
+
+<details>
+<summary>¿Reenviar el acceso cambia la contraseña de la alumna?</summary>
+
+No. **Enviar correo electrónico de acceso** vuelve a enviar los datos de acceso y la contraseña sigue igual. Si olvidó la contraseña, usa **Generar nueva contraseña**, en el mismo menú de los tres puntos.
+
+</details>
+
+<details>
+<summary>¿Registrar a la alumna de nuevo con el mismo correo da problemas?</summary>
+
+No. No se duplica: solo recibe los productos nuevos. Con **Notificar al usuario por correo** activado, recibe un correo avisándole.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/mensagens/central-de-atendimento" titulo="Atiende a tus alumnos desde la central">Donde los alumnos piden ayuda y el equipo responde.</ProximoPasso>

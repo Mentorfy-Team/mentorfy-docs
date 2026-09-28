@@ -1,0 +1,85 @@
+---
+title: Define límites y sigue el consumo del Copilot del estudiante
+sidebar_label: Límites y consumo
+sidebar_position: 3
+description: Controla cuántos mensajes puede enviar cada alumno, para quién queda habilitado el asistente y cuántos créditos usa.
+---
+
+Controla cuánto se puede usar el Copilot del estudiante y para quién queda habilitado, y sigue el uso que hacen tus alumnos.
+
+<Aula slug="copiloto-aluno-p3-limites" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>En <strong>Límites por estudiante</strong>, completa el <strong>Límite diario</strong>, el <strong>Límite semanal</strong> y el <strong>Límite mensual</strong>.</>}>
+    Es la cantidad de mensajes que puede enviar cada alumno. Cero es sin límite.
+  </Passo>
+  <Passo titulo={<>En <strong>Reglas de liberación</strong>, elige después de cuántos días del registro se habilita el asistente.</>}>
+    Usa 0 para habilitarlo al instante.
+  </Passo>
+  <Passo titulo={<>Si quieres, marca <strong>Liberar solo para estudiantes con productos específicos</strong> y elige los productos.</>}>
+    ![Reglas de liberación con un producto elegido](/img/guia/copiloto-aluno-p3-limites/03-regras.jpg)
+  </Passo>
+  <Passo titulo={<>Revisa el resumen en <strong>Cómo se combinan las reglas</strong> y haz clic en <strong>Guardar</strong>.</>}>
+    Cuando usas las dos reglas, el alumno tiene que cumplir las dos.
+  </Passo>
+  <Passo titulo={<>Sigue el gasto en <strong>Uso y proyección</strong>.</>}>
+    Mira los créditos usados en el mes, cuánto queda y la proyección. El **Ranking de estudiantes** muestra quién lo usa más.
+
+    ![Uso y proyección](/img/guia/copiloto-aluno-p3-limites/05-consumo.jpg)
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::info Cuánto cuesta
+En el plan pago, los mensajes de los alumnos no descuentan créditos. En el periodo de prueba, cada mensaje de un alumno descuenta 0,35 crédito de IA de **tu** cuenta.
+:::
+
+:::tip
+Si aparece **¡Advertencia!** en **Uso y proyección**, los créditos pueden acabarse antes de fin de mes. Baja los límites por alumno o compra más créditos en **Mi cuenta**. Sin créditos disponibles, no puedes activar el asistente.
+:::
+
+## Referencia
+
+| Configuración | Cómo funciona |
+| --- | --- |
+| **Límite diario / semanal / mensual** | Mensajes por alumno en cada periodo. 0 = sin límite |
+| **Liberar después de X días de registro** | El alumno solo lo usa después de esa cantidad de días. 0 = al instante |
+| **Liberar solo para estudiantes con productos específicos** | El alumno tiene que tener acceso a al menos uno de los productos elegidos |
+| Las dos reglas juntas | El alumno tiene que cumplir las dos |
+
+Lo que ve el alumno cuando choca con una regla:
+
+| Situación | Mensaje para el alumno |
+| --- | --- |
+| Pasó el límite del día | Un aviso de que llegó al límite diario de … mensajes y de que lo intente de nuevo mañana. |
+| Pasó el límite de la semana o del mes | Un mensaje parecido, que le pide intentarlo la próxima semana o el próximo mes |
+| Todavía no tiene los días de registro | Un aviso de que el copiloto estará disponible en … días. |
+| No tiene el producto exigido | Un aviso de que necesita acceso a un producto específico para usar el copiloto. |
+
+## Preguntas frecuentes
+
+<details>
+<summary>¿Qué pasa si se acaban mis créditos?</summary>
+
+En el periodo de prueba, el asistente deja de responder a los alumnos hasta que vuelvas a tener créditos. En cualquier plan, sin créditos disponibles no se puede activar el asistente. Compra más en **Mi cuenta**.
+
+</details>
+
+<details>
+<summary>El ranking está vacío.</summary>
+
+Solo muestra alumnos después de que empiezan a usar el asistente. Mientras tanto, aparece "Ningún estudiante ha usado el Copilot aún."
+
+</details>
+
+<details>
+<summary>Cambié los límites y no cambió nada.</summary>
+
+Revisa si hiciste clic en **Guardar**, en la esquina de arriba. Sin guardar, los cambios se pierden al salir de la página.
+
+</details>
+
+<ProximoPasso para="/docs/integracoes/intro" titulo="Conecta Mentorfy con tus herramientas">Mira las integraciones disponibles.</ProximoPasso>

@@ -1,0 +1,75 @@
+---
+title: Arma tu proceso en columnas
+sidebar_label: Armar el proceso
+sidebar_position: 2
+description: Crea las fases del tablero de Grupos, dale color y plazo a cada una y arrastra los grupos a medida que avanzan.
+---
+
+Cada columna del tablero es una fase de tu proceso, desde el inicio hasta el final. Con las fases correctas, das un vistazo y sabes en qué punto está cada grupo.
+
+<Aula slug="grupos-p2-kanban" />
+
+## Paso a paso
+
+<Passos>
+  <Passo titulo={<>Al final del tablero, haz clic en <strong>Agregar columna</strong>.</>} />
+  <Passo titulo={<>Ponle un nombre a la fase, como "Reunión inicial", y haz clic en <strong>Agregar</strong>.</>} />
+  <Passo titulo={<>En el menú de la columna, en <strong>Color</strong>, elige un color.</>}>
+    Así encuentras la fase de lejos. En el mismo menú están **Renombrar**, **Cambiar duración**, **Quién puede verla** y **Eliminar columna**.
+
+    ![Menú de la columna con Renombrar, Color, Cambiar duración, Quién puede verla y Eliminar columna](/img/guia/grupos-p2-kanban/04-menu.jpg)
+  </Passo>
+  <Passo titulo={<>En <strong>Cambiar duración</strong>, elige un ritmo y haz clic en <strong>Guardar duración</strong>.</>}>
+    El grupo detenido en la columna se pone amarillo (en atención) y, después, rojo (atrasado).
+
+    ![Ventana de duración con los ritmos y el botón Guardar duración](/img/guia/grupos-p2-kanban/08-ritmo.jpg)
+  </Passo>
+  <Passo titulo={<>Arrastra la columna al lugar correcto, y los grupos de una fase a otra.</>}>
+    El tablero muestra en qué fase está cada grupo.
+  </Passo>
+</Passos>
+
+## Bueno saber
+
+:::tip
+Si tienes dudas, usa **Equilibrado**: es el ritmo que sugiere la pantalla. Puedes ajustar los días con los botones **-** y **+**.
+:::
+
+:::info
+El plazo cambia lo que todo el equipo ve como atrasado. Por eso, solo el dueño de la cuenta o quien tiene **Editar** en **Grupos** puede cambiar el plazo de una columna.
+:::
+
+## Referencia
+
+| Ritmo | Pasa a atención tras | Pasa a atrasado tras |
+| --- | --- | --- |
+| **Ritmo corto** | 3 días | 5 días |
+| **Equilibrado** (sugerido) | 7 días | 14 días |
+| **Ciclo largo** | 15 días | 30 días |
+
+En **Cómo contar los días**, elige **Días hábiles** (sin fines de semana ni feriados) o **Días corridos** (todos los días cuentan). El predeterminado es días hábiles. Para quitar el aviso de una columna, usa **Quitar duración**.
+
+## Preguntas frecuentes
+
+<details>
+<summary>Eliminé una columna con grupos dentro. ¿Los grupos desaparecen?</summary>
+
+No. Eliminar una columna nunca elimina un grupo. Si la columna tiene grupos, la pantalla te pide que elijas en **Mover grupos a** a qué columna van. Si es la única columna, crea otra antes, para que los grupos tengan adónde ir.
+
+</details>
+
+<details>
+<summary>¿Desde cuándo empieza a contar el plazo?</summary>
+
+Desde el día en que el grupo entró a la columna. Si nunca se movió, cuenta desde que se creó el grupo. Cuando el grupo pasa a atención o a atrasado, la tarjeta recibe una etiqueta amarilla o roja con los días en la columna, como "6d en la columna". Pasa el mouse sobre la etiqueta para leer el motivo.
+
+</details>
+
+<details>
+<summary>¿El plazo vale para todas las columnas?</summary>
+
+No. Cada columna tiene su plazo, y el aviso vale solo para los grupos que están en ella.
+
+</details>
+
+<ProximoPasso para="/docs/grupos-e-equipe/grupos/organizar-o-time" titulo="Organiza el equipo">Decide quién cuida cada grupo y quién puede ver cada cosa.</ProximoPasso>

@@ -1,0 +1,94 @@
+---
+title: My student didn't get her access
+sidebar_label: Student without access
+sidebar_position: 4
+description: A checklist of the most common reasons a student has no access, how to check each one, and how to fix it.
+---
+
+Go through the list from top to bottom. Each item tells you **how to check** and **how to fix**. The problem is almost always in the first three.
+
+:::tip Start here
+In **Clients** › **My Clients**, search for the student by name or email. If she **doesn't show up**, skip straight to item 5. If she does, click the three dots on her row and choose **Log in as Student**: you see exactly what she sees.
+:::
+
+On the Mentorfy screen, a student shows up as a **client**, in the **Clients** menu.
+
+## 1. The access email wasn't sent or didn't arrive
+
+**How to check:** look at the student's **Email Status** column.
+
+- **Delivered**, **Opened**, or **Clicked**: the email arrived. Go to item 2.
+- **Bounced**: the address doesn't exist or is blocked. Go to item 3.
+- **Deferred**: her email provider is refusing it for now; it will try sending again on its own.
+- **No info**: there's no email record for her. Maybe no email was sent, which happens when she was registered with **Notify user by email** turned off, or through [bulk access](/docs/alunos/acesso-em-massa), which doesn't send emails.
+
+**How to fix:**
+
+<Passos>
+  <Passo titulo={<>Click the three dots on the student's row.</>} />
+  <Passo titulo={<>Choose <strong>Send access email</strong>.</>}>
+    Her password doesn't change. The email can take 1 to 3 minutes to arrive.
+  </Passo>
+</Passos>
+
+## 2. The email went to spam
+
+**How to check:** the **Email Status** column shows **Spam**, or it shows **Delivered** and she says she can't find anything.
+
+**How to fix:** ask her to look in the **Spam**, **Junk**, and **Promotions** folders, mark the email as "not spam", and click the link. Still can't find it? Resend it as in item 1.
+
+## 3. The email address was typed wrong
+
+**How to check:** compare the email in the list, letter by letter, with the one she uses. Common mistakes: `gmail.con`, `hotmial.com`, an extra dot.
+
+**How to fix:**
+
+<Passos>
+  <Passo titulo={<>Click <strong>Register</strong> and register the student with the right email and the same product.</>}>
+    See [Register a student](/docs/alunos/cadastrar-aluno).
+  </Passo>
+  <Passo titulo={<>If you want, delete the wrong registration: three dots › <strong>Remove Client</strong>.</>} />
+</Passos>
+
+:::danger Remove Client deletes everything
+Removing a client deletes their whole history, and it can't be undone. Only remove the registration made with the wrong email.
+:::
+
+## 4. The product isn't released or has expired
+
+**How to check:** in the **Products** column, see whether the mentorship shows up for her and whether it's **Active** or **Expired**. In her area, the mentorship shows as **ACCESS EXPIRED** or **NOT RELEASED**.
+
+**How to fix:**
+
+- **She doesn't have the product:** three dots › **Add Product**.
+- **It expired:** use [bulk access](/docs/alunos/acesso-em-massa) with **Lifetime access**, **Extend expiration**, or **Specific date**. The **Keep current expiration** option doesn't renew anyone who has already expired.
+
+## 5. The access is waiting for your approval
+
+**How to check:** in the menu, open **Clients** › **Approvals**. There you'll find students who asked for access from the student area (the **REQUEST ACCESS** button) and purchases whose payment is still pending. For the student, the mentorship shows as **AWAITING APPROVAL**.
+
+**How to fix:** click **Approve Access** on her row. **Reject Access** deletes the request.
+
+## 6. The purchase from an integration didn't come through
+
+**How to check:** the student bought through Hotmart, Kiwify, or another platform, but she doesn't show up in **My Clients**. If she does show up, click the three dots › **View Profile** and open **View payment events** to see what the platform sent.
+
+**How to fix:** check that the sales platform is connected and that the product sold is linked to the right mentorship. The step-by-step for each platform is in [Integrations](/docs/integracoes/intro). Meanwhile, you can [register the student](/docs/alunos/cadastrar-aluno) by hand.
+
+## Common questions
+
+<details>
+<summary>Does resending the access change the student's password?</summary>
+
+No. **Send access email** sends the access details again, and the password stays the same. If she forgot her password, use **Generate new password**, in the same three-dots menu.
+
+</details>
+
+<details>
+<summary>Is it a problem to register the student again with the same email?</summary>
+
+No. She isn't duplicated: she just gets the new products. With **Notify user by email** turned on, she gets an email letting her know.
+
+</details>
+
+<ProximoPasso para="/docs/alunos/mensagens/central-de-atendimento" titulo="Support your students from the inbox">Where students ask for help and your team answers.</ProximoPasso>

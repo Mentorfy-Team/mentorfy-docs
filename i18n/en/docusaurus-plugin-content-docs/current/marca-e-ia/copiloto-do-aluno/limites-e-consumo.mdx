@@ -1,0 +1,85 @@
+---
+title: Set limits and track Student Copilot usage
+sidebar_label: Limits and usage
+sidebar_position: 3
+description: Control how many messages each student can send, who the assistant is available to, and how many credits it uses.
+---
+
+Control how much Student Copilot can be used and who it's available to, and track how your students use it.
+
+<Aula slug="copiloto-aluno-p3-limites" />
+
+## Step by step
+
+<Passos>
+  <Passo titulo={<>In <strong>Limits per Student</strong>, fill in the <strong>Daily Limit</strong>, the <strong>Weekly Limit</strong>, and the <strong>Monthly Limit</strong>.</>}>
+    It's the number of messages each student can send. Zero means no limit.
+  </Passo>
+  <Passo titulo={<>In <strong>Release Rules</strong>, choose after how many days from registration the assistant becomes available.</>}>
+    Use 0 to make it available right away.
+  </Passo>
+  <Passo titulo={<>If you want, check <strong>Release only for students with specific products</strong> and pick the products.</>}>
+    ![Release Rules with a product picked](/img/guia/copiloto-aluno-p3-limites/03-regras.jpg)
+  </Passo>
+  <Passo titulo={<>Check the summary in <strong>How rules combine</strong> and click <strong>Save</strong>.</>}>
+    When you use both rules, the student has to meet both.
+  </Passo>
+  <Passo titulo={<>Track spending in <strong>Usage & Forecast</strong>.</>}>
+    See the credits used this month, how many are left, and the forecast. The **Student Ranking** shows who uses it most.
+
+    ![Usage & Forecast](/img/guia/copiloto-aluno-p3-limites/05-consumo.jpg)
+  </Passo>
+</Passos>
+
+## Good to know
+
+:::info How much it costs
+On a paid plan, student messages don't use credits. During the trial period, each student message uses 0.35 AI credit from **your** account.
+:::
+
+:::tip
+If **Warning!** shows up in **Usage & Forecast**, your credits may run out before the end of the month. Lower the per-student limits or buy more credits in **My Account**. With no credits available, you can't turn on the assistant.
+:::
+
+## Reference
+
+| Setting | How it works |
+| --- | --- |
+| **Daily / Weekly / Monthly Limit** | Messages per student in each period. 0 = no limit |
+| **Release after X days of registration** | The student can only use it after that number of days. 0 = right away |
+| **Release only for students with specific products** | The student needs access to at least one of the chosen products |
+| Both rules together | The student has to meet both |
+
+What the student sees when they hit a rule:
+
+| Situation | Message to the student |
+| --- | --- |
+| Went over the daily limit | "You've reached the daily limit of … messages. Try again tomorrow." |
+| Went over the weekly or monthly limit | A similar message, asking them to try again next week or next month |
+| Doesn't have enough days since registration yet | "The copilot will be available in … days." |
+| Doesn't have the required product | "You need access to a specific product to use the copilot." |
+
+## Common questions
+
+<details>
+<summary>What happens if my credits run out?</summary>
+
+During the trial period, the assistant stops answering students until you have credits again. On any plan, with no credits available, you can't turn on the assistant. Buy more in **My Account**.
+
+</details>
+
+<details>
+<summary>The ranking is empty.</summary>
+
+It only shows students once they start using the assistant. Until then, it shows "No students have used the copilot yet."
+
+</details>
+
+<details>
+<summary>I changed the limits and nothing changed.</summary>
+
+Check that you clicked **Save**, in the top corner. Without saving, your changes are lost when you leave the page.
+
+</details>
+
+<ProximoPasso para="/docs/integracoes/intro" titulo="Connect Mentorfy to your tools">See the available integrations.</ProximoPasso>
