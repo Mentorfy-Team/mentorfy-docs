@@ -1,0 +1,87 @@
+---
+title: Use your own artwork and a default certificate
+sidebar_label: My artwork and default
+sidebar_position: 3
+description: Upload your own artwork for the certificate and use one certificate as the default for mentorships that don't have their own.
+---
+
+Want the certificate to use the design you already have? Upload your artwork and place the fields. Then, if you want, make this certificate work for mentorships that don't have their own yet.
+
+<Aula slug="certificados-p3-arte" />
+
+## Step by step
+
+<Passos>
+  <Passo titulo={<>In the certificate editor, under <strong>Design</strong>, click <strong>My artwork</strong>.</>}>
+    Until you upload the artwork, the certificate stays as a **Draft**. If it was already active, it goes back to draft and you need to click **Activate certificate** again after uploading the artwork.
+  </Passo>
+  <Passo titulo={<>Upload <strong>Your artwork</strong>.</>}>
+    Use PNG, JPG, or PDF at 1600 × 1200 px (4:3), in landscape. The fields appear on top of it.
+
+    ![Editor with the artwork uploaded and the fields over the preview](/img/guia/certificados-p3-arte/01-minha-arte.jpg)
+  </Passo>
+  <Passo titulo="Drag each field to the right place on the preview.">
+    Place, for example, the student's name. The final file keeps the exact same position, pixel by pixel. Under **Fields on the artwork**, click a field to turn it on. To remove a field, select it and use **Remove from artwork**.
+  </Passo>
+  <Passo titulo={<>Check the <strong>Back</strong>.</>}>
+    Under **Design**, the back can be **Automatic content** or **My artwork**. On the **Back** tab of the preview, you see how it looks.
+  </Passo>
+  <Passo titulo={<>Click <strong>Activate certificate</strong>.</>} />
+  <Passo titulo={<>To use it on other mentorships, turn on <strong>Default certificate</strong>.</>}>
+    Turn on **Use for programs without their own certificate**. Students who already finished get it now. On the **Certificates** screen, those mentorships show **Uses default**, and the default's mentorship shows the **DEFAULT** tag.
+
+    ![Certificates screen with the DEFAULT tag and a mentorship that uses the default](/img/guia/certificados-p3-arte/02-hub-padrao.jpg)
+  </Passo>
+</Passos>
+
+## Good to know
+
+:::caution Turning on the default issues right away
+Students who already finished a mentorship without its own certificate get the certificate as soon as you turn on **Default certificate**.
+:::
+
+:::tip Want a certificate just for one mentorship?
+On the row of the mentorship that **Uses default**, click **Customize**. In the editor, click **Customize for this program**. It gets its own certificate, as a draft, and students start getting the new one once you activate it.
+:::
+
+:::info The automatic back
+With **Automatic content**, the platform generates the back with the list of modules, the workload, "Issued by", and the code. With **My artwork**, you upload the back's artwork and place the fields. Without artwork on the back, the background is white.
+:::
+
+## Reference
+
+| File | Accepted format |
+| --- | --- |
+| Certificate artwork (front and back) | PNG, JPG, or PDF at 1600 × 1200 px (4:3). Image up to 8 MB, PDF up to 25 MB |
+
+If the image isn't 4:3, the artwork is adjusted to fill and may crop the edges. If the PDF has more than one page, the first one is used.
+
+| A certificate can only be the default if… | Why |
+| --- | --- |
+| It's **Active** | Draft and disabled certificates don't issue |
+| It uses the 100% or percentage-of-steps rule | The module rule only applies to its own mentorship |
+
+## Common questions
+
+<details>
+<summary>The Default certificate switch is locked. Why?</summary>
+
+The certificate must be active and use the 100% or percentage-of-steps rule. The screen tells you which of the two is missing.
+
+</details>
+
+<details>
+<summary>I already have a default. What if I turn it on for another certificate?</summary>
+
+There's only one default at a time. When you turn it on for another certificate, it becomes the default in place of the current one.
+
+</details>
+
+<details>
+<summary>I turned the default off. What happens?</summary>
+
+Mentorships that used the default are left without a certificate. The same happens if you disable the default certificate, or if you change its rule to modules.
+
+</details>
+
+<ProximoPasso para="/docs/cursos/banco-de-questoes/guardar-perguntas" titulo="Save your questions">Build a question bank to use in your lesson quizzes.</ProximoPasso>

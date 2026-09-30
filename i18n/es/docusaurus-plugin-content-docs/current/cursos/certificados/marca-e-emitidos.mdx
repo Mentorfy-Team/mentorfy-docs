@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Define logo, color y firma una vez para todos los certificados, mira quién ya lo recibió y emítelo a mano.
 ---
 
-En **Marca y firma**, configuras una vez el logo, el color y la firma, y eso vale para todos los certificados. En **Emitidos**, ves quién ya lo recibió y puedes emitirlo al momento para un alumno.
+En **Marca y firma**, configuras una vez el nombre, el logo, el color y quién firma, y eso vale para todos los certificados. En **Emitidos**, ves quién ya lo recibió y te ocupas de cada certificado.
 
 <Aula slug="certificados-p2-marca" />
 
@@ -16,18 +16,20 @@ En **Marca y firma**, configuras una vez el logo, el color y la firma, y eso val
     El botón está en la esquina de arriba, a la derecha.
   </Passo>
   <Passo titulo={<>Completa tu marca y haz clic en <strong>Guardar marca</strong>.</>}>
-    Pon el **Nombre de la marca**, el **Logo**, el **Color de acento** y quién firma.
+    Pon el **Nombre de la marca**, el **Logo**, el **Color de acento** y, en **Firma por defecto**, el nombre y el cargo de quien firma.
 
-    ![Ventana Marca y firma con nombre, logo, color y firma estándar](/img/guia/certificados-p2-marca/02-marca.jpg)
+    ![Ventana Marca y firma con nombre, logo, color y firma por defecto](/img/guia/certificados-p2-marca/02-marca.jpg)
   </Passo>
-  <Passo titulo={<>Para ver quién ya lo recibió, haz clic en <strong>Emitidos</strong> en la mentoría.</>} />
+  <Passo titulo={<>Para ver quién ya lo recibió, haz clic en <strong>Emitidos</strong> en la mentoría.</>}>
+    Arriba ves cuántos certificados salieron, cuántos descargó el alumno y cuántos necesitan atención. La franja de abajo muestra la regla que está vigente, con el enlace **Cambiar regla**.
+
+    ![Pantalla de emitidos con los contadores, los filtros y la lista de alumnos](/img/guia/certificados-p2-marca/03-emitidos.jpg)
+  </Passo>
   <Passo titulo={<>¿Necesitas entregarlo antes? Haz clic en <strong>Emitir para un alumno</strong>.</>}>
-    Busca al alumno por nombre o correo y haz clic en **Emitir**. Funciona aunque no haya cumplido la regla.
-
-    ![Ventana Emitir para un alumno con la búsqueda y la lista de alumnos](/img/guia/certificados-p2-marca/06-emitir.jpg)
+    Busca al alumno por nombre o e-mail y haz clic en **Emitir**. Funciona aunque no haya cumplido la regla.
   </Passo>
-  <Passo titulo="Listo: el certificado aparece en la lista.">
-    La lista muestra el **Código** y el **Estado**, por ejemplo si el alumno ya lo descargó o todavía no lo abrió.
+  <Passo titulo="Ocúpate de cada certificado en la lista.">
+    En la fila del alumno, puedes descargar el PDF, abrir la página de validación y reenviar el e-mail. En **Más acciones**, eliges **Generar de nuevo** o **Revocar**.
   </Passo>
 </Passos>
 
@@ -37,33 +39,55 @@ En **Marca y firma**, configuras una vez el logo, el color y la firma, y eso val
 La marca vale para todos los certificados, pero puedes cambiar el logo, el color y la firma en el certificado de una mentoría específica.
 :::
 
-:::info ¿Pediste el documento (CPF) o la firma del alumno?
-Si el certificado pide el documento o la firma del alumno, solo se emite después de que el alumno lo haga. En la lista, el estado aparece como **Esperando documento** o **Esperando firma**.
+:::info ¿Pediste documento o la firma del alumno?
+Si el certificado pide el documento o la firma del alumno, solo sale después de que el alumno lo haga. En la lista, el estado aparece como **Esperando documento** o **Esperando firma**.
 :::
 
 ## Referencia
 
 | Archivo | Formato aceptado |
 | --- | --- |
-| Logo | PNG con fondo transparente o PDF. Imagen de hasta 2 MB, PDF de hasta 10 MB |
-| Imagen de la firma | PNG con fondo transparente o PDF. Imagen de hasta 2 MB, PDF de hasta 10 MB |
+| Logo | PNG con fondo transparente o PDF. Imagen hasta 2 MB, PDF hasta 10 MB |
+| Imagen de la firma | PNG con fondo transparente o PDF. Imagen hasta 2 MB, PDF hasta 10 MB |
 
-¿No tienes imagen de la firma? Activa **Usar letra manuscrita en lugar de imagen**: la plataforma escribe el nombre con una fuente de firma.
+¿Sin imagen de la firma? Activa **Usar letra manuscrita en lugar de imagen**: la plataforma escribe el nombre con una fuente de firma.
+
+| Filtro en **Emitidos** | Qué muestra |
+| --- | --- |
+| **No abrieron** | Certificados enviados que el alumno aún no descargó |
+| **Esperando documento** | Alumnos que aún no indicaron su documento |
+| **Esperando firma** | Alumnos que aún no firmaron en su área |
+| **Fallaron** | Certificados que no se generaron |
+| **Revocados** | Certificados cancelados por ti |
 
 ## Preguntas frecuentes
 
 <details>
-<summary>El alumno dice que no recibió el correo. ¿Cómo lo reenvío?</summary>
+<summary>El alumno dice que no recibió el e-mail. ¿Cómo lo reenvío?</summary>
 
-En **Emitidos**, abre las acciones del certificado del alumno y usa **Reenviar e-mail**. También puedes usar **Descargar PDF** y enviárselo.
+En la fila del alumno, usa **Reenviar e-mail**. También puedes **Descargar PDF** y enviárselo.
 
 </details>
 
 <details>
-<summary>Lo emití por error. ¿Puedo cancelarlo?</summary>
+<summary>Emití por error. ¿Se puede cancelar?</summary>
 
-Sí. En las acciones del certificado, usa **Revocar**. La página de validación pasa a mostrar "inválido" y el alumno pierde la descarga. Si cambias de idea, usa **Reactivar**.
+Sí. En **Más acciones**, usa **Revocar**. Puedes escribir un motivo (opcional, solo tú lo ves). La página de validación pasa a mostrar "inválido" y el alumno pierde la descarga. Si cambias de idea, usa **Reactivar** en la fila del certificado.
 
 </details>
 
-<ProximoPasso para="/docs/cursos/banco-de-questoes/guardar-perguntas" titulo="Guarda tus preguntas">Arma un banco de preguntas para usar en los quizzes de las clases.</ProximoPasso>
+<details>
+<summary>Un certificado falló o está esperando el documento. ¿Qué hago?</summary>
+
+Si falló, haz clic en **Intentar de nuevo** en la fila. Si está **Esperando documento**, el alumno necesita indicar su documento; después, haz clic en **Emitir ahora** en la fila. Si está **Esperando firma**, solo el alumno puede firmar, en su área.
+
+</details>
+
+<details>
+<summary>¿Cómo llevo la lista a una hoja de cálculo?</summary>
+
+Haz clic en **Exportar lista**, arriba en la pantalla de emitidos. La plataforma descarga un archivo con los certificados de la mentoría.
+
+</details>
+
+<ProximoPasso para="/docs/cursos/certificados/minha-arte-e-padrao" titulo="Usa tu arte y un certificado predeterminado">Sube tu propio arte y haz que un certificado valga para varias mentorías.</ProximoPasso>

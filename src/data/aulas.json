@@ -245,8 +245,8 @@
       "description": "Em Certificados, pronto em quatro passos",
       "route": "/mentor/mentorias/certificados",
       "external": false,
-      "durationSec": 45,
-      "guid": "022bfff2-7f3e-42f1-8d00-4ec1d0137084"
+      "durationSec": 54,
+      "guid": "cbc3a94b-ce1a-4ff9-a91f-54519286ef98"
     },
     {
       "slug": "certificados-p2-marca",
@@ -255,8 +255,18 @@
       "description": "Configure uma vez, use em todos",
       "route": "/mentor/mentorias/certificados",
       "external": false,
-      "durationSec": 42,
-      "guid": "13b6c3af-177d-415e-ace0-129e5e0eadab"
+      "durationSec": 56,
+      "guid": "fe0ca548-85a9-445f-a13c-285e28d310ce"
+    },
+    {
+      "slug": "certificados-p3-arte",
+      "track": "conteudo",
+      "title": "Certificados · Parte 3: a sua arte e o certificado padrão",
+      "description": "Use a sua arte e um certificado para várias mentorias",
+      "route": "/mentor/mentorias/certificados",
+      "external": false,
+      "durationSec": 61,
+      "guid": "30a150c9-74ad-418e-870a-b2c9d4837d2d"
     },
     {
       "slug": "banco-questoes",

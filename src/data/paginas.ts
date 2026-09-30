@@ -27,6 +27,7 @@ export const PAGINA_DA_AULA: Record<string, string> = {
   'armazenamento-p2-pastas': '/docs/cursos/armazenamento/organizar-em-pastas',
   certificados: '/docs/cursos/certificados/certificados-automaticos',
   'certificados-p2-marca': '/docs/cursos/certificados/marca-e-emitidos',
+  'certificados-p3-arte': '/docs/cursos/certificados/minha-arte-e-padrao',
   'banco-questoes': '/docs/cursos/banco-de-questoes/guardar-perguntas',
   'banco-p2-aula': '/docs/cursos/banco-de-questoes/usar-numa-aula',
   'categorias-vitrine': '/docs/cursos/vitrine/organizar-em-categorias',

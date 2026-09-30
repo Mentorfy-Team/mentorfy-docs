@@ -1,11 +1,11 @@
 ---
-title: Set up your brand and see the issued certificates
+title: Set up your brand and see issued certificates
 sidebar_label: Brand and issued
 sidebar_position: 2
-description: Set your logo, color, and signature once for all certificates, see who has already received one, and issue manually.
+description: Set your logo, color, and signature once for all certificates, see who already got one, and issue it by hand.
 ---
 
-In **Brand and signature**, you set your logo, color, and signature once, and they apply to all certificates. In **Issued**, you see who has already received one and can issue it right away to a student.
+In **Brand and signature**, you set the name, logo, color, and signer once, and it applies to all certificates. In **Issued**, you see who already got a certificate and take care of each one.
 
 <Aula slug="certificados-p2-marca" />
 
@@ -16,54 +16,78 @@ In **Brand and signature**, you set your logo, color, and signature once, and th
     The button is in the top right corner.
   </Passo>
   <Passo titulo={<>Fill in your brand and click <strong>Save brand</strong>.</>}>
-    Add the **Brand name**, the **Logo**, the **Accent color**, and who signs.
+    Enter the **Brand name**, the **Logo**, the **Accent color**, and, under **Default signature**, the name and role of the person who signs.
 
     ![Brand and signature window with name, logo, color, and default signature](/img/guia/certificados-p2-marca/02-marca.jpg)
   </Passo>
-  <Passo titulo={<>To see who has already received one, click <strong>Issued</strong> on the mentorship.</>} />
-  <Passo titulo={<>Need to give it out sooner? Click <strong>Issue to a student</strong>.</>}>
-    Search for the student by name or email and click **Issue**. It works even if they haven't met the rule.
+  <Passo titulo={<>To see who already got one, click <strong>Issued</strong> on the mentorship.</>}>
+    At the top, you see how many certificates went out, how many students downloaded, and how many need attention. The bar below shows the rule that's active, with the **Change rule** link.
 
-    ![Issue to a student window with the search and the list of students](/img/guia/certificados-p2-marca/06-emitir.jpg)
+    ![Issued screen with the counters, the filters, and the list of students](/img/guia/certificados-p2-marca/03-emitidos.jpg)
   </Passo>
-  <Passo titulo="Done: the certificate shows up in the list.">
-    The list shows the **Code** and the **Status**, for example whether the student has already downloaded it or hasn't opened it yet.
+  <Passo titulo={<>Need to deliver early? Click <strong>Issue to a student</strong>.</>}>
+    Search for the student by name or email and click **Issue**. It works even if they haven't met the rule.
+  </Passo>
+  <Passo titulo="Take care of each certificate in the list.">
+    On the student's row, you can download the PDF, open the validation page, and resend the email. Under **More actions**, you choose **Generate again** or **Revoke**.
   </Passo>
 </Passos>
 
 ## Good to know
 
 :::tip You can change it for each mentorship
-The brand applies to all certificates, but you can change the logo, color, and signature on a specific mentorship's certificate.
+Your brand applies to all certificates, but you can change the logo, color, and signature on a specific mentorship's certificate.
 :::
 
 :::info Asked for the student's ID or signature?
-If the certificate asks for the student's ID (CPF) or signature, it only goes out after the student provides it. In the list, the status shows as **Waiting for ID** or **Waiting for signature**.
+If the certificate asks for the student's ID or signature, it only goes out after the student does it. In the list, the status shows as **Waiting for ID** or **Waiting for signature**.
 :::
 
 ## Reference
 
 | File | Accepted format |
 | --- | --- |
-| Logo | PNG with a transparent background, or PDF. Image up to 2 MB, PDF up to 10 MB |
-| Signature image | PNG with a transparent background, or PDF. Image up to 2 MB, PDF up to 10 MB |
+| Logo | Transparent PNG or PDF. Image up to 2 MB, PDF up to 10 MB |
+| Signature image | Transparent PNG or PDF. Image up to 2 MB, PDF up to 10 MB |
 
-No signature image? Turn on **Use handwritten lettering instead of an image**: the platform writes the name in a signature-style font.
+No signature image? Turn on **Use handwritten lettering instead of an image**: the platform writes the name in a signature font.
+
+| Filter in **Issued** | What it shows |
+| --- | --- |
+| **Not opened** | Certificates sent that the student hasn't downloaded yet |
+| **Waiting for ID** | Students who haven't entered their ID yet |
+| **Waiting for signature** | Students who haven't signed in their area yet |
+| **Failed** | Certificates that weren't generated |
+| **Revoked** | Certificates you canceled |
 
 ## Common questions
 
 <details>
 <summary>The student says they didn't get the email. How do I resend it?</summary>
 
-In **Issued**, open the actions for the student's certificate and use **Resend email**. You can also **Download PDF** and send it to them.
+On the student's row, use **Resend email**. You can also **Download PDF** and send it to them.
 
 </details>
 
 <details>
-<summary>I issued it by mistake. Can I cancel it?</summary>
+<summary>I issued one by mistake. Can I cancel it?</summary>
 
-Yes. In the certificate's actions, use **Revoke**. The validation page starts showing "invalid" and the student loses the download. If you change your mind, use **Reactivate**.
+Yes. Under **More actions**, use **Revoke**. You can write a reason (optional, only you see it). The validation page then shows "invalid" and the student loses the download. If you change your mind, use **Reactivate** on the certificate's row.
 
 </details>
 
-<ProximoPasso para="/docs/cursos/banco-de-questoes/guardar-perguntas" titulo="Save your questions">Build a question bank to use in your lesson quizzes.</ProximoPasso>
+<details>
+<summary>A certificate failed or is waiting for the ID. What do I do?</summary>
+
+If it failed, click **Try again** on the row. If it's **Waiting for ID**, the student needs to enter their ID; then click **Issue now** on the row. If it's **Waiting for signature**, only the student can sign, in their own area.
+
+</details>
+
+<details>
+<summary>How do I get the list into a spreadsheet?</summary>
+
+Click **Export list**, at the top of the issued screen. The platform downloads a file with the mentorship's certificates.
+
+</details>
+
+<ProximoPasso para="/docs/cursos/certificados/minha-arte-e-padrao" titulo="Use your own artwork and a default certificate">Upload your own artwork and make one certificate work for several mentorships.</ProximoPasso>
