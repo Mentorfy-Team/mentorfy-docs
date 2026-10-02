@@ -292,21 +292,21 @@
       "slug": "categorias-vitrine",
       "track": "conteudo",
       "title": "Organize a sua vitrine em categorias",
-      "description": "Em Categorias da Vitrine, as prateleiras da sua loja",
-      "route": "/mentor/vitrine-config/geral",
+      "description": "Em Minhas Mentorias, as prateleiras da sua área do aluno",
+      "route": "/mentor/mentorias/minhas-mentorias",
       "external": false,
-      "durationSec": 38,
-      "guid": "79c3774a-3fe0-4487-8117-12503f34d8fb"
+      "durationSec": 54,
+      "guid": "4f8c23af-a636-47fd-9436-14e0084b1811"
     },
     {
       "slug": "categorias-p2-visibilidade",
       "track": "conteudo",
       "title": "Vitrine · Parte 2: controle o que aparece",
-      "description": "Oculte, bloqueie ou coloque em construção",
-      "route": "/mentor/vitrine-config/geral",
+      "description": "Visível, em construção ou oculta: você decide",
+      "route": "/mentor/mentorias/minhas-mentorias",
       "external": false,
-      "durationSec": 39,
-      "guid": "98d067a8-ab8b-4473-8245-a6793585d0da"
+      "durationSec": 68,
+      "guid": "b400f0f3-9c63-4c87-989c-3443dbe49eec"
     },
     {
       "slug": "visao-geral",

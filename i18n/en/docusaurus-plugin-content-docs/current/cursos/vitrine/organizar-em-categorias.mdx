@@ -2,68 +2,75 @@
 title: Organize your showcase in categories
 sidebar_label: Organize in categories
 sidebar_position: 1
-description: Create categories in Showcase Categories and move your mentorships into them.
+description: Create categories in the Showcase view of My Mentorships, put your mentorships inside them, and publish.
 ---
 
-Categories are the shelves of your showcase: they make everything easy to find. Create the shelf, then put the mentorships inside it.
+Categories are the shelves of your showcase: they make each mentorship easy to find. Create the shelf, put the mentorships inside it, and publish.
 
 <Aula slug="categorias-vitrine" />
 
 ## Step by step
 
 <Passos>
-  <Passo titulo={<>In the menu, open <strong>Showcase Categories</strong> and click <strong>New Category</strong>.</>}>
-    ![Showcase Categories screen with the list of categories and the No category area](/img/guia/categorias-vitrine/01-categorias.jpg)
+  <Passo titulo={<>In <strong>My Mentorships</strong>, open the <strong>Showcase</strong> view and click <strong>New category</strong>.</>}>
+    The **Showcase** view is one of the two icon buttons at the top (the other is **Table**). **New category** is in the bottom bar.
+
+    ![Showcase view of My Mentorships with the bottom bar and the New category button](/img/guia/categorias-vitrine/01-vitrine.jpg)
   </Passo>
-  <Passo titulo={<>Give it a name and click <strong>Create Category</strong>.</>}>
-    Done, the new shelf shows up in the list.
+  <Passo titulo={<>Give it a <strong>Name</strong> and click <strong>Create category</strong>.</>}>
+    The new category shows up at the end of the showcase, empty. An empty category doesn't show up for the student.
   </Passo>
-  <Passo titulo="On the mentorship that goes on this shelf, open the three-dot menu.">
-    Mentorships that don't have a shelf yet are in **No category**, at the end of the list.
+  <Passo titulo={<>In the category title, click <strong>+ Program</strong>.</>}>
+    The **Add programs** panel opens. Use the search, or the **All** / **No category** filter, to find the mentorships.
+
+    ![Add programs panel with the search, the filter, and the list of mentorships to tick](/img/guia/categorias-vitrine/06-adicionar.jpg)
   </Passo>
-  <Passo titulo={<>Choose <strong>Move to</strong> and then the category.</>}>
-    ![Mentorship menu with Move to open and the list of categories](/img/guia/categorias-vitrine/07-mover.jpg)
+  <Passo titulo={<>Tick the mentorships and click <strong>Add N programs</strong>.</>}>
+    A mentorship can be in more than one category: the ones already in other categories stay there and also show up here. Don't have the mentorship yet? Click **Create new program**: it goes straight into this category.
   </Passo>
-  <Passo titulo="Done: the mentorship is now inside the category.">
-    The showcase organizes itself.
+  <Passo titulo="Set the order.">
+    The arrows move the category up and down the showcase. **Reorder** arranges the mentorships inside it.
+  </Passo>
+  <Passo titulo={<>Click <strong>Publish</strong> and confirm with <strong>Publish now</strong>.</>}>
+    Until you publish, nothing changes for the student. The **Publish for your students?** window shows a summary of what will change. After you confirm, it can take a few minutes to show up in the student app.
   </Passo>
 </Passos>
 
 ## Good to know
 
-:::tip One mentorship on two shelves
-In the mentorship menu, **Add to another category** puts the mentorship on a new shelf without removing it from the ones it's already on. **Move to** takes it out of where it is and moves it to the new one.
+:::info Everything stays a draft until you publish
+Each change goes into the draft. At the top you see how many changes are unpublished (for example, **1 unpublished change**) and the **Discard** button, which takes everything back to what the student sees today. The exception is a mentorship's cover: when you change it, the student already sees the new cover.
 :::
 
-:::info Empty categories don't show up
-The student only sees shelves that have at least one mentorship they can see. An empty category disappears from the showcase.
+:::info No category
+Mentorships that aren't in any category show up for the student under **Other Products**. To take a mentorship out of the showcase, hide it (see [Control what shows up in the showcase](/docs/cursos/vitrine/controlar-o-que-aparece)).
 :::
 
-:::tip No ideas for categories?
-Click **Generate with AI**, tell it a bit about your mentorships, and the AI suggests categories. You check them before applying.
+:::tip Want help getting started?
+In the bottom bar, **Organize with AI** helps you build the categories. In the **Table** view, the left panel lists the categories, with the **AI** and **+ New** buttons.
 :::
 
 ## Common questions
 
 <details>
-<summary>How do I change the name or order of the categories?</summary>
+<summary>How do I rename a category or create a subcategory?</summary>
 
-To rename, double-click the name. To change the order, click and drag the category or the mentorship.
-
-</details>
-
-<details>
-<summary>How do I create a subcategory?</summary>
-
-Click the category's gear icon and, in **Parent Category (optional)**, choose the category above it. Then click **Save**. Leave it empty to keep it as a main category.
+Click the gear icon next to the category title. **Rename** changes the name. **Move inside…** puts the category inside another one, and **Top level** brings it back to the start of the showcase.
 
 </details>
 
 <details>
 <summary>What happens if I delete a category?</summary>
 
-The category and its subcategories are deleted. The mentorships are not deleted: they just leave that shelf. If they aren't on another one, they go back to **No category**.
+In the gear menu, click **Delete category**. The category and its subcategories leave the showcase, but the mentorships are not deleted. The ones that aren't in another category go to **Other Products**. The window also lets you choose another category to receive the mentorships. Like any change, the deletion only reaches the student when you publish.
 
 </details>
 
-<ProximoPasso para="/docs/cursos/vitrine/controlar-o-que-aparece" titulo="Control what shows up in the showcase">Hide, block new enrollments, or put it under construction.</ProximoPasso>
+<details>
+<summary>I made a mistake. Can I undo it?</summary>
+
+Yes, as long as you haven't published. After many changes a notice with **Undo** shows up, and the **Discard** button at the top takes everything back to what is published.
+
+</details>
+
+<ProximoPasso para="/docs/cursos/vitrine/controlar-o-que-aparece" titulo="Control what shows up in the showcase">Make it visible, under construction, or hidden.</ProximoPasso>

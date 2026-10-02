@@ -2,64 +2,79 @@
 title: Controla lo que aparece en la vitrina
 sidebar_label: Controlar lo que aparece
 sidebar_position: 2
-description: Oculta una categoría o una mentoría, bloquea nuevas inscripciones o pon una mentoría en construcción.
+description: Deja cada mentoría visible, en construcción u oculta, oculta una categoría entera y revísalo en la Vista previa.
 ---
 
-En la vitrina, tú decides lo que ve el alumno: puedes esconder un estante entero, esconder una mentoría, cerrar nuevas inscripciones o avisar que algo está en construcción.
+En la vitrina, tú decides lo que ve el alumno: cada mentoría puede estar visible, en construcción u oculta, y una categoría entera puede quedar escondida.
 
 <Aula slug="categorias-p2-visibilidade" />
 
 ## Paso a paso
 
 <Passos>
-  <Passo titulo={<>En <strong>Categorías de vitrina</strong>, haz clic en el engranaje de la categoría.</>} />
-  <Passo titulo={<>Activa <strong>Ocultar en la vitrina</strong> y haz clic en <strong>Guardar</strong>.</>}>
-    La categoría recibe la etiqueta **Oculta en la vitrina**. Quien ya compró una mentoría de ella sigue viendo esa mentoría.
-
-    ![Ventana Configuración de categoría con la opción Ocultar en la vitrina](/img/guia/categorias-p2-visibilidade/02-engrenagem.jpg)
+  <Passo titulo={<>En <strong>Mis mentorías</strong>, en la vista <strong>Tabla</strong>, haz clic en el <strong>Estado</strong> de la mentoría.</>}>
+    La columna **Estado** muestra cómo ve el alumno cada mentoría.
   </Passo>
-  <Passo titulo="Para una sola mentoría, usa los íconos de su línea.">
-    El ojo muestra o esconde, el candado bloquea nuevas inscripciones y el último ícono activa el modo en construcción. Mira qué hace cada uno en Referencia.
+  <Passo titulo={<>En el menú <strong>Cómo la ve el alumno</strong>, elige una opción.</>}>
+    El cambio entra en el borrador y aparece un aviso con **Deshacer**. Las opciones están en Referencia.
 
-    ![Línea de la mentoría con los íconos de ojo, candado y construcción](/img/guia/categorias-p2-visibilidade/05-produto.jpg)
+    ![Menú Cómo la ve el alumno abierto en la columna Estado, con Visible, En construcción y Oculta](/img/guia/categorias-p2-visibilidade/02-status.jpg)
   </Passo>
-  <Passo titulo="Haz clic en el candado para bloquear nuevas inscripciones.">
-    Quien ya tiene acceso sigue, y nadie nuevo entra. Haz clic de nuevo para habilitarlas.
+  <Passo titulo={<>Para esconder una categoría entera, abre la vista <strong>Vitrina</strong> y haz clic en el engranaje de la categoría.</>}>
+    Elige **Ocultar para el alumno**. La categoría recibe la etiqueta **Oculta para el alumno**. Para volver atrás, elige **Mostrar al alumno**.
+
+    ![Menú del engranaje de la categoría con Renombrar, Mover dentro de, Ocultar para el alumno y Eliminar categoría](/img/guia/categorias-p2-visibilidade/05-menu.jpg)
+  </Passo>
+  <Passo titulo={<>Haz clic en <strong>Vista previa</strong> para revisar.</>}>
+    El botón está junto a **Editar**, arriba. La vista previa muestra la vitrina como la ve el alumno: la categoría oculta desaparece, y las mentorías en construcción muestran el aviso **Disponible pronto**. Para volver a modificar, haz clic en **Editar**.
+  </Passo>
+  <Passo titulo={<>Haz clic en <strong>Publicar</strong> y confirma en <strong>Publicar ahora</strong>.</>}>
+    Solo entonces el cambio llega al alumno. Puede tardar unos minutos en aparecer en su app.
   </Passo>
 </Passos>
 
 ## Es bueno saber
 
-:::tip Pasa el mouse sobre el ícono
-Cada ícono muestra lo que está activado, por ejemplo **Visible** u **Oculto**, y lo que pasa al hacer clic.
+:::tip Encuentra lo que está oculto
+Arriba de la **Tabla**, los filtros **Visibles**, **Ocultas**, **Sin portada** y **Sin alumnos** ayudan a encontrar lo que buscas. **Más filtros** abre otras opciones.
 :::
 
-:::caution En construcción vale para todos
-El modo en construcción bloquea el acceso de todo el mundo, incluso de quien ya compró. Úsalo solo mientras estés armando la mentoría.
+:::caution Ocultar no quita el acceso a quien ya lo tiene
+Una mentoría **Oculta** y una categoría oculta salen de la vitrina para quien aún no tiene acceso. El alumno que ya tiene acceso a la mentoría la sigue viendo y puede abrirla. La pantalla dice que solo tú y tu equipo la ven, pero eso no aplica a esos alumnos.
+:::
+
+:::info En construcción: el alumno la ve, pero no la abre
+Úsalo para mostrar la portada de una mentoría que todavía se está armando. El alumno ve la tarjeta, pero solo puede abrirla cuando la cambies a **Visible**.
 :::
 
 ## Referencia
 
-| Control | Lo que ve el alumno |
+| Estado | Lo que ve el alumno |
 | --- | --- |
-| **Ocultar en la vitrina** (engranaje de la categoría) | El estante desaparece. Quien ya tiene acceso a una mentoría de él sigue viendo solo esa mentoría |
-| Ojo: **Visible** / **Oculto** | Si está oculta, la mentoría solo aparece para quien ya la compró |
-| Candado: **Bloquear nuevas inscripciones** | Quien ya tiene acceso sigue; nadie nuevo entra |
-| **Habilitar el modo de construcción** | La portada aparece, pero por ahora nadie puede abrirla |
+| **Visible** | El alumno la ve y puede abrirla |
+| **En construcción** | El alumno ve la tarjeta, pero aún no la abre |
+| **Oculta** | Sale de la vitrina. Quien ya tiene acceso la sigue viendo |
 
 ## Preguntas frecuentes
 
 <details>
-<summary>Oculté una mentoría. ¿Los alumnos que ya la compraron pierden el acceso?</summary>
+<summary>Oculté una mentoría y todavía aparece para el alumno. ¿Por qué?</summary>
 
-No. Ocultar solo saca la mentoría de la vista de quien no la compró. Quien ya tiene acceso sigue viéndola y mirando las clases.
+El cambio solo llega al alumno después de **Publicar**. Si está en más de una categoría, revisa en la **Vista previa**: la mentoría oculta no aparece en ninguna de ellas.
+
+</details>
+
+<details>
+<summary>La mentoría está Visible, pero el alumno no la ve. ¿Por qué?</summary>
+
+En la **Tabla**, un ícono amarillo junto a la mentoría explica el motivo cuando pasas el mouse sobre él. Por ejemplo, su categoría está oculta o solo está en categorías ocultas.
 
 </details>
 
 <details>
 <summary>Quiero sacar una mentoría de circulación para siempre. ¿La oculto o la borro?</summary>
 
-Mejor ocúltala: se puede deshacer con un clic. Borrar la mentoría les quita el acceso a todos los alumnos y no se puede recuperar.
+Mejor ocúltala: se puede deshacer con un clic. Borrar una mentoría es para siempre y la pantalla avisa que no se puede recuperar (mira [Crea tu primera mentoría](/docs/cursos/mentorias/criar-mentoria)).
 
 </details>
 

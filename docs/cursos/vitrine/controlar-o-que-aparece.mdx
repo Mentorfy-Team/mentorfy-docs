@@ -2,64 +2,79 @@
 title: Controle o que aparece na vitrine
 sidebar_label: Controlar o que aparece
 sidebar_position: 2
-description: Oculte uma categoria ou mentoria, bloqueie novas inscrições ou coloque uma mentoria em construção.
+description: Deixe cada mentoria visível, em construção ou oculta, esconda uma categoria inteira e confira no Preview.
 ---
 
-Na vitrine, você decide o que o aluno vê: dá para esconder uma prateleira inteira, esconder uma mentoria, fechar novas inscrições ou avisar que algo está em construção.
+Na vitrine, você decide o que o aluno vê: cada mentoria pode estar visível, em construção ou oculta, e uma categoria inteira pode ficar escondida.
 
 <Aula slug="categorias-p2-visibilidade" />
 
 ## Passo a passo
 
 <Passos>
-  <Passo titulo={<>Em <strong>Categorias da Vitrine</strong>, clique na engrenagem da categoria.</>} />
-  <Passo titulo={<>Ligue <strong>Ocultar na vitrine</strong> e clique em <strong>Salvar</strong>.</>}>
-    A categoria ganha a etiqueta **Oculta na vitrine**. Quem já comprou uma mentoria dela continua vendo essa mentoria.
-
-    ![Janela Configurações da Categoria com a opção Ocultar na vitrine](/img/guia/categorias-p2-visibilidade/02-engrenagem.jpg)
+  <Passo titulo={<>Em <strong>Minhas Mentorias</strong>, na visão <strong>Tabela</strong>, clique no <strong>Status</strong> da mentoria.</>}>
+    A coluna **Status** mostra como o aluno vê cada mentoria.
   </Passo>
-  <Passo titulo="Para uma mentoria só, use os ícones na linha dela.">
-    O olho mostra ou esconde, o cadeado bloqueia novas inscrições e o último ícone liga o modo em construção. Veja o que cada um faz em Referência.
+  <Passo titulo={<>No menu <strong>Como o aluno vê</strong>, escolha uma opção.</>}>
+    A mudança entra no rascunho e aparece um aviso com **Desfazer**. As opções estão em Referência.
 
-    ![Linha da mentoria com os ícones de olho, cadeado e construção](/img/guia/categorias-p2-visibilidade/05-produto.jpg)
+    ![Menu Como o aluno vê aberto na coluna Status, com Visível, Em construção e Oculta](/img/guia/categorias-p2-visibilidade/02-status.jpg)
   </Passo>
-  <Passo titulo="Clique no cadeado para bloquear novas inscrições.">
-    Quem já tem acesso continua, e ninguém novo entra. Clique de novo para liberar.
+  <Passo titulo={<>Para esconder uma categoria inteira, abra a visão <strong>Vitrine</strong> e clique na engrenagem da categoria.</>}>
+    Escolha **Ocultar para o aluno**. A categoria ganha a etiqueta **Oculta para o aluno**. Para voltar atrás, escolha **Mostrar para o aluno**.
+
+    ![Menu da engrenagem da categoria com Renomear, Mover para dentro de, Ocultar para o aluno e Excluir categoria](/img/guia/categorias-p2-visibilidade/05-menu.jpg)
+  </Passo>
+  <Passo titulo={<>Clique em <strong>Preview</strong> para conferir.</>}>
+    O botão fica ao lado de **Editar**, no topo. O Preview mostra a vitrine como o aluno vê: a categoria oculta some, e as mentorias em construção aparecem com o aviso **Disponível em breve**. Para voltar a mexer, clique em **Editar**.
+  </Passo>
+  <Passo titulo={<>Clique em <strong>Publicar</strong> e confirme em <strong>Publicar agora</strong>.</>}>
+    Só depois disso a mudança chega ao aluno. Pode levar alguns minutos para aparecer no app dele.
   </Passo>
 </Passos>
 
 ## Bom saber
 
-:::tip Passe o mouse sobre o ícone
-Cada ícone mostra o que está ligado, por exemplo **Visível** ou **Oculto**, e o que acontece ao clicar.
+:::tip Ache o que está oculto
+No topo da **Tabela**, os filtros **Visíveis**, **Ocultas**, **Sem capa** e **Sem alunos** ajudam a achar o que você procura. **Mais filtros** abre outras opções.
 :::
 
-:::caution Em construção vale para todos
-O modo em construção bloqueia o acesso de todo mundo, inclusive de quem já comprou. Use só enquanto estiver montando.
+:::caution Ocultar não tira o acesso de quem já tem
+Uma mentoria **Oculta** e uma categoria oculta saem da vitrine para quem ainda não tem acesso. O aluno que já tem acesso à mentoria continua vendo e abrindo. A tela diz "Só você e sua equipe veem", mas isso não vale para esses alunos.
+:::
+
+:::info Em construção: o aluno vê, mas não abre
+Use para mostrar a capa de uma mentoria que ainda está sendo montada. O aluno vê o card, mas só consegue abrir quando você mudar para **Visível**.
 :::
 
 ## Referência
 
-| Controle | O que o aluno vê |
+| Status | O que o aluno vê |
 | --- | --- |
-| **Ocultar na vitrine** (engrenagem da categoria) | A prateleira some. Quem já tem acesso a uma mentoria dela continua vendo só essa mentoria |
-| Olho: **Visível** / **Oculto** | Oculta, a mentoria só aparece para quem já comprou |
-| Cadeado: **Bloquear novas inscrições** | Quem já tem acesso continua; ninguém novo entra |
-| **Ativar modo em construção** | A capa aparece, mas ninguém consegue abrir por enquanto |
+| **Visível** | O aluno vê e consegue abrir |
+| **Em construção** | O aluno vê o card, mas ainda não abre |
+| **Oculta** | Sai da vitrine. Quem já tem acesso continua vendo |
 
 ## Dúvidas comuns
 
 <details>
-<summary>Ocultei uma mentoria. Os alunos que já compraram perdem o acesso?</summary>
+<summary>Ocultei uma mentoria e ela ainda aparece para o aluno. Por quê?</summary>
 
-Não. Ocultar só tira a mentoria da vista de quem não comprou. Quem já tem acesso continua vendo e assistindo.
+A mudança só chega ao aluno depois de **Publicar**. Se ela está em mais de uma categoria, confira no **Preview**: a mentoria oculta não aparece em nenhuma delas.
+
+</details>
+
+<details>
+<summary>A mentoria está Visível, mas o aluno não vê. Por quê?</summary>
+
+Na **Tabela**, um ícone amarelo ao lado da mentoria explica o motivo quando você passa o mouse. Por exemplo, a categoria dela está oculta ou ela só está em categorias ocultas.
 
 </details>
 
 <details>
 <summary>Quero tirar uma mentoria do ar de vez. Oculto ou apago?</summary>
 
-Prefira ocultar: dá para desfazer com um clique. Apagar a mentoria tira o acesso de todos os alunos e não dá para recuperar.
+Prefira ocultar: dá para desfazer com um clique. Apagar a mentoria é para sempre e a tela avisa que não dá para recuperar (veja [Crie a sua primeira mentoria](/docs/cursos/mentorias/criar-mentoria)).
 
 </details>
 
