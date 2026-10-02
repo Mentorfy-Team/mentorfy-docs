@@ -195,8 +195,8 @@
       "description": "Em Minhas Mentorias, em menos de um minuto",
       "route": "/mentor/mentorias/minhas-mentorias",
       "external": false,
-      "durationSec": 35,
-      "guid": "29253306-7778-47fa-942f-9bb4ca5b5162"
+      "durationSec": 49,
+      "guid": "3dc0fe6a-a149-49dd-a5f6-8edb88199c96"
     },
     {
       "slug": "mentorias-p2-modulos",
